@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "jfx": {
+      "command": "jbang",
+      "args": [
+        "jfx@quarkiverse/quarkus-mcp-servers"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "pollinations-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@bendusy/pollinations-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

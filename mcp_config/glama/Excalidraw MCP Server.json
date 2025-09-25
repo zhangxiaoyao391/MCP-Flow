@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "excalidraw": {
+      "command": "node",
+      "args": [
+        "/absolute/path/to/mcp_excalidraw/dist/index.js"
+      ]
+    }
+  }
+}

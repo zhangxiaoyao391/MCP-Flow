@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "whodis-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@vinsidious/whodis-mcp-server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Whodis Domain Availability Server",
+            "mcp_list_description": "Check the availability of domain names using WHOIS lookups integrated as an MCP tool. Enable AI assistants and other tools to seamlessly verify domain registration status within their workflows. Provides a CLI interface and detailed logging for easy testing and monitoring."
+        }
+    }
+}

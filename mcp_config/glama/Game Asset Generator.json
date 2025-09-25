@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "game-asset-generator": {
+      "command": "node",
+      "args": [
+        "/full/path/to/game-asset-mcp/src/index.js"
+      ]
+    }
+  }
+}

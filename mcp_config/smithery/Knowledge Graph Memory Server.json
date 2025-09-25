@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "servers": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@jlia0/servers",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

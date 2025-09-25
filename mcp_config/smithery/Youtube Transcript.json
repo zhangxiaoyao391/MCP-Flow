@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-youtube-transcript": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@jkawamoto/mcp-youtube-transcript",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+        "excel-mcp-server": {
+            "command": "uvx",
+            "args": [
+                "excel-mcp-server",
+                "stdio"
+            ],
+            "mcp_list_name": "Excel MCP Server",
+            "mcp_list_description": "Manipulate Excel files seamlessly without requiring Microsoft Excel installed. Create, read, modify workbooks, apply formatting, generate charts, and manage worksheets through AI agents. Supports both local and remote usage with stdio and SSE transport protocols."
+        }
+    }
+}

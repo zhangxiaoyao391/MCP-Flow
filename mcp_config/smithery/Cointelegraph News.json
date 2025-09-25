@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "cointelegraph-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@kukapay/cointelegraph-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

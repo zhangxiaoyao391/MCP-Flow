@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mcp-tool-kit": {
+      "command": "docker",
+      "args": [
+        "exec",
+        "-i",
+        "mcp-server",
+        "python",
+        "mcp_server_v2.py"
+      ]
+    }
+  }
+}

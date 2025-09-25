@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "Vectara": {
+      "command": "uv",
+      "args": [
+        "tool",
+        "run",
+        "vectara-mcp"
+      ]
+    }
+  }
+}

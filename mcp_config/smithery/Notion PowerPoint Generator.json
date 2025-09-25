@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "notion-ppt-generator": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@Minwook-Byun/notion-ppt-generator",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Notion PowerPoint Generator",
+            "mcp_list_description": "Automatically generate PowerPoint presentations from Notion pages using local templates. Convert Notion databases into styled slides with automatic color themes and font styling. Manage and save presentations seamlessly with a Flask web server interface."
+        }
+    }
+}

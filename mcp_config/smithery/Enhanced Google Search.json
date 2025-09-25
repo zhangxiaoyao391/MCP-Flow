@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "google-search-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@kongyo2/google-search-mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Enhanced Google Search",
+            "mcp_list_description": "Provide enhanced Google search capabilities with advanced anonymization and anti-detection features. Execute complex search queries with configurable parameters such as language, region, safe search, and time range. Benefit from robust error handling, smart retry logic, and realistic browser fingerprinting to improve reliability and avoid detection."
+        }
+    }
+}

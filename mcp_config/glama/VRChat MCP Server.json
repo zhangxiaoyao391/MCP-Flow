@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "vrchat-mcp": {
+      "command": "npx",
+      "args": [
+        "vrchat-mcp"
+      ],
+      "env": {
+        "VRCHAT_USERNAME": "your-username",
+        "VRCHAT_AUTH_TOKEN": "your-auth-token"
+      }
+    }
+  }
+}

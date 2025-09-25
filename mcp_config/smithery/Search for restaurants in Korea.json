@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@KR-NOTEPAD/mcp-server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

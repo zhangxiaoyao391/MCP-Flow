@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "wikipedia-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@Rudra-ravi/wikipedia-mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Wikipedia Information Server",
+            "mcp_list_description": "Provide real-time access to Wikipedia content to enhance AI assistants with accurate and up-to-date factual information. Enable LLMs to search articles, retrieve full content, summaries, sections, links, and related topics from Wikipedia in multiple languages. Facilitate grounded and reliable responses by integrating Wikipedia data seamlessly."
+        }
+    }
+}

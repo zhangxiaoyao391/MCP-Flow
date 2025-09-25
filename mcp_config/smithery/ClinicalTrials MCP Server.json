@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "clinicaltrials-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@JackKuo666/clinicaltrials-mcp-server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

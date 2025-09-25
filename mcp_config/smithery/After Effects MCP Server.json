@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "after-effects-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@Dakkshin/after-effects-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

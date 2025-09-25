@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mcp-guide": {
+      "command": "node",
+      "args": [
+        "path/to/mcp-guide/dist/index.js"
+      ]
+    }
+  }
+}

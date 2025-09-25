@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "code-index": {
+      "command": "uvx",
+      "args": [
+        "code-index-mcp"
+      ]
+    }
+  }
+}

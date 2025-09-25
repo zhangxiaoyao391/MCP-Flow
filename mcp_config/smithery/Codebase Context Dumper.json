@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "codebase-context-dumper": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@lex-tools/codebase-context-dumper",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Codebase Context Dumper",
+            "mcp_list_description": "Automate the extraction of your codebase context for Large Language Models."
+        }
+    }
+}

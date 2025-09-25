@@ -1,0 +1,7 @@
+{
+    "mcpServers": {
+        "CoinMarketCap": {
+            "command": "COINMARKETCAP_API_KEY=*"
+        }
+    }
+}

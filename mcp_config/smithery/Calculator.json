@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-server-calculator": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@githejie/mcp-server-calculator",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

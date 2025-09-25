@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "mcp-server-ccxt": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@doggybee/mcp-server-ccxt",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "CCXT MCP Server",
+            "mcp_list_description": "High-performance CCXT MCP server for cryptocurrency exchange integration."
+        }
+    }
+}

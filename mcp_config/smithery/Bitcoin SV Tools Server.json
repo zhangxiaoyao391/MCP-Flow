@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "bsv-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@b-open-io/bsv-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Bitcoin SV Tools Server",
+            "mcp_list_description": "Provide AI assistants with seamless access to Bitcoin SV blockchain functionalities including wallet operations, NFT ordinals, token marketplace interactions, and data conversions. Enable natural language interactions to manage BSV addresses, send transactions, purchase NFTs and tokens, and query blockchain data. Enhance AI capabilities with a comprehensive suite of Bitcoin SV tools accessible via the Model Context Protocol."
+        }
+    }
+}

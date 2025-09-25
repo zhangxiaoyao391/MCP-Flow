@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "denemem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@iremaltunay55/denemem",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Weather Forecast Server with AI Assistant",
+            "mcp_list_description": "Provide detailed and user-friendly weather information based on coordinates or city names. Interact naturally with an AI assistant that understands various input formats and offers personalized advice. Enhance your applications with real-time weather data and smart conversational capabilities."
+        }
+    }
+}

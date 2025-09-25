@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "weather_mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@HarunGuclu/weather_mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "stampchain": {
+      "command": "node",
+      "args": [
+        "/path/to/stampchain-mcp/dist/index.js"
+      ],
+      "cwd": "/path/to/stampchain-mcp"
+    }
+  }
+}

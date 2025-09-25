@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "codebase-context-dumper": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@lex-tools/codebase-context-dumper"
+      ]
+    }
+  }
+}

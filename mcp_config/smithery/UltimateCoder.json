@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "ultimatecodermcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@m-ahmed-elbeskeri/ultimatecodermcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "UltimateCoder",
+            "mcp_list_description": "Transform your local machine into a powerful code command center. Automate file handling, run terminal commands, and leverage AI to enhance your development workflows—all securely and instantly, without cloud latency. Perfect for developers and automation architects looking to streamline their processes."
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "bibliomantic-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@jackxzxz/bibliomantic-mcp-server",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Bibliomantic Server",
+            "mcp_list_description": "Integrate traditional I Ching divination with AI responses to provide philosophical reflection and creative guidance. Explore ancient Chinese wisdom and literary context through a bibliomantic approach inspired by Philip K. Dick. Enhance your AI interactions with educational tools and authentic divination methods for thoughtful perspective-taking."
+        }
+    }
+}

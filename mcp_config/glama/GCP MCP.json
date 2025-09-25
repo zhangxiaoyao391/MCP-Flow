@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "gcp": {
+      "command": "sh",
+      "args": [
+        "-c",
+        "npx -y gcp-mcp"
+      ]
+    }
+  }
+}

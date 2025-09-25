@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "web3-rpc": {
+      "command": "node",
+      "args": [
+        "/PATH/TO/web3-mcp/build/index.js"
+      ]
+    }
+  }
+}

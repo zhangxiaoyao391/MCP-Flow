@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-painter": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@flrngel/mcp-painter",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

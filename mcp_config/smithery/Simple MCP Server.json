@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "simple-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@IlaydaBayrak/simple-mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Simple MCP Server",
+            "mcp_list_description": "Provide a minimal and straightforward implementation of the Model Context Protocol server to enable integration of LLMs with external tools and resources. Facilitate easy setup and deployment for developers looking to experiment or build upon MCP standards. Simplify the process of exposing tools, resources, and prompts to LLM clients."
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "fb_ad_library": {
+      "command": "{{PATH_TO_PROJECT}}/facebook-ads-library-mcp/venv/bin/python",
+      "args": [
+        "{{PATH_TO_PROJECT}}/facebook-ads-library-mcp/mcp_server.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-kali-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@atimevil/mcp-kali-server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

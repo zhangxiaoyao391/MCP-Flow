@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "gptr-mcp": {
+      "command": "python",
+      "args": [
+        "/absolute/path/to/gpt-researcher/gptr-mcp/server.py"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "your-openai-key-here",
+        "TAVILY_API_KEY": "your-tavily-key-here"
+      }
+    }
+  }
+}

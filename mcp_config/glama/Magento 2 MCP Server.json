@@ -1,0 +1,4 @@
+{
+  "MAGENTO_BASE_URL": "https://YOUR_DOMAIN/rest/V1",
+  "MAGENTO_API_TOKEN": "your-api-token"
+}

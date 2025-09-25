@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-nixos": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@utensils/mcp-nixos",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

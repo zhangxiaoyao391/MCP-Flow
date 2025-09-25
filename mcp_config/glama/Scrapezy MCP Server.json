@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "scrapezy": {
+      "command": "npx @scrapezy/mcp --api-key=your_api_key"
+    }
+  }
+}

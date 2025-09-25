@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "<name_of_your_documentation_no_spaces>": {
+      "command": "npx",
+      "args": [
+        "@ragrabbit/mcp",
+        "http://<RagRabbit install>/",
+        "<name of your documentation>"
+      ]
+    }
+  }
+}

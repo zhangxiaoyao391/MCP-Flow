@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "s-navmobil": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@meren41/s-navmobil",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Manga Translator",
+            "mcp_list_description": "Translate manga text from one language to another using the MangAPI3 Translate API. Send text and target language parameters to receive translated results in JSON format. Simplify manga translation workflows with this dedicated service."
+        }
+    }
+}

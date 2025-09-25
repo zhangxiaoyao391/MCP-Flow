@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "xcodemcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "xcodemcp@latest"
+      ],
+      "env": {
+        "LOG_LEVEL": "INFO"
+      }
+    }
+  }
+}

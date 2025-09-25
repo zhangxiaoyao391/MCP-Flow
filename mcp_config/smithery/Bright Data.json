@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "brightdata-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@luminati-io/brightdata-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Bright Data",
+            "mcp_list_description": "One MCP for the Web. Easily search, crawl, navigate, and extract websites without getting blocked. Ideal for discovering and retrieving structured insights from any public source - effortlessly and ethically."
+        }
+    }
+}

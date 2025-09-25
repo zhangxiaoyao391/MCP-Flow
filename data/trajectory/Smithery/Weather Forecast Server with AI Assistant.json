@@ -1,0 +1,636 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "Start a friendly and uplifting dialogue about the changing seasons, weaving in an optimistic perspective on how the natural shifts can inspire new beginnings and opportunities in daily life."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_weather_greeting",
+                    "arguments": {}
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_weather_greeting",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Generate a comprehensive analysis of the next week's weather trends for the geographic coordinates of Kyoto, incorporating key details such as anticipated shifts in humidity levels, potential storm activity, or other notable atmospheric changes to optimize outdoor cultural experiences."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_chat_weather_assistant",
+                    "arguments": {
+                        "message": "Generate a comprehensive analysis of the next week's weather trends for the geographic coordinates of Kyoto, incorporating key details such as anticipated shifts in humidity levels, potential storm activity, or other notable atmospheric changes to optimize outdoor cultural experiences."
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_chat_weather_assistant",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf24\\ufe0f Merhaba! Ben hava durumu asistan\\u0131n\\u0131z\\u0131m! \\ud83d\\ude0a\\n\\nSize hava durumu bilgisi verebilmek i\\u00e7in \\u015funlardan birini payla\\u015fabilirsiniz:\\n\\n\\ud83d\\udccd **Koordinatlar:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf24\\ufe0f Merhaba! Ben hava durumu asistan\\u0131n\\u0131z\\u0131m! \\ud83d\\ude0a\\n\\nSize hava durumu bilgisi verebilmek i\\u00e7in \\u015funlardan birini payla\\u015fabilirsiniz:\\n\\n\\ud83d\\udccd **Koordinatlar:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Craft an engaging and imaginative introduction that invites participants to explore the subtle ways natural light and seasonal changes influence human mood, productivity, and interactions, sparking a broader conversation about the interplay between environment and daily habits. "
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_weather_greeting",
+                    "arguments": {}
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_weather_greeting",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "With the geographic coordinates provided (latitude: 37.7749, longitude: -122.4194), obtain a thorough weather forecast for this location that involves not only detailed hourly data, precipitation probabilities, wind conditions, and temperature variations but also an analysis of atmospheric pressure trends, humidity levels, and potential anomalies in upcoming meteorological patterns."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather_by_coordinates",
+                    "arguments": {
+                        "latitude": 37.7749,
+                        "longitude": -122.4194,
+                        "units": "metric"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather_by_coordinates",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"{\\n  \\\"konum\\\": {\\n    \\\"enlem\\\": 37.7749,\\n    \\\"boylam\\\": -122.4194,\\n    \\\"\\u015fehir\\\": \\\"San Francisco\\\",\\n    \\\"\\u00fclke\\\": \\\"US\\\"\\n  },\\n  \\\"hava_durumu\\\": {\\n    \\\"ana_durum\\\": \\\"Clouds\\\",\\n    \\\"a\\u00e7\\u0131klama\\\": \\\"par\\u00e7al\\u0131 bulutlu\\\",\\n    \\\"ikon\\\": \\\"04n\\\"\\n  },\\n  \\\"s\\u0131cakl\\u0131k\\\": {\\n    \\\"mevcut\\\": 16.24,\\n    \\\"hissedilen\\\": 16.03,\\n    \\\"minimum\\\": 15.18,\\n    \\\"maksimum\\\": 17.44,\\n    \\\"birim\\\": \\\"\\u00b0C\\\"\\n  },\\n  \\\"atmosfer\\\": {\\n    \\\"bas\\u0131n\\u00e7\\\": 1012,\\n    \\\"nem\\\": 81,\\n    \\\"g\\u00f6r\\u00fc\\u015f_mesafesi\\\": 10000\\n  },\\n  \\\"r\\u00fczgar\\\": {\\n    \\\"h\\u0131z\\\": 6.69,\\n    \\\"y\\u00f6n\\\": 280,\\n    \\\"birim\\\": \\\"m/s\\\"\\n  },\\n  \\\"bulutluluk\\\": {\\n    \\\"y\\u00fczde\\\": 75\\n  },\\n  \\\"g\\u00fcne\\u015f\\\": {\\n    \\\"do\\u011fu\\u015f\\\": 1757166264,\\n    \\\"bat\\u0131\\u015f\\\": 1757212310\\n  },\\n  \\\"zaman\\\": {\\n    \\\"veri_zaman\\u0131\\\": 1757153566,\\n    \\\"saat_dilimi\\\": -25200\\n  }\\n}\"}], \"structuredContent\": {\"result\": \"{\\n  \\\"konum\\\": {\\n    \\\"enlem\\\": 37.7749,\\n    \\\"boylam\\\": -122.4194,\\n    \\\"\\u015fehir\\\": \\\"San Francisco\\\",\\n    \\\"\\u00fclke\\\": \\\"US\\\"\\n  },\\n  \\\"hava_durumu\\\": {\\n    \\\"ana_durum\\\": \\\"Clouds\\\",\\n    \\\"a\\u00e7\\u0131klama\\\": \\\"par\\u00e7al\\u0131 bulutlu\\\",\\n    \\\"ikon\\\": \\\"04n\\\"\\n  },\\n  \\\"s\\u0131cakl\\u0131k\\\": {\\n    \\\"mevcut\\\": 16.24,\\n    \\\"hissedilen\\\": 16.03,\\n    \\\"minimum\\\": 15.18,\\n    \\\"maksimum\\\": 17.44,\\n    \\\"birim\\\": \\\"\\u00b0C\\\"\\n  },\\n  \\\"atmosfer\\\": {\\n    \\\"bas\\u0131n\\u00e7\\\": 1012,\\n    \\\"nem\\\": 81,\\n    \\\"g\\u00f6r\\u00fc\\u015f_mesafesi\\\": 10000\\n  },\\n  \\\"r\\u00fczgar\\\": {\\n    \\\"h\\u0131z\\\": 6.69,\\n    \\\"y\\u00f6n\\\": 280,\\n    \\\"birim\\\": \\\"m/s\\\"\\n  },\\n  \\\"bulutluluk\\\": {\\n    \\\"y\\u00fczde\\\": 75\\n  },\\n  \\\"g\\u00fcne\\u015f\\\": {\\n    \\\"do\\u011fu\\u015f\\\": 1757166264,\\n    \\\"bat\\u0131\\u015f\\\": 1757212310\\n  },\\n  \\\"zaman\\\": {\\n    \\\"veri_zaman\\u0131\\\": 1757153566,\\n    \\\"saat_dilimi\\\": -25200\\n  }\\n}\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": ": Develop an engaging, conversational, and contextually adaptive message that effectively introduces and immerses users into a dynamic, personalized weather forecast interaction experience, ensuring it feels intuitive and fostering a sense of curiosity about localized and real-time weather insights."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_weather_greeting",
+                    "arguments": {}
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_weather_greeting",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Assess the current meteorological conditions in Istanbul, delve into the probability of rain by examining historical and forecasted weather patterns, and offer well-founded advice regarding the practicality of carrying an umbrella today in anticipation of possible precipitation."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_chat_weather_assistant",
+                    "arguments": {
+                        "message": "Assess the current meteorological conditions in Istanbul, delve into the probability of rain by examining historical and forecasted weather patterns, and offer well-founded advice regarding the practicality of carrying an umbrella today in anticipation of possible precipitation."
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_chat_weather_assistant",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf24\\ufe0f Merhaba! Ben hava durumu asistan\\u0131n\\u0131z\\u0131m! \\ud83d\\ude0a\\n\\nSize hava durumu bilgisi verebilmek i\\u00e7in \\u015funlardan birini payla\\u015fabilirsiniz:\\n\\n\\ud83d\\udccd **Koordinatlar:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf24\\ufe0f Merhaba! Ben hava durumu asistan\\u0131n\\u0131z\\u0131m! \\ud83d\\ude0a\\n\\nSize hava durumu bilgisi verebilmek i\\u00e7in \\u015funlardan birini payla\\u015fabilirsiniz:\\n\\n\\ud83d\\udccd **Koordinatlar:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Based solely on the geographical coordinates of latitude 48.8566 and longitude 2.3522, can you analyze the current air quality index at this location by cross-referencing relevant environmental datasets and, if necessary, detail appropriate safety measures to mitigate risks?"
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather",
+                    "arguments": {
+                        "latitude": 48.8566,
+                        "longitude": 2.3522
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf0d **Paris, FR** i\\u00e7in hava durumu:\\n\\n\\ud83c\\udf24\\ufe0f **Genel Durum:** A\\u00e7\\u0131k\\n\\ud83c\\udf21\\ufe0f **S\\u0131cakl\\u0131k:** 20.63\\u00b0C (Hissedilen: 20.18\\u00b0C)\\n\\ud83d\\udcca **G\\u00fcnl\\u00fck Aral\\u0131k:** 19.99\\u00b0C - 22.38\\u00b0C\\n\\ud83d\\udca7 **Nem:** %55\\n\\ud83d\\udd3d **Bas\\u0131n\\u00e7:** 1015 hPa\\n\\ud83d\\udca8 **R\\u00fczgar:** 3.6 m/s\\n\\n\\ud83d\\udca1 **Tavsiyelerim:**\\n\\ud83d\\udc55 G\\u00fczel hava! Rahat k\\u0131yafetler tercih edin.\\n\\u2600\\ufe0f A\\u00e7\\u0131k hava! D\\u0131\\u015far\\u0131da vakit ge\\u00e7irmek i\\u00e7in harika!\\n\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf0d **Paris, FR** i\\u00e7in hava durumu:\\n\\n\\ud83c\\udf24\\ufe0f **Genel Durum:** A\\u00e7\\u0131k\\n\\ud83c\\udf21\\ufe0f **S\\u0131cakl\\u0131k:** 20.63\\u00b0C (Hissedilen: 20.18\\u00b0C)\\n\\ud83d\\udcca **G\\u00fcnl\\u00fck Aral\\u0131k:** 19.99\\u00b0C - 22.38\\u00b0C\\n\\ud83d\\udca7 **Nem:** %55\\n\\ud83d\\udd3d **Bas\\u0131n\\u00e7:** 1015 hPa\\n\\ud83d\\udca8 **R\\u00fczgar:** 3.6 m/s\\n\\n\\ud83d\\udca1 **Tavsiyelerim:**\\n\\ud83d\\udc55 G\\u00fczel hava! Rahat k\\u0131yafetler tercih edin.\\n\\u2600\\ufe0f A\\u00e7\\u0131k hava! D\\u0131\\u015far\\u0131da vakit ge\\u00e7irmek i\\u00e7in harika!\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "For geographical coordinates at latitude 40.7128 and longitude -74.0060, evaluate and provide detailed insights into the current atmospheric conditions—specifically including temperature, humidity, wind speed, and notable meteorological phenomena—while accounting for possible regional influences, seasonal variations, and the interconnected impact of local weather patterns on these parameters."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather",
+                    "arguments": {
+                        "latitude": 40.7128,
+                        "longitude": -74.006
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf0d **New York kenti, US** i\\u00e7in hava durumu:\\n\\n\\ud83c\\udf24\\ufe0f **Genel Durum:** Sa\\u011fanak\\n\\ud83c\\udf21\\ufe0f **S\\u0131cakl\\u0131k:** 25.65\\u00b0C (Hissedilen: 26.39\\u00b0C)\\n\\ud83d\\udcca **G\\u00fcnl\\u00fck Aral\\u0131k:** 23.98\\u00b0C - 26.66\\u00b0C\\n\\ud83d\\udca7 **Nem:** %81\\n\\ud83d\\udd3d **Bas\\u0131n\\u00e7:** 1011 hPa\\n\\ud83d\\udca8 **R\\u00fczgar:** 7.72 m/s\\n\\ud83c\\udf27\\ufe0f **Ya\\u011f\\u0131\\u015f (Son 1 saat):** 36.46 mm\\n\\n\\ud83d\\udca1 **Tavsiyelerim:**\\n\\ud83d\\udc55 G\\u00fczel hava! Rahat k\\u0131yafetler tercih edin.\\n\\ud83d\\udca7 Y\\u00fcksek nem, serinletici i\\u00e7ecekler tercih edin!\\n\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf0d **New York kenti, US** i\\u00e7in hava durumu:\\n\\n\\ud83c\\udf24\\ufe0f **Genel Durum:** Sa\\u011fanak\\n\\ud83c\\udf21\\ufe0f **S\\u0131cakl\\u0131k:** 25.65\\u00b0C (Hissedilen: 26.39\\u00b0C)\\n\\ud83d\\udcca **G\\u00fcnl\\u00fck Aral\\u0131k:** 23.98\\u00b0C - 26.66\\u00b0C\\n\\ud83d\\udca7 **Nem:** %81\\n\\ud83d\\udd3d **Bas\\u0131n\\u00e7:** 1011 hPa\\n\\ud83d\\udca8 **R\\u00fczgar:** 7.72 m/s\\n\\ud83c\\udf27\\ufe0f **Ya\\u011f\\u0131\\u015f (Son 1 saat):** 36.46 mm\\n\\n\\ud83d\\udca1 **Tavsiyelerim:**\\n\\ud83d\\udc55 G\\u00fczel hava! Rahat k\\u0131yafetler tercih edin.\\n\\ud83d\\udca7 Y\\u00fcksek nem, serinletici i\\u00e7ecekler tercih edin!\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Analyze the current environmental and atmospheric conditions in Tokyo, including pollen count, UV index, rainfall probability, and temperature fluctuations, to assess whether spending an afternoon practicing Tai Chi in Yoyogi Park would be considered beneficial and safe."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_chat_weather_assistant",
+                    "arguments": {
+                        "message": "Analyze the current environmental and atmospheric conditions in Tokyo, including pollen count, UV index, rainfall probability, and temperature fluctuations, to assess whether spending an afternoon practicing Tai Chi in Yoyogi Park would be considered beneficial and safe."
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_chat_weather_assistant",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf24\\ufe0f Merhaba! Ben hava durumu asistan\\u0131n\\u0131z\\u0131m! \\ud83d\\ude0a\\n\\nSize hava durumu bilgisi verebilmek i\\u00e7in \\u015funlardan birini payla\\u015fabilirsiniz:\\n\\n\\ud83d\\udccd **Koordinatlar:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf24\\ufe0f Merhaba! Ben hava durumu asistan\\u0131n\\u0131z\\u0131m! \\ud83d\\ude0a\\n\\nSize hava durumu bilgisi verebilmek i\\u00e7in \\u015funlardan birini payla\\u015fabilirsiniz:\\n\\n\\ud83d\\udccd **Koordinatlar:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": ": Develop a pleasant and conversational message to onboard users into a weather forecast interaction."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_weather_greeting",
+                    "arguments": {}
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_weather_greeting",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Ask about the current weather conditions in Istanbul and get advice on whether you should carry an umbrella today."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_chat_weather_assistant",
+                    "arguments": {
+                        "message": "What are the current weather conditions in Istanbul, and should I carry an umbrella today?"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_chat_weather_assistant",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83e\\udd14 Anlayamad\\u0131m. Size yard\\u0131mc\\u0131 olabilmek i\\u00e7in l\\u00fctfen:\\n\\n\\ud83d\\udccd **Koordinatlar\\u0131n\\u0131z\\u0131** (enlem, boylam) veya\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131n\\u0131z\\u0131** payla\\u015f\\u0131n\\n\\n\\u00d6rnek:\\n\\u2022 \\\"Enlem: 41.0082, Boylam: 28.9784\\\"\\n\\u2022 \\\"\\u0130stanbul i\\u00e7in hava durumu\\\"\\n\\u2022 \\\"41.0082, 28.9784\\\"\\n\\nNas\\u0131l yard\\u0131mc\\u0131 olabilirim? \\ud83d\\ude0a\"}], \"structuredContent\": {\"result\": \"\\ud83e\\udd14 Anlayamad\\u0131m. Size yard\\u0131mc\\u0131 olabilmek i\\u00e7in l\\u00fctfen:\\n\\n\\ud83d\\udccd **Koordinatlar\\u0131n\\u0131z\\u0131** (enlem, boylam) veya\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131n\\u0131z\\u0131** payla\\u015f\\u0131n\\n\\n\\u00d6rnek:\\n\\u2022 \\\"Enlem: 41.0082, Boylam: 28.9784\\\"\\n\\u2022 \\\"\\u0130stanbul i\\u00e7in hava durumu\\\"\\n\\u2022 \\\"41.0082, 28.9784\\\"\\n\\nNas\\u0131l yard\\u0131mc\\u0131 olabilirim? \\ud83d\\ude0a\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Based on the planetary coordinates provided at latitude 40.7128 and longitude -74.0060, analyze the current phase of the moon, calculate its visibility percentage in the night sky, and explain how this phase would appear visually to an observer at that specific location."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather",
+                    "arguments": {
+                        "latitude": 40.7128,
+                        "longitude": -74.006
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf0d **New York kenti, US** i\\u00e7in hava durumu:\\n\\n\\ud83c\\udf24\\ufe0f **Genel Durum:** Sa\\u011fanak\\n\\ud83c\\udf21\\ufe0f **S\\u0131cakl\\u0131k:** 25.65\\u00b0C (Hissedilen: 26.39\\u00b0C)\\n\\ud83d\\udcca **G\\u00fcnl\\u00fck Aral\\u0131k:** 23.98\\u00b0C - 26.66\\u00b0C\\n\\ud83d\\udca7 **Nem:** %81\\n\\ud83d\\udd3d **Bas\\u0131n\\u00e7:** 1011 hPa\\n\\ud83d\\udca8 **R\\u00fczgar:** 7.72 m/s\\n\\ud83c\\udf27\\ufe0f **Ya\\u011f\\u0131\\u015f (Son 1 saat):** 36.46 mm\\n\\n\\ud83d\\udca1 **Tavsiyelerim:**\\n\\ud83d\\udc55 G\\u00fczel hava! Rahat k\\u0131yafetler tercih edin.\\n\\ud83d\\udca7 Y\\u00fcksek nem, serinletici i\\u00e7ecekler tercih edin!\\n\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf0d **New York kenti, US** i\\u00e7in hava durumu:\\n\\n\\ud83c\\udf24\\ufe0f **Genel Durum:** Sa\\u011fanak\\n\\ud83c\\udf21\\ufe0f **S\\u0131cakl\\u0131k:** 25.65\\u00b0C (Hissedilen: 26.39\\u00b0C)\\n\\ud83d\\udcca **G\\u00fcnl\\u00fck Aral\\u0131k:** 23.98\\u00b0C - 26.66\\u00b0C\\n\\ud83d\\udca7 **Nem:** %81\\n\\ud83d\\udd3d **Bas\\u0131n\\u00e7:** 1011 hPa\\n\\ud83d\\udca8 **R\\u00fczgar:** 7.72 m/s\\n\\ud83c\\udf27\\ufe0f **Ya\\u011f\\u0131\\u015f (Son 1 saat):** 36.46 mm\\n\\n\\ud83d\\udca1 **Tavsiyelerim:**\\n\\ud83d\\udc55 G\\u00fczel hava! Rahat k\\u0131yafetler tercih edin.\\n\\ud83d\\udca7 Y\\u00fcksek nem, serinletici i\\u00e7ecekler tercih edin!\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Please conduct an in-depth analysis and deliver a detailed update on the prevailing weather conditions in Istanbul, encompassing significant atmospheric phenomena, any observable meteorological trends, and the precise temperature described in metric units."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather_by_city",
+                    "arguments": {
+                        "city_name": "Istanbul",
+                        "units": "metric"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather_by_city",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"{\\n  \\\"konum\\\": {\\n    \\\"enlem\\\": 41.0351,\\n    \\\"boylam\\\": 28.9833,\\n    \\\"\\u015fehir\\\": \\\"\\u0130stanbul\\\",\\n    \\\"\\u00fclke\\\": \\\"TR\\\"\\n  },\\n  \\\"hava_durumu\\\": {\\n    \\\"ana_durum\\\": \\\"Clouds\\\",\\n    \\\"a\\u00e7\\u0131klama\\\": \\\"par\\u00e7al\\u0131 bulutlu\\\",\\n    \\\"ikon\\\": \\\"04n\\\"\\n  },\\n  \\\"s\\u0131cakl\\u0131k\\\": {\\n    \\\"mevcut\\\": 21.68,\\n    \\\"hissedilen\\\": 21.81,\\n    \\\"minimum\\\": 21.68,\\n    \\\"maksimum\\\": 21.68,\\n    \\\"birim\\\": \\\"\\u00b0C\\\"\\n  },\\n  \\\"atmosfer\\\": {\\n    \\\"bas\\u0131n\\u00e7\\\": 1016,\\n    \\\"nem\\\": 73,\\n    \\\"g\\u00f6r\\u00fc\\u015f_mesafesi\\\": 10000\\n  },\\n  \\\"r\\u00fczgar\\\": {\\n    \\\"h\\u0131z\\\": 3.6,\\n    \\\"y\\u00f6n\\\": 20,\\n    \\\"birim\\\": \\\"m/s\\\"\\n  },\\n  \\\"bulutluluk\\\": {\\n    \\\"y\\u00fczde\\\": 75\\n  },\\n  \\\"g\\u00fcne\\u015f\\\": {\\n    \\\"do\\u011fu\\u015f\\\": 1757129746,\\n    \\\"bat\\u0131\\u015f\\\": 1757176172\\n  },\\n  \\\"zaman\\\": {\\n    \\\"veri_zaman\\u0131\\\": 1757187292,\\n    \\\"saat_dilimi\\\": 10800\\n  }\\n}\"}], \"structuredContent\": {\"result\": \"{\\n  \\\"konum\\\": {\\n    \\\"enlem\\\": 41.0351,\\n    \\\"boylam\\\": 28.9833,\\n    \\\"\\u015fehir\\\": \\\"\\u0130stanbul\\\",\\n    \\\"\\u00fclke\\\": \\\"TR\\\"\\n  },\\n  \\\"hava_durumu\\\": {\\n    \\\"ana_durum\\\": \\\"Clouds\\\",\\n    \\\"a\\u00e7\\u0131klama\\\": \\\"par\\u00e7al\\u0131 bulutlu\\\",\\n    \\\"ikon\\\": \\\"04n\\\"\\n  },\\n  \\\"s\\u0131cakl\\u0131k\\\": {\\n    \\\"mevcut\\\": 21.68,\\n    \\\"hissedilen\\\": 21.81,\\n    \\\"minimum\\\": 21.68,\\n    \\\"maksimum\\\": 21.68,\\n    \\\"birim\\\": \\\"\\u00b0C\\\"\\n  },\\n  \\\"atmosfer\\\": {\\n    \\\"bas\\u0131n\\u00e7\\\": 1016,\\n    \\\"nem\\\": 73,\\n    \\\"g\\u00f6r\\u00fc\\u015f_mesafesi\\\": 10000\\n  },\\n  \\\"r\\u00fczgar\\\": {\\n    \\\"h\\u0131z\\\": 3.6,\\n    \\\"y\\u00f6n\\\": 20,\\n    \\\"birim\\\": \\\"m/s\\\"\\n  },\\n  \\\"bulutluluk\\\": {\\n    \\\"y\\u00fczde\\\": 75\\n  },\\n  \\\"g\\u00fcne\\u015f\\\": {\\n    \\\"do\\u011fu\\u015f\\\": 1757129746,\\n    \\\"bat\\u0131\\u015f\\\": 1757176172\\n  },\\n  \\\"zaman\\\": {\\n    \\\"veri_zaman\\u0131\\\": 1757187292,\\n    \\\"saat_dilimi\\\": 10800\\n  }\\n}\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Gather detailed geophysical information, including soil composition, seismic activity patterns, groundwater levels, and magnetic field fluctuations, for the region defined by latitude 34.0522 and longitude -118.2437."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather_by_coordinates",
+                    "arguments": {
+                        "latitude": 34.0522,
+                        "longitude": -118.2437,
+                        "units": null
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather_by_coordinates",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"Error executing tool get_weather_by_coordinates: 1 validation error for get_weather_by_coordinatesArguments\\nunits\\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\\n    For further information visit https://errors.pydantic.dev/2.11/v/string_type\"}], \"isError\": true}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Retrieve detailed weather information, including temperature and conditions, for the coordinates with latitude 40.7128 and longitude -74.0060."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather_by_coordinates",
+                    "arguments": {
+                        "latitude": 40.7128,
+                        "longitude": -74.006,
+                        "units": null
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather_by_coordinates",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"Error executing tool get_weather_by_coordinates: 1 validation error for get_weather_by_coordinatesArguments\\nunits\\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\\n    For further information visit https://errors.pydantic.dev/2.11/v/string_type\"}], \"isError\": true}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Analyze the environmental factors in Kyoto this morning to assess whether they are favorable for meditative calligraphy practice in an open teahouse garden."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_chat_weather_assistant",
+                    "arguments": {
+                        "message": "Analyze the environmental factors in Kyoto this morning to assess whether they are favorable for meditative calligraphy practice in an open teahouse garden."
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_chat_weather_assistant",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf24\\ufe0f Merhaba! Ben hava durumu asistan\\u0131n\\u0131z\\u0131m! \\ud83d\\ude0a\\n\\nSize hava durumu bilgisi verebilmek i\\u00e7in \\u015funlardan birini payla\\u015fabilirsiniz:\\n\\n\\ud83d\\udccd **Koordinatlar:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf24\\ufe0f Merhaba! Ben hava durumu asistan\\u0131n\\u0131z\\u0131m! \\ud83d\\ude0a\\n\\nSize hava durumu bilgisi verebilmek i\\u00e7in \\u015funlardan birini payla\\u015fabilirsiniz:\\n\\n\\ud83d\\udccd **Koordinatlar:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Craft an inviting opening statement to start a discussion about weather conditions."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_weather_greeting",
+                    "arguments": {}
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_weather_greeting",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Provide a detailed analysis of the current atmospheric conditions in Kyoto, ensuring the inclusion of temperature, humidity level, and likelihood of precipitation, and synthesize this information into a well-structured, clear, and logically prioritized summary."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather_by_city",
+                    "arguments": {
+                        "city_name": "Kyoto",
+                        "country_code": "",
+                        "units": null
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather_by_city",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"Error executing tool get_weather_by_city: 1 validation error for get_weather_by_cityArguments\\nunits\\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\\n    For further information visit https://errors.pydantic.dev/2.11/v/string_type\"}], \"isError\": true}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Look up the weather forecast for Madrid, Spain, and include details on temperature using metric units."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather_by_city",
+                    "arguments": {
+                        "city_name": "Madrid",
+                        "country_code": "ES",
+                        "units": "metric"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather_by_city",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"{\\n  \\\"konum\\\": {\\n    \\\"enlem\\\": 40.4165,\\n    \\\"boylam\\\": -3.7026,\\n    \\\"\\u015fehir\\\": \\\"Sol\\\",\\n    \\\"\\u00fclke\\\": \\\"ES\\\"\\n  },\\n  \\\"hava_durumu\\\": {\\n    \\\"ana_durum\\\": \\\"Clear\\\",\\n    \\\"a\\u00e7\\u0131klama\\\": \\\"a\\u00e7\\u0131k\\\",\\n    \\\"ikon\\\": \\\"01n\\\"\\n  },\\n  \\\"s\\u0131cakl\\u0131k\\\": {\\n    \\\"mevcut\\\": 28.98,\\n    \\\"hissedilen\\\": 27.86,\\n    \\\"minimum\\\": 27.43,\\n    \\\"maksimum\\\": 29.81,\\n    \\\"birim\\\": \\\"\\u00b0C\\\"\\n  },\\n  \\\"atmosfer\\\": {\\n    \\\"bas\\u0131n\\u00e7\\\": 1010,\\n    \\\"nem\\\": 30,\\n    \\\"g\\u00f6r\\u00fc\\u015f_mesafesi\\\": 10000\\n  },\\n  \\\"r\\u00fczgar\\\": {\\n    \\\"h\\u0131z\\\": 1.34,\\n    \\\"y\\u00f6n\\\": 133,\\n    \\\"birim\\\": \\\"m/s\\\"\\n  },\\n  \\\"bulutluluk\\\": {\\n    \\\"y\\u00fczde\\\": 0\\n  },\\n  \\\"g\\u00fcne\\u015f\\\": {\\n    \\\"do\\u011fu\\u015f\\\": 1757137627,\\n    \\\"bat\\u0131\\u015f\\\": 1757183976\\n  },\\n  \\\"zaman\\\": {\\n    \\\"veri_zaman\\u0131\\\": 1757187277,\\n    \\\"saat_dilimi\\\": 7200\\n  }\\n}\"}], \"structuredContent\": {\"result\": \"{\\n  \\\"konum\\\": {\\n    \\\"enlem\\\": 40.4165,\\n    \\\"boylam\\\": -3.7026,\\n    \\\"\\u015fehir\\\": \\\"Sol\\\",\\n    \\\"\\u00fclke\\\": \\\"ES\\\"\\n  },\\n  \\\"hava_durumu\\\": {\\n    \\\"ana_durum\\\": \\\"Clear\\\",\\n    \\\"a\\u00e7\\u0131klama\\\": \\\"a\\u00e7\\u0131k\\\",\\n    \\\"ikon\\\": \\\"01n\\\"\\n  },\\n  \\\"s\\u0131cakl\\u0131k\\\": {\\n    \\\"mevcut\\\": 28.98,\\n    \\\"hissedilen\\\": 27.86,\\n    \\\"minimum\\\": 27.43,\\n    \\\"maksimum\\\": 29.81,\\n    \\\"birim\\\": \\\"\\u00b0C\\\"\\n  },\\n  \\\"atmosfer\\\": {\\n    \\\"bas\\u0131n\\u00e7\\\": 1010,\\n    \\\"nem\\\": 30,\\n    \\\"g\\u00f6r\\u00fc\\u015f_mesafesi\\\": 10000\\n  },\\n  \\\"r\\u00fczgar\\\": {\\n    \\\"h\\u0131z\\\": 1.34,\\n    \\\"y\\u00f6n\\\": 133,\\n    \\\"birim\\\": \\\"m/s\\\"\\n  },\\n  \\\"bulutluluk\\\": {\\n    \\\"y\\u00fczde\\\": 0\\n  },\\n  \\\"g\\u00fcne\\u015f\\\": {\\n    \\\"do\\u011fu\\u015f\\\": 1757137627,\\n    \\\"bat\\u0131\\u015f\\\": 1757183976\\n  },\\n  \\\"zaman\\\": {\\n    \\\"veri_zaman\\u0131\\\": 1757187277,\\n    \\\"saat_dilimi\\\": 7200\\n  }\\n}\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Provide a detailed analysis of the present meteorological conditions in Istanbul, covering aspects such as temperature, wind speed, humidity levels, and precipitation probabilities, while also offering specific guidance on whether carrying an umbrella today would be a prudent choice based on these factors."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_chat_weather_assistant",
+                    "arguments": {
+                        "message": "Provide a detailed analysis of the present meteorological conditions in Istanbul, covering aspects such as temperature, wind speed, humidity levels, and precipitation probabilities, while also offering specific guidance on whether carrying an umbrella today would be a prudent choice based on these factors."
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_chat_weather_assistant",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf24\\ufe0f Merhaba! Ben hava durumu asistan\\u0131n\\u0131z\\u0131m! \\ud83d\\ude0a\\n\\nSize hava durumu bilgisi verebilmek i\\u00e7in \\u015funlardan birini payla\\u015fabilirsiniz:\\n\\n\\ud83d\\udccd **Koordinatlar:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf24\\ufe0f Merhaba! Ben hava durumu asistan\\u0131n\\u0131z\\u0131m! \\ud83d\\ude0a\\n\\nSize hava durumu bilgisi verebilmek i\\u00e7in \\u015funlardan birini payla\\u015fabilirsiniz:\\n\\n\\ud83d\\udccd **Koordinatlar:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Could you provide me with today's weather in New York, ensuring the temperature is in Fahrenheit, including details about wind speed and humidity, and specifying whether any weather alerts or advisories are in effect?"
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather_by_city",
+                    "arguments": {
+                        "city_name": "New York",
+                        "country_code": "US",
+                        "units": "imperial"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather_by_city",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"{\\n  \\\"konum\\\": {\\n    \\\"enlem\\\": 40.7143,\\n    \\\"boylam\\\": -74.006,\\n    \\\"\\u015fehir\\\": \\\"New York kenti\\\",\\n    \\\"\\u00fclke\\\": \\\"US\\\"\\n  },\\n  \\\"hava_durumu\\\": {\\n    \\\"ana_durum\\\": \\\"Rain\\\",\\n    \\\"a\\u00e7\\u0131klama\\\": \\\"\\u00e7ok \\u015fiddetli ya\\u011fmur\\\",\\n    \\\"ikon\\\": \\\"10d\\\"\\n  },\\n  \\\"s\\u0131cakl\\u0131k\\\": {\\n    \\\"mevcut\\\": 77.77,\\n    \\\"hissedilen\\\": 79.05,\\n    \\\"minimum\\\": 74.95,\\n    \\\"maksimum\\\": 79.99,\\n    \\\"birim\\\": \\\"\\u00b0F\\\"\\n  },\\n  \\\"atmosfer\\\": {\\n    \\\"bas\\u0131n\\u00e7\\\": 1011,\\n    \\\"nem\\\": 81,\\n    \\\"g\\u00f6r\\u00fc\\u015f_mesafesi\\\": 2414\\n  },\\n  \\\"r\\u00fczgar\\\": {\\n    \\\"h\\u0131z\\\": 17.27,\\n    \\\"y\\u00f6n\\\": 280,\\n    \\\"birim\\\": \\\"mph\\\"\\n  },\\n  \\\"bulutluluk\\\": {\\n    \\\"y\\u00fczde\\\": 100\\n  },\\n  \\\"g\\u00fcne\\u015f\\\": {\\n    \\\"do\\u011fu\\u015f\\\": 1757154496,\\n    \\\"bat\\u0131\\u015f\\\": 1757200844\\n  },\\n  \\\"zaman\\\": {\\n    \\\"veri_zaman\\u0131\\\": 1757187130,\\n    \\\"saat_dilimi\\\": -14400\\n  },\\n  \\\"ya\\u011f\\u0131\\u015f\\\": {\\n    \\\"son_1_saat\\\": 32.82,\\n    \\\"birim\\\": \\\"mm\\\"\\n  }\\n}\"}], \"structuredContent\": {\"result\": \"{\\n  \\\"konum\\\": {\\n    \\\"enlem\\\": 40.7143,\\n    \\\"boylam\\\": -74.006,\\n    \\\"\\u015fehir\\\": \\\"New York kenti\\\",\\n    \\\"\\u00fclke\\\": \\\"US\\\"\\n  },\\n  \\\"hava_durumu\\\": {\\n    \\\"ana_durum\\\": \\\"Rain\\\",\\n    \\\"a\\u00e7\\u0131klama\\\": \\\"\\u00e7ok \\u015fiddetli ya\\u011fmur\\\",\\n    \\\"ikon\\\": \\\"10d\\\"\\n  },\\n  \\\"s\\u0131cakl\\u0131k\\\": {\\n    \\\"mevcut\\\": 77.77,\\n    \\\"hissedilen\\\": 79.05,\\n    \\\"minimum\\\": 74.95,\\n    \\\"maksimum\\\": 79.99,\\n    \\\"birim\\\": \\\"\\u00b0F\\\"\\n  },\\n  \\\"atmosfer\\\": {\\n    \\\"bas\\u0131n\\u00e7\\\": 1011,\\n    \\\"nem\\\": 81,\\n    \\\"g\\u00f6r\\u00fc\\u015f_mesafesi\\\": 2414\\n  },\\n  \\\"r\\u00fczgar\\\": {\\n    \\\"h\\u0131z\\\": 17.27,\\n    \\\"y\\u00f6n\\\": 280,\\n    \\\"birim\\\": \\\"mph\\\"\\n  },\\n  \\\"bulutluluk\\\": {\\n    \\\"y\\u00fczde\\\": 100\\n  },\\n  \\\"g\\u00fcne\\u015f\\\": {\\n    \\\"do\\u011fu\\u015f\\\": 1757154496,\\n    \\\"bat\\u0131\\u015f\\\": 1757200844\\n  },\\n  \\\"zaman\\\": {\\n    \\\"veri_zaman\\u0131\\\": 1757187130,\\n    \\\"saat_dilimi\\\": -14400\\n  },\\n  \\\"ya\\u011f\\u0131\\u015f\\\": {\\n    \\\"son_1_saat\\\": 32.82,\\n    \\\"birim\\\": \\\"mm\\\"\\n  }\\n}\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Based on the geographical location at latitude 40.7128 and longitude -74.0060, let me know the current weather details."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather",
+                    "arguments": {
+                        "latitude": 40.7128,
+                        "longitude": -74.006
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf0d **New York kenti, US** i\\u00e7in hava durumu:\\n\\n\\ud83c\\udf24\\ufe0f **Genel Durum:** Sa\\u011fanak\\n\\ud83c\\udf21\\ufe0f **S\\u0131cakl\\u0131k:** 25.65\\u00b0C (Hissedilen: 26.39\\u00b0C)\\n\\ud83d\\udcca **G\\u00fcnl\\u00fck Aral\\u0131k:** 23.98\\u00b0C - 26.66\\u00b0C\\n\\ud83d\\udca7 **Nem:** %81\\n\\ud83d\\udd3d **Bas\\u0131n\\u00e7:** 1011 hPa\\n\\ud83d\\udca8 **R\\u00fczgar:** 7.72 m/s\\n\\ud83c\\udf27\\ufe0f **Ya\\u011f\\u0131\\u015f (Son 1 saat):** 36.46 mm\\n\\n\\ud83d\\udca1 **Tavsiyelerim:**\\n\\ud83d\\udc55 G\\u00fczel hava! Rahat k\\u0131yafetler tercih edin.\\n\\ud83d\\udca7 Y\\u00fcksek nem, serinletici i\\u00e7ecekler tercih edin!\\n\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf0d **New York kenti, US** i\\u00e7in hava durumu:\\n\\n\\ud83c\\udf24\\ufe0f **Genel Durum:** Sa\\u011fanak\\n\\ud83c\\udf21\\ufe0f **S\\u0131cakl\\u0131k:** 25.65\\u00b0C (Hissedilen: 26.39\\u00b0C)\\n\\ud83d\\udcca **G\\u00fcnl\\u00fck Aral\\u0131k:** 23.98\\u00b0C - 26.66\\u00b0C\\n\\ud83d\\udca7 **Nem:** %81\\n\\ud83d\\udd3d **Bas\\u0131n\\u00e7:** 1011 hPa\\n\\ud83d\\udca8 **R\\u00fczgar:** 7.72 m/s\\n\\ud83c\\udf27\\ufe0f **Ya\\u011f\\u0131\\u015f (Son 1 saat):** 36.46 mm\\n\\n\\ud83d\\udca1 **Tavsiyelerim:**\\n\\ud83d\\udc55 G\\u00fczel hava! Rahat k\\u0131yafetler tercih edin.\\n\\ud83d\\udca7 Y\\u00fcksek nem, serinletici i\\u00e7ecekler tercih edin!\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Using the coordinates latitude 40.7128 and longitude -74.0060, determine the temperature and provide a nuanced and thorough analysis of the prevailing weather conditions, incorporating detailed information about factors such as humidity, wind speed, precipitation levels, cloud cover, and potential atmospheric patterns."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather_by_coordinates",
+                    "arguments": {
+                        "latitude": 40.7128,
+                        "longitude": -74.006,
+                        "units": null
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather_by_coordinates",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"Error executing tool get_weather_by_coordinates: 1 validation error for get_weather_by_coordinatesArguments\\nunits\\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\\n    For further information visit https://errors.pydantic.dev/2.11/v/string_type\"}], \"isError\": true}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Design a warm and inviting opening message that introduces users to an interactive climate insight tool, gently encouraging them to personalize their experience by selecting specific environmental factors or regions of interest."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_weather_greeting",
+                    "arguments": {}
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_weather_greeting",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}], \"structuredContent\": {\"result\": \"\\ud83c\\udf24\\ufe0f **Merhaba! Hava Durumu Asistan\\u0131n\\u0131z\\u0131m!** \\ud83d\\ude0a\\n\\nSize g\\u00fcncel hava durumu bilgileri sa\\u011flamak i\\u00e7in buraday\\u0131m!\\n\\n**Nas\\u0131l kullanabilirsiniz:**\\n\\n\\ud83d\\udccd **Koordinat ile:**\\n   \\u2022 Enlem: 41.0082, Boylam: 28.9784\\n   \\u2022 Veya k\\u0131saca: 41.0082, 28.9784\\n\\n\\ud83c\\udfd9\\ufe0f **\\u015eehir ad\\u0131 ile:**\\n   \\u2022 \\u0130stanbul i\\u00e7in hava durumu\\n   \\u2022 Ankara hava durumu\\n\\n\\ud83d\\udde3\\ufe0f **Do\\u011fal konu\\u015fma ile:**\\n   \\u2022 \\\"\\u0130stanbul'da hava nas\\u0131l?\\\"\\n   \\u2022 \\\"Bug\\u00fcn Ankara'da ya\\u011fmur var m\\u0131?\\\"\\n\\nHangi konum i\\u00e7in hava durumu \\u00f6\\u011frenmek istiyorsunuz? \\ud83c\\udf0d\\u2728\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Determine the temperature and weather details for a point on the map using latitude 40.7128 and longitude -74.0060."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "denemem_get_weather_by_coordinates",
+                    "arguments": {
+                        "latitude": 40.7128,
+                        "longitude": -74.006,
+                        "units": null
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "denemem_get_weather_by_coordinates",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"Error executing tool get_weather_by_coordinates: 1 validation error for get_weather_by_coordinatesArguments\\nunits\\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\\n    For further information visit https://errors.pydantic.dev/2.11/v/string_type\"}], \"isError\": true}"
+        }
+    ]
+]

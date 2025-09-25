@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-expr-lang": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@ivan-saorin/mcp-expr-lang",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

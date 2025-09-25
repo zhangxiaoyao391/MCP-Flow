@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "deep-code-reasoning": {
+      "command": "node",
+      "args": [
+        "/path/to/deep-code-reasoning-mcp/dist/index.js"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "your-gemini-api-key"
+      }
+    }
+  }
+}

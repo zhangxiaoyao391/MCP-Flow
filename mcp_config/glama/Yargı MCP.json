@@ -1,0 +1,12 @@
+{
+  "theme": "Default",
+  "selectedAuthType": "###",
+  "mcpServers": {
+    "yargi_mcp": {
+      "command": "uvx",
+      "args": [
+        "yargi-mcp"
+      ]
+    }
+  }
+}

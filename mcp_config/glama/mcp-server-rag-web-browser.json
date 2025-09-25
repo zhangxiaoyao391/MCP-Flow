@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "rag-web-browser": {
+      "command": "npx",
+      "args": [
+        "@apify/mcp-server-rag-web-browser"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-api-token"
+      }
+    }
+  }
+}

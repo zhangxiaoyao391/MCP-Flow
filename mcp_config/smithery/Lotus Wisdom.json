@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "lotus-wisdom-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@linxule/lotus-wisdom-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Lotus Wisdom",
+            "mcp_list_description": "Utilize the wisdom of the Lotus Sutra to solve complex problems through a structured, multi-faceted approach. Engage in a thoughtful process that combines analytical and intuitive insights, allowing for deeper understanding and clarity. Experience meditation pauses that foster natural insights and culminate in a well-integrated response."
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "pdftomd-converter": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@javilujann/pdftomd-converter",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "PDF to Markdown Converter",
+            "mcp_list_description": "Convert PDF files into Markdown format effortlessly."
+        }
+    }
+}

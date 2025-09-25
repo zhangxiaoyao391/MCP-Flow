@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "bible-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@HarunGuclu/bible-mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Bible Verse Access Server",
+            "mcp_list_description": "Provide easy access to Bible verses, passages, and translations in multiple languages. Retrieve random or specific verses, browse books and chapters, and explore various Bible translations seamlessly. Enhance your applications with rich biblical content through a simple API interface."
+        }
+    }
+}

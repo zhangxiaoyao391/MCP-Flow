@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-osint-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@himanshusanecha/mcp-osint-server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

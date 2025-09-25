@@ -1,0 +1,15 @@
+{
+    "mcpServers": {
+        "google-scholar-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@DeadWaveWave/google-scholar-mcp-server",
+                "--key",
+                "your key"
+            ]
+        }
+    }
+}

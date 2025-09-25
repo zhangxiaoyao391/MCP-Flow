@@ -1,0 +1,643 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "Survey the cutting-edge breakthroughs and emerging challenges in the field of computational creativity (cs.CC) by examining scholarly publications from the past month, with a focus on cross-disciplinary innovations and their real-world implications."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_analyze_trends",
+                    "arguments": {
+                        "category": "cs.CC",
+                        "days": 30
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_analyze_trends",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## cs.CC \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}], \"structuredContent\": {\"result\": \"## cs.CC \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Retrieve comprehensive and precise details for the scientific paper identified by the reference code arXiv:2304.12345, ensuring inclusion not only of its full citation data and associated research affiliations but also an analysis of its publication history, co-authorship network, and relevance within the broader research domain."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_get_paper_info",
+                    "arguments": {
+                        "paper_id": "2304.12345"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_get_paper_info",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Non-isometric codes for the black hole interior from fundamental and\\n  effective dynamics\\n\\n**\\uc800\\uc790**: Oliver DeWolfe, Kenneth Higginbotham\\n**\\ucd9c\\ud310\\uc77c**: 2023-04-24\\n**\\uce74\\ud14c\\uace0\\ub9ac**: hep-th, gr-qc, quant-ph\\n**DOI**: None\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2304.12345\\n**PDF**: https://arxiv.org/pdf/2304.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nWe introduce a new holographic map for encoding black hole interiors by\\nincluding both fundamental and effective dynamics. This holographic map is\\nconstructed by evolving a state in the effective, semiclassical gravity\\ndescription of the interior backwards in time to pull the degrees of freedom\\noutside the black hole, before evolving forwards in time in the fundamental\\ndescription. We show this ``backwards-forwards'' map is equivalent to a\\npost-selection map of the type introduced by Akers, Engelhardt, Harlow,\\nPenington, and Vardhan, and in the case of trivial effective interactions\\nreduces to their model, while providing a suitable generalization when those\\ninteractions are nontrivial. We show the map is equivariant with respect to\\ntime evolution, and independent of any interactions outside the black hole.\\nThis construction includes interactions with an infaller in a way that\\npreserves the unitarity of black hole evolution exactly and does not allow for\\nsuperpolynomial computational complexity.\\n\"}], \"structuredContent\": {\"result\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Non-isometric codes for the black hole interior from fundamental and\\n  effective dynamics\\n\\n**\\uc800\\uc790**: Oliver DeWolfe, Kenneth Higginbotham\\n**\\ucd9c\\ud310\\uc77c**: 2023-04-24\\n**\\uce74\\ud14c\\uace0\\ub9ac**: hep-th, gr-qc, quant-ph\\n**DOI**: None\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2304.12345\\n**PDF**: https://arxiv.org/pdf/2304.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nWe introduce a new holographic map for encoding black hole interiors by\\nincluding both fundamental and effective dynamics. This holographic map is\\nconstructed by evolving a state in the effective, semiclassical gravity\\ndescription of the interior backwards in time to pull the degrees of freedom\\noutside the black hole, before evolving forwards in time in the fundamental\\ndescription. We show this ``backwards-forwards'' map is equivalent to a\\npost-selection map of the type introduced by Akers, Engelhardt, Harlow,\\nPenington, and Vardhan, and in the case of trivial effective interactions\\nreduces to their model, while providing a suitable generalization when those\\ninteractions are nontrivial. We show the map is equivariant with respect to\\ntime evolution, and independent of any interactions outside the black hole.\\nThis construction includes interactions with an infaller in a way that\\npreserves the unitarity of black hole evolution exactly and does not allow for\\nsuperpolynomial computational complexity.\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Gather and comprehensively synthesize all accessible and intricate information regarding the scientific paper identified by the reference code arXiv:2304.12345, including its broader academic and research context, detailed authorship background, complete publication trajectory, and any interrelated citations or significant scholarly discussions."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_get_paper_info",
+                    "arguments": {
+                        "paper_id": "arXiv:2304.12345"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_get_paper_info",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"ID 'arXiv:2304.12345'\\uc5d0 \\ud574\\ub2f9\\ud558\\ub294 \\ub17c\\ubb38\\uc744 \\ucc3e\\uc744 \\uc218 \\uc5c6\\uc2b5\\ub2c8\\ub2e4.\"}], \"structuredContent\": {\"result\": \"ID 'arXiv:2304.12345'\\uc5d0 \\ud574\\ub2f9\\ud558\\ub294 \\ub17c\\ubb38\\uc744 \\ucc3e\\uc744 \\uc218 \\uc5c6\\uc2b5\\ub2c8\\ub2e4.\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Gather all available details for the scientific paper with reference code arXiv:2304.12345."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_get_paper_info",
+                    "arguments": {
+                        "paper_id": "2304.12345"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_get_paper_info",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Non-isometric codes for the black hole interior from fundamental and\\n  effective dynamics\\n\\n**\\uc800\\uc790**: Oliver DeWolfe, Kenneth Higginbotham\\n**\\ucd9c\\ud310\\uc77c**: 2023-04-24\\n**\\uce74\\ud14c\\uace0\\ub9ac**: hep-th, gr-qc, quant-ph\\n**DOI**: None\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2304.12345\\n**PDF**: https://arxiv.org/pdf/2304.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nWe introduce a new holographic map for encoding black hole interiors by\\nincluding both fundamental and effective dynamics. This holographic map is\\nconstructed by evolving a state in the effective, semiclassical gravity\\ndescription of the interior backwards in time to pull the degrees of freedom\\noutside the black hole, before evolving forwards in time in the fundamental\\ndescription. We show this ``backwards-forwards'' map is equivalent to a\\npost-selection map of the type introduced by Akers, Engelhardt, Harlow,\\nPenington, and Vardhan, and in the case of trivial effective interactions\\nreduces to their model, while providing a suitable generalization when those\\ninteractions are nontrivial. We show the map is equivariant with respect to\\ntime evolution, and independent of any interactions outside the black hole.\\nThis construction includes interactions with an infaller in a way that\\npreserves the unitarity of black hole evolution exactly and does not allow for\\nsuperpolynomial computational complexity.\\n\"}], \"structuredContent\": {\"result\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Non-isometric codes for the black hole interior from fundamental and\\n  effective dynamics\\n\\n**\\uc800\\uc790**: Oliver DeWolfe, Kenneth Higginbotham\\n**\\ucd9c\\ud310\\uc77c**: 2023-04-24\\n**\\uce74\\ud14c\\uace0\\ub9ac**: hep-th, gr-qc, quant-ph\\n**DOI**: None\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2304.12345\\n**PDF**: https://arxiv.org/pdf/2304.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nWe introduce a new holographic map for encoding black hole interiors by\\nincluding both fundamental and effective dynamics. This holographic map is\\nconstructed by evolving a state in the effective, semiclassical gravity\\ndescription of the interior backwards in time to pull the degrees of freedom\\noutside the black hole, before evolving forwards in time in the fundamental\\ndescription. We show this ``backwards-forwards'' map is equivalent to a\\npost-selection map of the type introduced by Akers, Engelhardt, Harlow,\\nPenington, and Vardhan, and in the case of trivial effective interactions\\nreduces to their model, while providing a suitable generalization when those\\ninteractions are nontrivial. We show the map is equivariant with respect to\\ntime evolution, and independent of any interactions outside the black hole.\\nThis construction includes interactions with an infaller in a way that\\npreserves the unitarity of black hole evolution exactly and does not allow for\\nsuperpolynomial computational complexity.\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Compose a meticulously curated selection of the latest peer-reviewed scholarly articles focusing explicitly on cutting-edge neural network architectures and advanced optimization algorithms to acquire a more detailed and nuanced perspective on present-day innovations."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_scrape_recent_category_papers",
+                    "arguments": {
+                        "category": "neural networks, optimization",
+                        "max_results": 10
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_scrape_recent_category_papers",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"'neural networks, optimization' \\uce74\\ud14c\\uace0\\ub9ac\\uc758 \\ucd5c\\uc2e0 \\ub17c\\ubb38 \\ubaa9\\ub85d\\uc744 \\uc6f9 \\ud398\\uc774\\uc9c0\\uc5d0\\uc11c \\uac00\\uc838\\uc62c \\uc218 \\uc5c6\\uc2b5\\ub2c8\\ub2e4.\"}], \"structuredContent\": {\"result\": \"'neural networks, optimization' \\uce74\\ud14c\\uace0\\ub9ac\\uc758 \\ucd5c\\uc2e0 \\ub17c\\ubb38 \\ubaa9\\ub85d\\uc744 \\uc6f9 \\ud398\\uc774\\uc9c0\\uc5d0\\uc11c \\uac00\\uc838\\uc62c \\uc218 \\uc5c6\\uc2b5\\ub2c8\\ub2e4.\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Delve into the emerging research themes, recent advancements, their interconnections, and the potential real-world applications within the category \"cs.AI\" over the past 30 days, emphasizing multi-dimensional analysis and critical evaluation."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_analyze_trends",
+                    "arguments": {
+                        "category": "cs.AI",
+                        "days": 30
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_analyze_trends",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}], \"structuredContent\": {\"result\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Review the recent trends and popular topics in the research field of cs.AI over the last 30 days to understand the current focus areas."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_analyze_trends",
+                    "arguments": {
+                        "category": "cs.AI",
+                        "days": 30
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_analyze_trends",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}], \"structuredContent\": {\"result\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Examine the dynamic shifts in research priorities and the intricate, emergent debates within the specialized subfield \"Computer Science - Artificial Intelligence (cs.AI)\" over the past 30 days, aiming to uncover nuanced insights into prevailing methodologies, innovative trajectories, and key focal points in ongoing studies."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_analyze_trends",
+                    "arguments": {
+                        "category": "cs.AI",
+                        "days": 30
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_analyze_trends",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}], \"structuredContent\": {\"result\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Identify and curate an in-depth catalog of the most recent research papers and technical breakthroughs dedicated to emerging trends and sophisticated techniques in Natural Language Processing subfields, including but not limited to semantic parsing, conversational AI systems, and multimodal language models, to explore cutting-edge advancements shaping this domain."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_scrape_recent_category_papers",
+                    "arguments": {
+                        "category": "cs.CL",
+                        "max_results": 10
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_scrape_recent_category_papers",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## arXiv 'cs.CL' \\uce74\\ud14c\\uace0\\ub9ac \\ucd5c\\uc2e0 \\ub17c\\ubb38 \\ubaa9\\ub85d\\n\\n### 1. Can Language Models Handle a Non-Gregorian Calendar?\\n**ID**: 2509.04432\\n**\\uc800\\uc790**: Mutsumi Sasaki, Go Kamoda, Ryosuke Takahashi, Kosuke Sato, Kentaro Inui, Keisuke Sakaguchi, Benjamin Heinzerling\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04432\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04432\\n**\\ucd08\\ub85d**: Temporal reasoning and knowledge are essential capabilities for language\\nmodels (LMs). While much prior work has analyzed and improved temporal\\nreasoning in LMs, most studies have focused solely on th...\\n\\n### 2. Measuring Bias or Measuring the Task: Understanding the Brittle Nature of LLM Gender Biases\\n**ID**: 2509.04373\\n**\\uc800\\uc790**: Bufan Gao, Elisa Kreiss\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04373\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04373\\n**\\ucd08\\ub85d**: As LLMs are increasingly applied in socially impactful settings, concerns\\nabout gender bias have prompted growing efforts both to measure and mitigate\\nsuch bias. These efforts often rely on evaluation...\\n\\n### 3. PARCO: Phoneme-Augmented Robust Contextual ASR via Contrastive Entity Disambiguation\\n**ID**: 2509.04357\\n**\\uc800\\uc790**: Jiajun He, Naoki Sawada, Koichi Miyazaki, Tomoki Toda\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04357\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04357\\n**\\ucd08\\ub85d**: Automatic speech recognition (ASR) systems struggle with domain-specific\\nnamed entities, especially homophones. Contextual ASR improves recognition but\\noften fails to capture fine-grained phoneme vari...\\n\\n### 4. Facts Fade Fast: Evaluating Memorization of Outdated Medical Knowledge in Large Language Models\\n**ID**: 2509.04304\\n**\\uc800\\uc790**: Juraj Vladika, Mahdi Dhaini, Florian Matthes\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04304\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04304\\n**\\ucd08\\ub85d**: The growing capabilities of Large Language Models (LLMs) show significant\\npotential to enhance healthcare by assisting medical researchers and\\nphysicians. However, their reliance on static training da...\\n\\n### 5. Inverse IFEval: Can LLMs Unlearn Stubborn Training Conventions to Follow Real Instructions?\\n**ID**: 2509.04292\\n**\\uc800\\uc790**: Qinyan Zhang, Xinping Lei, Ruijie Miao, Yu Fu, Haojie Fan, Le Chang, Jiafan Hou, Dingling Zhang, Zhongfei Hou, Ziqiang Yang, Changxin Pu, Fei Hu, Jingkai Liu, Mengyun Liu, Yang Liu, Xiang Gao, Jiaheng Liu, Tong Yang, Zaiyuan Wang, Ge Zhang, Wenhao Huang\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04292\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04292\\n**\\ucd08\\ub85d**: Large Language Models (LLMs) achieve strong performance on diverse tasks but\\noften exhibit cognitive inertia, struggling to follow instructions that\\nconflict with the standardized patterns learned dur...\\n\\n### 6. Explicit and Implicit Data Augmentation for Social Event Detection\\n**ID**: 2509.04202\\n**\\uc800\\uc790**: Congbo Ma, Yuxia Wang, Jia Wu, Jian Yang, Jing Du, Zitai Qiu, Qing Li, Hu Wang, Preslav Nakov\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04202\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04202\\n**\\ucd08\\ub85d**: Social event detection involves identifying and categorizing important events\\nfrom social media, which relies on labeled data, but annotation is costly and\\nlabor-intensive. To address this problem, we...\\n\\n### 7. MAGneT: Coordinated Multi-Agent Generation of Synthetic Multi-Turn Mental Health Counseling Sessions\\n**ID**: 2509.04183\\n**\\uc800\\uc790**: Aishik Mandal, Tanmoy Chakraborty, Iryna Gurevych\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04183\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04183\\n**\\ucd08\\ub85d**: The growing demand for scalable psychological counseling highlights the need\\nfor fine-tuning open-source Large Language Models (LLMs) with high-quality,\\nprivacy-compliant data, yet such data remains s...\\n\\n### 8. Joint Modeling of Entities and Discourse Relations for Coherence Assessment\\n**ID**: 2509.04182\\n**\\uc800\\uc790**: Wei Liu, Michael Strube\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04182\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04182\\n**\\ucd08\\ub85d**: In linguistics, coherence can be achieved by different means, such as by\\nmaintaining reference to the same set of entities across sentences and by\\nestablishing discourse relations between them. Howeve...\\n\\n### 9. MultiWikiQA: A Reading Comprehension Benchmark in 300+ Languages\\n**ID**: 2509.04111\\n**\\uc800\\uc790**: Dan Saattrup Smart\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04111\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04111\\n**\\ucd08\\ub85d**: We introduce a new reading comprehension dataset, dubbed MultiWikiQA, which\\ncovers 306 languages. The context data comes from Wikipedia articles, with\\nquestions generated by an LLM and the answers app...\\n\\n### 10. Towards Stable and Personalised Profiles for Lexical Alignment in Spoken Human-Agent Dialogue\\n**ID**: 2509.04104\\n**\\uc800\\uc790**: Keara Schaaij, Roel Boumans, Tibor Bosse, Iris Hendrickx\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04104\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04104\\n**\\ucd08\\ub85d**: Lexical alignment, where speakers start to use similar words across\\nconversation, is known to contribute to successful communication. However, its\\nimplementation in conversational agents remains under...\\n\\n\"}], \"structuredContent\": {\"result\": \"## arXiv 'cs.CL' \\uce74\\ud14c\\uace0\\ub9ac \\ucd5c\\uc2e0 \\ub17c\\ubb38 \\ubaa9\\ub85d\\n\\n### 1. Can Language Models Handle a Non-Gregorian Calendar?\\n**ID**: 2509.04432\\n**\\uc800\\uc790**: Mutsumi Sasaki, Go Kamoda, Ryosuke Takahashi, Kosuke Sato, Kentaro Inui, Keisuke Sakaguchi, Benjamin Heinzerling\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04432\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04432\\n**\\ucd08\\ub85d**: Temporal reasoning and knowledge are essential capabilities for language\\nmodels (LMs). While much prior work has analyzed and improved temporal\\nreasoning in LMs, most studies have focused solely on th...\\n\\n### 2. Measuring Bias or Measuring the Task: Understanding the Brittle Nature of LLM Gender Biases\\n**ID**: 2509.04373\\n**\\uc800\\uc790**: Bufan Gao, Elisa Kreiss\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04373\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04373\\n**\\ucd08\\ub85d**: As LLMs are increasingly applied in socially impactful settings, concerns\\nabout gender bias have prompted growing efforts both to measure and mitigate\\nsuch bias. These efforts often rely on evaluation...\\n\\n### 3. PARCO: Phoneme-Augmented Robust Contextual ASR via Contrastive Entity Disambiguation\\n**ID**: 2509.04357\\n**\\uc800\\uc790**: Jiajun He, Naoki Sawada, Koichi Miyazaki, Tomoki Toda\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04357\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04357\\n**\\ucd08\\ub85d**: Automatic speech recognition (ASR) systems struggle with domain-specific\\nnamed entities, especially homophones. Contextual ASR improves recognition but\\noften fails to capture fine-grained phoneme vari...\\n\\n### 4. Facts Fade Fast: Evaluating Memorization of Outdated Medical Knowledge in Large Language Models\\n**ID**: 2509.04304\\n**\\uc800\\uc790**: Juraj Vladika, Mahdi Dhaini, Florian Matthes\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04304\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04304\\n**\\ucd08\\ub85d**: The growing capabilities of Large Language Models (LLMs) show significant\\npotential to enhance healthcare by assisting medical researchers and\\nphysicians. However, their reliance on static training da...\\n\\n### 5. Inverse IFEval: Can LLMs Unlearn Stubborn Training Conventions to Follow Real Instructions?\\n**ID**: 2509.04292\\n**\\uc800\\uc790**: Qinyan Zhang, Xinping Lei, Ruijie Miao, Yu Fu, Haojie Fan, Le Chang, Jiafan Hou, Dingling Zhang, Zhongfei Hou, Ziqiang Yang, Changxin Pu, Fei Hu, Jingkai Liu, Mengyun Liu, Yang Liu, Xiang Gao, Jiaheng Liu, Tong Yang, Zaiyuan Wang, Ge Zhang, Wenhao Huang\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04292\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04292\\n**\\ucd08\\ub85d**: Large Language Models (LLMs) achieve strong performance on diverse tasks but\\noften exhibit cognitive inertia, struggling to follow instructions that\\nconflict with the standardized patterns learned dur...\\n\\n### 6. Explicit and Implicit Data Augmentation for Social Event Detection\\n**ID**: 2509.04202\\n**\\uc800\\uc790**: Congbo Ma, Yuxia Wang, Jia Wu, Jian Yang, Jing Du, Zitai Qiu, Qing Li, Hu Wang, Preslav Nakov\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04202\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04202\\n**\\ucd08\\ub85d**: Social event detection involves identifying and categorizing important events\\nfrom social media, which relies on labeled data, but annotation is costly and\\nlabor-intensive. To address this problem, we...\\n\\n### 7. MAGneT: Coordinated Multi-Agent Generation of Synthetic Multi-Turn Mental Health Counseling Sessions\\n**ID**: 2509.04183\\n**\\uc800\\uc790**: Aishik Mandal, Tanmoy Chakraborty, Iryna Gurevych\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04183\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04183\\n**\\ucd08\\ub85d**: The growing demand for scalable psychological counseling highlights the need\\nfor fine-tuning open-source Large Language Models (LLMs) with high-quality,\\nprivacy-compliant data, yet such data remains s...\\n\\n### 8. Joint Modeling of Entities and Discourse Relations for Coherence Assessment\\n**ID**: 2509.04182\\n**\\uc800\\uc790**: Wei Liu, Michael Strube\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04182\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04182\\n**\\ucd08\\ub85d**: In linguistics, coherence can be achieved by different means, such as by\\nmaintaining reference to the same set of entities across sentences and by\\nestablishing discourse relations between them. Howeve...\\n\\n### 9. MultiWikiQA: A Reading Comprehension Benchmark in 300+ Languages\\n**ID**: 2509.04111\\n**\\uc800\\uc790**: Dan Saattrup Smart\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04111\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04111\\n**\\ucd08\\ub85d**: We introduce a new reading comprehension dataset, dubbed MultiWikiQA, which\\ncovers 306 languages. The context data comes from Wikipedia articles, with\\nquestions generated by an LLM and the answers app...\\n\\n### 10. Towards Stable and Personalised Profiles for Lexical Alignment in Spoken Human-Agent Dialogue\\n**ID**: 2509.04104\\n**\\uc800\\uc790**: Keara Schaaij, Roel Boumans, Tibor Bosse, Iris Hendrickx\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Computation and Language (cs.CL)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04104\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04104\\n**\\ucd08\\ub85d**: Lexical alignment, where speakers start to use similar words across\\nconversation, is known to contribute to successful communication. However, its\\nimplementation in conversational agents remains under...\\n\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Investigate the shifting trends and hot topics within the category \"cs.AI\" over the past 30 days to gain insights into ongoing work and priorities."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_analyze_trends",
+                    "arguments": {
+                        "category": "cs.AI",
+                        "days": 30
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_analyze_trends",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}], \"structuredContent\": {\"result\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Look up comprehensive data about the research paper with identification number 2307.12345."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_get_paper_info",
+                    "arguments": {
+                        "paper_id": "2307.12345"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_get_paper_info",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Tell me, what are you most afraid of? Exploring the Effects of Agent\\n  Representation on Information Disclosure in Human-Chatbot Interaction\\n\\n**\\uc800\\uc790**: Anna Stock, Stephan Schl\\u00f6gl, Aleksander Groth\\n**\\ucd9c\\ud310\\uc77c**: 2023-07-23\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.HC\\n**DOI**: http://dx.doi.org/10.1007/978-3-031-35894-4_13\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2307.12345\\n**PDF**: https://arxiv.org/pdf/2307.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nSelf-disclosure counts as a key factor influencing successful health\\ntreatment, particularly when it comes to building a functioning\\npatient-therapist-connection. To this end, the use of chatbots may be\\nconsidered a promising puzzle piece that helps foster respective information\\nprovision. Several studies have shown that people disclose more information\\nwhen they are interacting with a chatbot than when they are interacting with\\nanother human being. If and how the chatbot is embodied, however, seems to play\\nan important role influencing the extent to which information is disclosed.\\nHere, research shows that people disclose less if the chatbot is embodied with\\na human avatar in comparison to a chatbot without embodiment. Still, there is\\nonly little information available as to whether it is the embodiment with a\\nhuman face that inhibits disclosure, or whether any type of face will reduce\\nthe amount of shared information. The study presented in this paper thus aims\\nto investigate how the type of chatbot embodiment influences self-disclosure in\\nhuman-chatbot-interaction. We conducted a quasi-experimental study in which\\n$n=178$ participants were asked to interact with one of three settings of a\\nchatbot app. In each setting, the humanness of the chatbot embodiment was\\ndifferent (i.e., human vs. robot vs. disembodied). A subsequent discourse\\nanalysis explored difference in the breadth and depth of self-disclosure.\\nResults show that non-human embodiment seems to have little effect on\\nself-disclosure. Yet, our data also shows, that, contradicting to previous\\nwork, human embodiment may have a positive effect on the breadth and depth of\\nself-disclosure.\\n\"}], \"structuredContent\": {\"result\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Tell me, what are you most afraid of? Exploring the Effects of Agent\\n  Representation on Information Disclosure in Human-Chatbot Interaction\\n\\n**\\uc800\\uc790**: Anna Stock, Stephan Schl\\u00f6gl, Aleksander Groth\\n**\\ucd9c\\ud310\\uc77c**: 2023-07-23\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.HC\\n**DOI**: http://dx.doi.org/10.1007/978-3-031-35894-4_13\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2307.12345\\n**PDF**: https://arxiv.org/pdf/2307.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nSelf-disclosure counts as a key factor influencing successful health\\ntreatment, particularly when it comes to building a functioning\\npatient-therapist-connection. To this end, the use of chatbots may be\\nconsidered a promising puzzle piece that helps foster respective information\\nprovision. Several studies have shown that people disclose more information\\nwhen they are interacting with a chatbot than when they are interacting with\\nanother human being. If and how the chatbot is embodied, however, seems to play\\nan important role influencing the extent to which information is disclosed.\\nHere, research shows that people disclose less if the chatbot is embodied with\\na human avatar in comparison to a chatbot without embodiment. Still, there is\\nonly little information available as to whether it is the embodiment with a\\nhuman face that inhibits disclosure, or whether any type of face will reduce\\nthe amount of shared information. The study presented in this paper thus aims\\nto investigate how the type of chatbot embodiment influences self-disclosure in\\nhuman-chatbot-interaction. We conducted a quasi-experimental study in which\\n$n=178$ participants were asked to interact with one of three settings of a\\nchatbot app. In each setting, the humanness of the chatbot embodiment was\\ndifferent (i.e., human vs. robot vs. disembodied). A subsequent discourse\\nanalysis explored difference in the breadth and depth of self-disclosure.\\nResults show that non-human embodiment seems to have little effect on\\nself-disclosure. Yet, our data also shows, that, contradicting to previous\\nwork, human embodiment may have a positive effect on the breadth and depth of\\nself-disclosure.\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Obtain a comprehensive analysis of the research study linked to the identifier DOI:10.1000/xyz123, covering its objective, experimental design, key findings, potential applications, and references cited within the paper, if accessible."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_get_paper_info",
+                    "arguments": {
+                        "paper_id": "10.1000/xyz123"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_get_paper_info",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"ID '10.1000/xyz123'\\uc5d0 \\ud574\\ub2f9\\ud558\\ub294 \\ub17c\\ubb38\\uc744 \\ucc3e\\uc744 \\uc218 \\uc5c6\\uc2b5\\ub2c8\\ub2e4.\"}], \"structuredContent\": {\"result\": \"ID '10.1000/xyz123'\\uc5d0 \\ud574\\ub2f9\\ud558\\ub294 \\ub17c\\ubb38\\uc744 \\ucc3e\\uc744 \\uc218 \\uc5c6\\uc2b5\\ub2c8\\ub2e4.\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Examine the novel methodologies and less conventional breakthroughs introduced within the field of computational neuroscience over the past month to identify distinctive patterns and underexplored avenues of inquiry."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_analyze_trends",
+                    "arguments": {
+                        "category": "q-bio.NC",
+                        "days": 30
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_analyze_trends",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## q-bio.NC \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}], \"structuredContent\": {\"result\": \"## q-bio.NC \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Construct a meticulously detailed and systematically categorized list of the latest peer-reviewed publications in advanced machine learning research, ensuring relevance through an in-depth analysis of contemporary research trajectories and their broader transformative impacts on this rapidly evolving computational discipline."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_scrape_recent_category_papers",
+                    "arguments": {
+                        "category": "cs.LG",
+                        "max_results": 10
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_scrape_recent_category_papers",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## arXiv 'cs.LG' \\uce74\\ud14c\\uace0\\ub9ac \\ucd5c\\uc2e0 \\ub17c\\ubb38 \\ubaa9\\ub85d\\n\\n### 1. ChronoGraph: A Real-World Graph-Based Multivariate Time Series Dataset\\n**ID**: 2509.04449\\n**\\uc800\\uc790**: Adrian Catalin Lutu, Ioana Pintilie, Elena Burceanu, Andrei Manolache\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04449\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04449\\n**\\ucd08\\ub85d**: We present ChronoGraph, a graph-structured multivariate time series\\nforecasting dataset built from real-world production microservices. Each node\\nis a service that emits a multivariate stream of syste...\\n\\n### 2. Towards Cognitively-Faithful Decision-Making Models to Improve AI Alignment\\n**ID**: 2509.04445\\n**\\uc800\\uc790**: Cyrus Cousins, Vijay Keswani, Vincent Conitzer, Hoda Heidari, Jana Schaich Borg, Walter Sinnott-Armstrong\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04445\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04445\\n**\\ucd08\\ub85d**: Recent AI work trends towards incorporating human-centric objectives, with\\nthe explicit goal of aligning AI models to personal preferences and societal\\nvalues. Using standard preference elicitation me...\\n\\n### 3. Delta Activations: A Representation for Finetuned Large Language Models\\n**ID**: 2509.04442\\n**\\uc800\\uc790**: Zhiqiu Xu, Amish Sethi, Mayur Naik, Ser-Nam Lim\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04442\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04442\\n**\\ucd08\\ub85d**: The success of powerful open source Large Language Models (LLMs) has enabled\\nthe community to create a vast collection of post-trained models adapted to\\nspecific tasks and domains. However, navigating...\\n\\n### 4. Unveiling the Role of Data Uncertainty in Tabular Deep Learning\\n**ID**: 2509.04430\\n**\\uc800\\uc790**: Nikolay Kartashev, Ivan Rubachev, Artem Babenko\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04430\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04430\\n**\\ucd08\\ub85d**: Recent advancements in tabular deep learning have demonstrated exceptional\\npractical performance, yet the field often lacks a clear understanding of why\\nthese techniques actually succeed. To address t...\\n\\n### 5. Echo State Networks as State-Space Models: A Systems Perspective\\n**ID**: 2509.04422\\n**\\uc800\\uc790**: Pradeep Singh, Balasubramanian Raman\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04422\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04422\\n**\\ucd08\\ub85d**: Echo State Networks (ESNs) are typically presented as efficient,\\nreadout-trained recurrent models, yet their dynamics and design are often\\nguided by heuristics rather than first principles. We recast ...\\n\\n### 6. Towards a Unified View of Large Language Model Post-Training\\n**ID**: 2509.04419\\n**\\uc800\\uc790**: Xingtai Lv, Yuxin Zuo, Youbang Sun, Hongyi Liu, Yuntian Wei, Zhekai Chen, Lixuan He, Xuekai Zhu, Kaiyan Zhang, Bingning Wang, Ning Ding, Bowen Zhou\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04419\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04419\\n**\\ucd08\\ub85d**: Two major sources of training data exist for post-training modern language\\nmodels: online (model-generated rollouts) data, and offline (human or\\nother-model demonstrations) data. These two types of da...\\n\\n### 7. Interpretable Clustering with Adaptive Heterogeneous Causal Structure Learning in Mixed Observational Data\\n**ID**: 2509.04415\\n**\\uc800\\uc790**: Wenrui Li, Qinghao Zhang, Xiaowo Wang\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04415\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04415\\n**\\ucd08\\ub85d**: Understanding causal heterogeneity is essential for scientific discovery in\\ndomains such as biology and medicine. However, existing methods lack causal\\nawareness, with insufficient modeling of heterog...\\n\\n### 8. IPA: An Information-Preserving Input Projection Framework for Efficient Foundation Model Adaptation\\n**ID**: 2509.04398\\n**\\uc800\\uc790**: Yuan Yin, Shashanka Venkataramanan, Tuan-Hung Vu, Andrei Bursuc, Matthieu Cord\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04398\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04398\\n**\\ucd08\\ub85d**: Parameter-efficient fine-tuning (PEFT) methods, such as LoRA, reduce\\nadaptation cost by injecting low-rank updates into pretrained weights. However,\\nLoRA's down-projection is randomly initialized and ...\\n\\n### 9. Transition Models: Rethinking the Generative Learning Objective\\n**ID**: 2509.04394\\n**\\uc800\\uc790**: Zidong Wang, Yiyuan Zhang, Xiaoyu Yue, Xiangyu Yue, Yangguang Li, Wanli Ouyang, Lei Bai\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04394\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04394\\n**\\ucd08\\ub85d**: A fundamental dilemma in generative modeling persists: iterative diffusion\\nmodels achieve outstanding fidelity, but at a significant computational cost,\\nwhile efficient few-step alternatives are const...\\n\\n### 10. PagedEviction: Structured Block-wise KV Cache Pruning for Efficient Large Language Model Inference\\n**ID**: 2509.04377\\n**\\uc800\\uc790**: Krishna Teja Chitty-Venkata, Jie Ye, Xian-He Sun, Anthony Kougkas, Murali Emani, Venkatram Vishwanath, Bogdan Nicolae\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04377\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04377\\n**\\ucd08\\ub85d**: KV caching significantly improves the efficiency of Large Language Model\\n(LLM) inference by storing attention states from previously processed tokens,\\nenabling faster generation of subsequent tokens. ...\\n\\n\"}], \"structuredContent\": {\"result\": \"## arXiv 'cs.LG' \\uce74\\ud14c\\uace0\\ub9ac \\ucd5c\\uc2e0 \\ub17c\\ubb38 \\ubaa9\\ub85d\\n\\n### 1. ChronoGraph: A Real-World Graph-Based Multivariate Time Series Dataset\\n**ID**: 2509.04449\\n**\\uc800\\uc790**: Adrian Catalin Lutu, Ioana Pintilie, Elena Burceanu, Andrei Manolache\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04449\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04449\\n**\\ucd08\\ub85d**: We present ChronoGraph, a graph-structured multivariate time series\\nforecasting dataset built from real-world production microservices. Each node\\nis a service that emits a multivariate stream of syste...\\n\\n### 2. Towards Cognitively-Faithful Decision-Making Models to Improve AI Alignment\\n**ID**: 2509.04445\\n**\\uc800\\uc790**: Cyrus Cousins, Vijay Keswani, Vincent Conitzer, Hoda Heidari, Jana Schaich Borg, Walter Sinnott-Armstrong\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04445\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04445\\n**\\ucd08\\ub85d**: Recent AI work trends towards incorporating human-centric objectives, with\\nthe explicit goal of aligning AI models to personal preferences and societal\\nvalues. Using standard preference elicitation me...\\n\\n### 3. Delta Activations: A Representation for Finetuned Large Language Models\\n**ID**: 2509.04442\\n**\\uc800\\uc790**: Zhiqiu Xu, Amish Sethi, Mayur Naik, Ser-Nam Lim\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04442\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04442\\n**\\ucd08\\ub85d**: The success of powerful open source Large Language Models (LLMs) has enabled\\nthe community to create a vast collection of post-trained models adapted to\\nspecific tasks and domains. However, navigating...\\n\\n### 4. Unveiling the Role of Data Uncertainty in Tabular Deep Learning\\n**ID**: 2509.04430\\n**\\uc800\\uc790**: Nikolay Kartashev, Ivan Rubachev, Artem Babenko\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04430\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04430\\n**\\ucd08\\ub85d**: Recent advancements in tabular deep learning have demonstrated exceptional\\npractical performance, yet the field often lacks a clear understanding of why\\nthese techniques actually succeed. To address t...\\n\\n### 5. Echo State Networks as State-Space Models: A Systems Perspective\\n**ID**: 2509.04422\\n**\\uc800\\uc790**: Pradeep Singh, Balasubramanian Raman\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04422\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04422\\n**\\ucd08\\ub85d**: Echo State Networks (ESNs) are typically presented as efficient,\\nreadout-trained recurrent models, yet their dynamics and design are often\\nguided by heuristics rather than first principles. We recast ...\\n\\n### 6. Towards a Unified View of Large Language Model Post-Training\\n**ID**: 2509.04419\\n**\\uc800\\uc790**: Xingtai Lv, Yuxin Zuo, Youbang Sun, Hongyi Liu, Yuntian Wei, Zhekai Chen, Lixuan He, Xuekai Zhu, Kaiyan Zhang, Bingning Wang, Ning Ding, Bowen Zhou\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04419\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04419\\n**\\ucd08\\ub85d**: Two major sources of training data exist for post-training modern language\\nmodels: online (model-generated rollouts) data, and offline (human or\\nother-model demonstrations) data. These two types of da...\\n\\n### 7. Interpretable Clustering with Adaptive Heterogeneous Causal Structure Learning in Mixed Observational Data\\n**ID**: 2509.04415\\n**\\uc800\\uc790**: Wenrui Li, Qinghao Zhang, Xiaowo Wang\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04415\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04415\\n**\\ucd08\\ub85d**: Understanding causal heterogeneity is essential for scientific discovery in\\ndomains such as biology and medicine. However, existing methods lack causal\\nawareness, with insufficient modeling of heterog...\\n\\n### 8. IPA: An Information-Preserving Input Projection Framework for Efficient Foundation Model Adaptation\\n**ID**: 2509.04398\\n**\\uc800\\uc790**: Yuan Yin, Shashanka Venkataramanan, Tuan-Hung Vu, Andrei Bursuc, Matthieu Cord\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04398\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04398\\n**\\ucd08\\ub85d**: Parameter-efficient fine-tuning (PEFT) methods, such as LoRA, reduce\\nadaptation cost by injecting low-rank updates into pretrained weights. However,\\nLoRA's down-projection is randomly initialized and ...\\n\\n### 9. Transition Models: Rethinking the Generative Learning Objective\\n**ID**: 2509.04394\\n**\\uc800\\uc790**: Zidong Wang, Yiyuan Zhang, Xiaoyu Yue, Xiangyu Yue, Yangguang Li, Wanli Ouyang, Lei Bai\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04394\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04394\\n**\\ucd08\\ub85d**: A fundamental dilemma in generative modeling persists: iterative diffusion\\nmodels achieve outstanding fidelity, but at a significant computational cost,\\nwhile efficient few-step alternatives are const...\\n\\n### 10. PagedEviction: Structured Block-wise KV Cache Pruning for Efficient Large Language Model Inference\\n**ID**: 2509.04377\\n**\\uc800\\uc790**: Krishna Teja Chitty-Venkata, Jie Ye, Xian-He Sun, Anthony Kougkas, Murali Emani, Venkatram Vishwanath, Bogdan Nicolae\\n**\\ucd9c\\ud310\\uc77c**: 2025-09-04\\n**\\uce74\\ud14c\\uace0\\ub9ac**: Machine Learning (cs.LG)\\n**arXiv \\ub9c1\\ud06c**: https://arxiv.org/abs/2509.04377\\n**PDF \\ub9c1\\ud06c**: https://arxiv.org/pdf/2509.04377\\n**\\ucd08\\ub85d**: KV caching significantly improves the efficiency of Large Language Model\\n(LLM) inference by storing attention states from previously processed tokens,\\nenabling faster generation of subsequent tokens. ...\\n\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Analyze and synthesize studies that investigate the applicability of hybrid machine learning approaches combining symbolic reasoning and statistical models for tackling complex multimodal language understanding challenges, emphasizing their experimental setups and outcome interpretations."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_search_papers",
+                    "arguments": {
+                        "keyword": "hybrid machine learning approaches combining symbolic reasoning and statistical models for multimodal language understanding",
+                        "max_results": 5
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_search_papers",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## 'hybrid machine learning approaches combining symbolic reasoning and statistical models for multimodal language understanding' \\uac80\\uc0c9 \\uacb0\\uacfc\\n\\n### 1. Neuro-symbolic Architectures for Context Understanding\\n**\\uc800\\uc790**: Alessandro Oltramari, Jonathan Francis, Cory Henson, Kaixin Ma, Ruwan Wickramarachchi\\n**ID**: 2003.04707v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.AI, cs.CL, cs.SC\\n**\\uc694\\uc57d**: Computational context understanding refers to an agent's ability to fuse\\ndisparate sources of information for decision-making and is, therefore,\\ngenerally regarded as a prerequisite for sophisticated ...\\n**\\ucd9c\\ud310\\uc77c**: 2020-03-09\\n\\n### 2. Transformers meet Neural Algorithmic Reasoners\\n**\\uc800\\uc790**: Wilfried Bounsi, Borja Ibarz, Andrew Dudzik, Jessica B. Hamrick, Larisa Markeeva, Alex Vitvitskyi, Razvan Pascanu, Petar Veli\\u010dkovi\\u0107\\n**ID**: 2406.09308v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.LG\\n**\\uc694\\uc57d**: Transformers have revolutionized machine learning with their simple yet\\neffective architecture. Pre-training Transformers on massive text datasets from\\nthe Internet has led to unmatched generalization...\\n**\\ucd9c\\ud310\\uc77c**: 2024-06-13\\n\\n### 3. H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables\\n**\\uc800\\uc790**: Nikhil Abhyankar, Vivek Gupta, Dan Roth, Chandan K. Reddy\\n**ID**: 2407.05952v3\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.DB, cs.AI, cs.CL, cs.LG\\n**\\uc694\\uc57d**: Tabular reasoning involves interpreting natural language queries about\\ntabular data, which presents a unique challenge of combining language\\nunderstanding with structured data analysis. Existing metho...\\n**\\ucd9c\\ud310\\uc77c**: 2024-06-29\\n\\n### 4. Scientific Hypothesis Generation and Validation: Methods, Datasets, and\\n  Future Directions\\n**\\uc800\\uc790**: Adithya Kulkarni, Fatimah Alotaibi, Xinyue Zeng, Longfeng Wu, Tong Zeng, Barry Menglong Yao, Minqian Liu, Shuaicheng Zhang, Lifu Huang, Dawei Zhou\\n**ID**: 2505.04651v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.LG\\n**\\uc694\\uc57d**: Large Language Models (LLMs) are transforming scientific hypothesis\\ngeneration and validation by enabling information synthesis, latent\\nrelationship discovery, and reasoning augmentation. This survey ...\\n**\\ucd9c\\ud310\\uc77c**: 2025-05-06\\n\\n### 5. Synergizing Machine Learning & Symbolic Methods: A Survey on Hybrid\\n  Approaches to Natural Language Processing\\n**\\uc800\\uc790**: Rrubaa Panchendrarajan, Arkaitz Zubiaga\\n**ID**: 2401.11972v2\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL\\n**\\uc694\\uc57d**: The advancement of machine learning and symbolic approaches have underscored\\ntheir strengths and weaknesses in Natural Language Processing (NLP). While\\nmachine learning approaches are powerful in iden...\\n**\\ucd9c\\ud310\\uc77c**: 2024-01-22\\n\\n\"}], \"structuredContent\": {\"result\": \"## 'hybrid machine learning approaches combining symbolic reasoning and statistical models for multimodal language understanding' \\uac80\\uc0c9 \\uacb0\\uacfc\\n\\n### 1. Neuro-symbolic Architectures for Context Understanding\\n**\\uc800\\uc790**: Alessandro Oltramari, Jonathan Francis, Cory Henson, Kaixin Ma, Ruwan Wickramarachchi\\n**ID**: 2003.04707v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.AI, cs.CL, cs.SC\\n**\\uc694\\uc57d**: Computational context understanding refers to an agent's ability to fuse\\ndisparate sources of information for decision-making and is, therefore,\\ngenerally regarded as a prerequisite for sophisticated ...\\n**\\ucd9c\\ud310\\uc77c**: 2020-03-09\\n\\n### 2. Transformers meet Neural Algorithmic Reasoners\\n**\\uc800\\uc790**: Wilfried Bounsi, Borja Ibarz, Andrew Dudzik, Jessica B. Hamrick, Larisa Markeeva, Alex Vitvitskyi, Razvan Pascanu, Petar Veli\\u010dkovi\\u0107\\n**ID**: 2406.09308v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.LG\\n**\\uc694\\uc57d**: Transformers have revolutionized machine learning with their simple yet\\neffective architecture. Pre-training Transformers on massive text datasets from\\nthe Internet has led to unmatched generalization...\\n**\\ucd9c\\ud310\\uc77c**: 2024-06-13\\n\\n### 3. H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables\\n**\\uc800\\uc790**: Nikhil Abhyankar, Vivek Gupta, Dan Roth, Chandan K. Reddy\\n**ID**: 2407.05952v3\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.DB, cs.AI, cs.CL, cs.LG\\n**\\uc694\\uc57d**: Tabular reasoning involves interpreting natural language queries about\\ntabular data, which presents a unique challenge of combining language\\nunderstanding with structured data analysis. Existing metho...\\n**\\ucd9c\\ud310\\uc77c**: 2024-06-29\\n\\n### 4. Scientific Hypothesis Generation and Validation: Methods, Datasets, and\\n  Future Directions\\n**\\uc800\\uc790**: Adithya Kulkarni, Fatimah Alotaibi, Xinyue Zeng, Longfeng Wu, Tong Zeng, Barry Menglong Yao, Minqian Liu, Shuaicheng Zhang, Lifu Huang, Dawei Zhou\\n**ID**: 2505.04651v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.LG\\n**\\uc694\\uc57d**: Large Language Models (LLMs) are transforming scientific hypothesis\\ngeneration and validation by enabling information synthesis, latent\\nrelationship discovery, and reasoning augmentation. This survey ...\\n**\\ucd9c\\ud310\\uc77c**: 2025-05-06\\n\\n### 5. Synergizing Machine Learning & Symbolic Methods: A Survey on Hybrid\\n  Approaches to Natural Language Processing\\n**\\uc800\\uc790**: Rrubaa Panchendrarajan, Arkaitz Zubiaga\\n**ID**: 2401.11972v2\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL\\n**\\uc694\\uc57d**: The advancement of machine learning and symbolic approaches have underscored\\ntheir strengths and weaknesses in Natural Language Processing (NLP). While\\nmachine learning approaches are powerful in iden...\\n**\\ucd9c\\ud310\\uc77c**: 2024-01-22\\n\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Perform a comprehensive and balanced examination of studies investigating the environmental implications of renewable energy technologies, assessing their benefits, potential drawbacks, and the feasibility of mitigating any identified negative impacts."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_search_papers",
+                    "arguments": {
+                        "keyword": "environmental implications of renewable energy technologies",
+                        "max_results": 5
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_search_papers",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## 'environmental implications of renewable energy technologies' \\uac80\\uc0c9 \\uacb0\\uacfc\\n\\n### 1. Measuring the Dunkelflaute: How (not) to analyze variable renewable\\n  energy shortage\\n**\\uc800\\uc790**: Martin Kittel, Wolf-Peter Schill\\n**ID**: 2402.06758v3\\n**\\uce74\\ud14c\\uace0\\ub9ac**: econ.GN, q-fin.EC\\n**\\uc694\\uc57d**: As variable renewable energy sources increasingly gain importance in global\\nenergy systems, there is a growing interest in understanding periods of\\nvariable renewable energy shortage (\\\"Dunkelflauten\\\")...\\n**\\ucd9c\\ud310\\uc77c**: 2024-02-09\\n\\n### 2. Solar-charge your car: EV charging can be aligned with renewables by\\n  providing pro-environmental information on a smartboard\\n**\\uc800\\uc790**: Celina Kacperski, Melanie Vogel, Florian Kutzner, Mona Bielig, Soroush Karimi Madahi, Lieven Demolder, Matthias Strobbe, Sonja Klingert\\n**ID**: 2504.09542v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.ET\\n**\\uc694\\uc57d**: The integration of electric vehicle (EV) charging with renewable energy\\nsources is crucial for minimizing the carbon footprint of transportation. This\\nstudy investigates whether real-time pro-environm...\\n**\\ucd9c\\ud310\\uc77c**: 2025-04-13\\n\\n### 3. From Silicon Shield to Carbon Lock-in ? The Environmental Footprint of\\n  Electronic Components Manufacturing in Taiwan (2015-2020)\\n**\\uc800\\uc790**: Gauthier Roussilhe, Thibault Pirson, Mathieu Xhonneux, David Bol\\n**ID**: 2209.12523v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CY\\n**\\uc694\\uc57d**: Taiwan plans to rapidly increase its industrial production capacity of\\nelectronic components while concurrently setting policies for its ecological\\ntransition. Given that the island is responsible for...\\n**\\ucd9c\\ud310\\uc77c**: 2022-09-26\\n\\n### 4. Between Green Hills and Green Bills: Unveiling the Green Shades of\\n  Sustainability and Burden Shifting through Multi-Objective Optimization in\\n  Swiss Energy System Planning\\n**\\uc800\\uc790**: Jonas Schnidrig, Matthieu Souttre, Arthur Chuat, Fran\\u00e7ois Mar\\u00e9chal, Manuele Margni\\n**ID**: 2402.12973v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CE, physics.soc-ph, J.m\\n**\\uc694\\uc57d**: The Paris agreement is the first-ever universally accepted and legally\\nbinding agreement on global climate change. It is a bridge between today's and\\nclimate-neutrality policies and strategies before ...\\n**\\ucd9c\\ud310\\uc77c**: 2024-02-20\\n\\n### 5. Balancing Innovation and Sustainability: Addressing the Environmental\\n  Impact of Bitcoin Mining\\n**\\uc800\\uc790**: Mohammad Ikbal Hossain, Tanja Steigner\\n**ID**: 2411.08908v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CY\\n**\\uc694\\uc57d**: This study explores the intersection of technological innovation and\\nenvironmental sustainability in the context of Bitcoin mining. With Bitcoin's\\ngrowing adoption, concerns surrounding the energy con...\\n**\\ucd9c\\ud310\\uc77c**: 2024-10-29\\n\\n\"}], \"structuredContent\": {\"result\": \"## 'environmental implications of renewable energy technologies' \\uac80\\uc0c9 \\uacb0\\uacfc\\n\\n### 1. Measuring the Dunkelflaute: How (not) to analyze variable renewable\\n  energy shortage\\n**\\uc800\\uc790**: Martin Kittel, Wolf-Peter Schill\\n**ID**: 2402.06758v3\\n**\\uce74\\ud14c\\uace0\\ub9ac**: econ.GN, q-fin.EC\\n**\\uc694\\uc57d**: As variable renewable energy sources increasingly gain importance in global\\nenergy systems, there is a growing interest in understanding periods of\\nvariable renewable energy shortage (\\\"Dunkelflauten\\\")...\\n**\\ucd9c\\ud310\\uc77c**: 2024-02-09\\n\\n### 2. Solar-charge your car: EV charging can be aligned with renewables by\\n  providing pro-environmental information on a smartboard\\n**\\uc800\\uc790**: Celina Kacperski, Melanie Vogel, Florian Kutzner, Mona Bielig, Soroush Karimi Madahi, Lieven Demolder, Matthias Strobbe, Sonja Klingert\\n**ID**: 2504.09542v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.ET\\n**\\uc694\\uc57d**: The integration of electric vehicle (EV) charging with renewable energy\\nsources is crucial for minimizing the carbon footprint of transportation. This\\nstudy investigates whether real-time pro-environm...\\n**\\ucd9c\\ud310\\uc77c**: 2025-04-13\\n\\n### 3. From Silicon Shield to Carbon Lock-in ? The Environmental Footprint of\\n  Electronic Components Manufacturing in Taiwan (2015-2020)\\n**\\uc800\\uc790**: Gauthier Roussilhe, Thibault Pirson, Mathieu Xhonneux, David Bol\\n**ID**: 2209.12523v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CY\\n**\\uc694\\uc57d**: Taiwan plans to rapidly increase its industrial production capacity of\\nelectronic components while concurrently setting policies for its ecological\\ntransition. Given that the island is responsible for...\\n**\\ucd9c\\ud310\\uc77c**: 2022-09-26\\n\\n### 4. Between Green Hills and Green Bills: Unveiling the Green Shades of\\n  Sustainability and Burden Shifting through Multi-Objective Optimization in\\n  Swiss Energy System Planning\\n**\\uc800\\uc790**: Jonas Schnidrig, Matthieu Souttre, Arthur Chuat, Fran\\u00e7ois Mar\\u00e9chal, Manuele Margni\\n**ID**: 2402.12973v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CE, physics.soc-ph, J.m\\n**\\uc694\\uc57d**: The Paris agreement is the first-ever universally accepted and legally\\nbinding agreement on global climate change. It is a bridge between today's and\\nclimate-neutrality policies and strategies before ...\\n**\\ucd9c\\ud310\\uc77c**: 2024-02-20\\n\\n### 5. Balancing Innovation and Sustainability: Addressing the Environmental\\n  Impact of Bitcoin Mining\\n**\\uc800\\uc790**: Mohammad Ikbal Hossain, Tanja Steigner\\n**ID**: 2411.08908v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CY\\n**\\uc694\\uc57d**: This study explores the intersection of technological innovation and\\nenvironmental sustainability in the context of Bitcoin mining. With Bitcoin's\\ngrowing adoption, concerns surrounding the energy con...\\n**\\ucd9c\\ud310\\uc77c**: 2024-10-29\\n\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Examine the latest developments and evolving interests in the domain of artificial intelligence (cs.AI) by analyzing relevant papers from the last 30 days."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_analyze_trends",
+                    "arguments": {
+                        "category": "cs.AI",
+                        "days": 30
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_analyze_trends",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}], \"structuredContent\": {\"result\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Examine and provide a detailed critique of studies that elaborate on both the direct and indirect environmental consequences, incorporating exhaustive lifecycle assessments, of diverse renewable energy technologies across varied geographical, economic, and ecological contexts."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_search_papers",
+                    "arguments": {
+                        "keyword": "environmental consequences lifecycle assessments renewable energy technologies",
+                        "max_results": 5
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_search_papers",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## 'environmental consequences lifecycle assessments renewable energy technologies' \\uac80\\uc0c9 \\uacb0\\uacfc\\n\\n### 1. Energy-Sustainable IoT Connectivity: Vision, Technological Enablers,\\n  Challenges, and Future Directions\\n**\\uc800\\uc790**: Onel A. L\\u00f3pez, Osmel M. Rosabal, David Ruiz-Guirola, Prasoon Raghuwanshi, Konstantin Mikhaylov, Lauri Lov\\u00e9n, Sridhar Iyer\\n**ID**: 2306.02444v2\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.NI, eess.SP, 94-02, 68-02\\n**\\uc694\\uc57d**: Technology solutions must effectively balance economic growth, social equity,\\nand environmental integrity to achieve a sustainable society. Notably, although\\nthe Internet of Things (IoT) paradigm cons...\\n**\\ucd9c\\ud310\\uc77c**: 2023-06-04\\n\\n### 2. Fusion energy commercialization requires solving social and\\n  environmental challenges\\n**\\uc800\\uc790**: Stephanie Diem, Laila El-Guebaly, Aditi Verma\\n**ID**: 2403.05993v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: physics.soc-ph, physics.plasm-ph\\n**\\uc694\\uc57d**: Fusion energy, the process that uses the same reaction that powers the sun\\nand the stars, offers the promise of virtually unlimited, carbon-free energy\\nand is approaching reality. Recently, there's be...\\n**\\ucd9c\\ud310\\uc77c**: 2024-03-09\\n\\n### 3. From Efficiency Gains to Rebound Effects: The Problem of Jevons' Paradox\\n  in AI's Polarized Environmental Debate\\n**\\uc800\\uc790**: Alexandra Sasha Luccioni, Emma Strubell, Kate Crawford\\n**ID**: 2501.16548v2\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CY\\n**\\uc694\\uc57d**: As the climate crisis deepens, artificial intelligence (AI) has emerged as a\\ncontested force: some champion its potential to advance renewable energy,\\nmaterials discovery, and large-scale emissions mo...\\n**\\ucd9c\\ud310\\uc77c**: 2025-01-27\\n\\n### 4. A Survey of Sustainability in Large Language Models: Applications,\\n  Economics, and Challenges\\n**\\uc800\\uc790**: Aditi Singh, Nirmal Prakashbhai Patel, Abul Ehtesham, Saket Kumar, Tala Talaei Khoei\\n**ID**: 2412.04782v2\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.AI, cs.CE\\n**\\uc694\\uc57d**: Large Language Models (LLMs) have transformed numerous domains by providing\\nadvanced capabilities in natural language understanding, generation, and\\nreasoning. Despite their groundbreaking application...\\n**\\ucd9c\\ud310\\uc77c**: 2024-12-06\\n\\n### 5. Estimating the spatial economic and environmental impact of planned\\n  offshore wind energy in the USA using Environmentally Extended Multiregional\\n  Input-Output analysis\\n**\\uc800\\uc790**: Apoorva Bademi, Miriam Stevens, Isha Sura, Shweta Singh\\n**ID**: 2508.15012v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: econ.GN, q-fin.EC\\n**\\uc694\\uc57d**: There is a projected increase in offshore wind energy generation in the\\nUnited States over the next three decades, driven by legislative commitments\\nand government funding. Like other renewable techno...\\n**\\ucd9c\\ud310\\uc77c**: 2025-08-20\\n\\n\"}], \"structuredContent\": {\"result\": \"## 'environmental consequences lifecycle assessments renewable energy technologies' \\uac80\\uc0c9 \\uacb0\\uacfc\\n\\n### 1. Energy-Sustainable IoT Connectivity: Vision, Technological Enablers,\\n  Challenges, and Future Directions\\n**\\uc800\\uc790**: Onel A. L\\u00f3pez, Osmel M. Rosabal, David Ruiz-Guirola, Prasoon Raghuwanshi, Konstantin Mikhaylov, Lauri Lov\\u00e9n, Sridhar Iyer\\n**ID**: 2306.02444v2\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.NI, eess.SP, 94-02, 68-02\\n**\\uc694\\uc57d**: Technology solutions must effectively balance economic growth, social equity,\\nand environmental integrity to achieve a sustainable society. Notably, although\\nthe Internet of Things (IoT) paradigm cons...\\n**\\ucd9c\\ud310\\uc77c**: 2023-06-04\\n\\n### 2. Fusion energy commercialization requires solving social and\\n  environmental challenges\\n**\\uc800\\uc790**: Stephanie Diem, Laila El-Guebaly, Aditi Verma\\n**ID**: 2403.05993v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: physics.soc-ph, physics.plasm-ph\\n**\\uc694\\uc57d**: Fusion energy, the process that uses the same reaction that powers the sun\\nand the stars, offers the promise of virtually unlimited, carbon-free energy\\nand is approaching reality. Recently, there's be...\\n**\\ucd9c\\ud310\\uc77c**: 2024-03-09\\n\\n### 3. From Efficiency Gains to Rebound Effects: The Problem of Jevons' Paradox\\n  in AI's Polarized Environmental Debate\\n**\\uc800\\uc790**: Alexandra Sasha Luccioni, Emma Strubell, Kate Crawford\\n**ID**: 2501.16548v2\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CY\\n**\\uc694\\uc57d**: As the climate crisis deepens, artificial intelligence (AI) has emerged as a\\ncontested force: some champion its potential to advance renewable energy,\\nmaterials discovery, and large-scale emissions mo...\\n**\\ucd9c\\ud310\\uc77c**: 2025-01-27\\n\\n### 4. A Survey of Sustainability in Large Language Models: Applications,\\n  Economics, and Challenges\\n**\\uc800\\uc790**: Aditi Singh, Nirmal Prakashbhai Patel, Abul Ehtesham, Saket Kumar, Tala Talaei Khoei\\n**ID**: 2412.04782v2\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.AI, cs.CE\\n**\\uc694\\uc57d**: Large Language Models (LLMs) have transformed numerous domains by providing\\nadvanced capabilities in natural language understanding, generation, and\\nreasoning. Despite their groundbreaking application...\\n**\\ucd9c\\ud310\\uc77c**: 2024-12-06\\n\\n### 5. Estimating the spatial economic and environmental impact of planned\\n  offshore wind energy in the USA using Environmentally Extended Multiregional\\n  Input-Output analysis\\n**\\uc800\\uc790**: Apoorva Bademi, Miriam Stevens, Isha Sura, Shweta Singh\\n**ID**: 2508.15012v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: econ.GN, q-fin.EC\\n**\\uc694\\uc57d**: There is a projected increase in offshore wind energy generation in the\\nUnited States over the next three decades, driven by legislative commitments\\nand government funding. Like other renewable techno...\\n**\\ucd9c\\ud310\\uc77c**: 2025-08-20\\n\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Retrieve detailed information about the research paper with the unique identifier arXiv:2301.12345."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_get_paper_info",
+                    "arguments": {
+                        "paper_id": "arXiv:2301.12345"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_get_paper_info",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"ID 'arXiv:2301.12345'\\uc5d0 \\ud574\\ub2f9\\ud558\\ub294 \\ub17c\\ubb38\\uc744 \\ucc3e\\uc744 \\uc218 \\uc5c6\\uc2b5\\ub2c8\\ub2e4.\"}], \"structuredContent\": {\"result\": \"ID 'arXiv:2301.12345'\\uc5d0 \\ud574\\ub2f9\\ud558\\ub294 \\ub17c\\ubb38\\uc744 \\ucc3e\\uc744 \\uc218 \\uc5c6\\uc2b5\\ub2c8\\ub2e4.\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Conduct an in-depth exploration of cutting-edge research articles highlighting groundbreaking innovations and paradigm shifts within the field of natural language processing, incorporating the keyword \"NLP innovations\" to uncover emerging methodologies, unresolved hurdles, and predictive trajectories for its evolution."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_search_papers",
+                    "arguments": {
+                        "keyword": "NLP innovations",
+                        "max_results": 5
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_search_papers",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## 'NLP innovations' \\uac80\\uc0c9 \\uacb0\\uacfc\\n\\n### 1. Translational NLP: A New Paradigm and General Principles for Natural\\n  Language Processing Research\\n**\\uc800\\uc790**: Denis Newman-Griffis, Jill Fain Lehman, Carolyn Ros\\u00e9, Harry Hochheiser\\n**ID**: 2104.07874v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.AI\\n**\\uc694\\uc57d**: Natural language processing (NLP) research combines the study of universal\\nprinciples, through basic science, with applied science targeting specific use\\ncases and settings. However, the process of ex...\\n**\\ucd9c\\ud310\\uc77c**: 2021-04-16\\n\\n### 2. Leveraging AI and NLP for Bank Marketing: A Systematic Review and Gap\\n  Analysis\\n**\\uc800\\uc790**: Christopher Gerling, Stefan Lessmann\\n**ID**: 2411.14463v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.AI, econ.GN, q-fin.EC\\n**\\uc694\\uc57d**: This paper explores the growing impact of AI and NLP in bank marketing,\\nhighlighting their evolving roles in enhancing marketing strategies, improving\\ncustomer engagement, and creating value within th...\\n**\\ucd9c\\ud310\\uc77c**: 2024-11-17\\n\\n### 3. NLP-ADBench: NLP Anomaly Detection Benchmark\\n**\\uc800\\uc790**: Yuangang Li, Jiaqi Li, Zhuo Xiao, Tiankai Yang, Yi Nian, Xiyang Hu, Yue Zhao\\n**ID**: 2412.04784v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.LG\\n**\\uc694\\uc57d**: Anomaly detection (AD) is a critical machine learning task with diverse\\napplications in web systems, including fraud detection, content moderation, and\\nuser behavior analysis. Despite its significance...\\n**\\ucd9c\\ud310\\uc77c**: 2024-12-06\\n\\n### 4. Meta Learning for Natural Language Processing: A Survey\\n**\\uc800\\uc790**: Hung-yi Lee, Shang-Wen Li, Ngoc Thang Vu\\n**ID**: 2205.01500v2\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.AI, cs.LG\\n**\\uc694\\uc57d**: Deep learning has been the mainstream technique in natural language\\nprocessing (NLP) area. However, the techniques require many labeled data and\\nare less generalizable across domains. Meta-learning is...\\n**\\ucd9c\\ud310\\uc77c**: 2022-05-03\\n\\n### 5. A Survey on Patent Analysis: From NLP to Multimodal AI\\n**\\uc800\\uc790**: Homaira Huda Shomee, Zhu Wang, Sathya N. Ravi, Sourav Medya\\n**ID**: 2404.08668v3\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.IR, cs.AI\\n**\\uc694\\uc57d**: Recent advances in Pretrained Language Models (PLMs) and Large Language\\nModels (LLMs) have demonstrated transformative capabilities across diverse\\ndomains. The field of patent analysis and innovation ...\\n**\\ucd9c\\ud310\\uc77c**: 2024-04-02\\n\\n\"}], \"structuredContent\": {\"result\": \"## 'NLP innovations' \\uac80\\uc0c9 \\uacb0\\uacfc\\n\\n### 1. Translational NLP: A New Paradigm and General Principles for Natural\\n  Language Processing Research\\n**\\uc800\\uc790**: Denis Newman-Griffis, Jill Fain Lehman, Carolyn Ros\\u00e9, Harry Hochheiser\\n**ID**: 2104.07874v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.AI\\n**\\uc694\\uc57d**: Natural language processing (NLP) research combines the study of universal\\nprinciples, through basic science, with applied science targeting specific use\\ncases and settings. However, the process of ex...\\n**\\ucd9c\\ud310\\uc77c**: 2021-04-16\\n\\n### 2. Leveraging AI and NLP for Bank Marketing: A Systematic Review and Gap\\n  Analysis\\n**\\uc800\\uc790**: Christopher Gerling, Stefan Lessmann\\n**ID**: 2411.14463v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.AI, econ.GN, q-fin.EC\\n**\\uc694\\uc57d**: This paper explores the growing impact of AI and NLP in bank marketing,\\nhighlighting their evolving roles in enhancing marketing strategies, improving\\ncustomer engagement, and creating value within th...\\n**\\ucd9c\\ud310\\uc77c**: 2024-11-17\\n\\n### 3. NLP-ADBench: NLP Anomaly Detection Benchmark\\n**\\uc800\\uc790**: Yuangang Li, Jiaqi Li, Zhuo Xiao, Tiankai Yang, Yi Nian, Xiyang Hu, Yue Zhao\\n**ID**: 2412.04784v1\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.LG\\n**\\uc694\\uc57d**: Anomaly detection (AD) is a critical machine learning task with diverse\\napplications in web systems, including fraud detection, content moderation, and\\nuser behavior analysis. Despite its significance...\\n**\\ucd9c\\ud310\\uc77c**: 2024-12-06\\n\\n### 4. Meta Learning for Natural Language Processing: A Survey\\n**\\uc800\\uc790**: Hung-yi Lee, Shang-Wen Li, Ngoc Thang Vu\\n**ID**: 2205.01500v2\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.CL, cs.AI, cs.LG\\n**\\uc694\\uc57d**: Deep learning has been the mainstream technique in natural language\\nprocessing (NLP) area. However, the techniques require many labeled data and\\nare less generalizable across domains. Meta-learning is...\\n**\\ucd9c\\ud310\\uc77c**: 2022-05-03\\n\\n### 5. A Survey on Patent Analysis: From NLP to Multimodal AI\\n**\\uc800\\uc790**: Homaira Huda Shomee, Zhu Wang, Sathya N. Ravi, Sourav Medya\\n**ID**: 2404.08668v3\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.IR, cs.AI\\n**\\uc694\\uc57d**: Recent advances in Pretrained Language Models (PLMs) and Large Language\\nModels (LLMs) have demonstrated transformative capabilities across diverse\\ndomains. The field of patent analysis and innovation ...\\n**\\ucd9c\\ud310\\uc77c**: 2024-04-02\\n\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Retrieve and provide an exhaustive, meticulously detailed compilation of all attributes, metadata, associated information, and underlying contextual nuances available for the academic paper identified by the ID \"2301.12345,\" ensuring clarity, logical organization, and accuracy through a multi-layered investigative approach."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_get_paper_info",
+                    "arguments": {
+                        "paper_id": "2301.12345"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_get_paper_info",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Chemotactic motility-induced phase separation\\n\\n**\\uc800\\uc790**: Hongbo Zhao, Andrej Ko\\u0161mrlj, Sujit S. Datta\\n**\\ucd9c\\ud310\\uc77c**: 2023-01-29\\n**\\uce74\\ud14c\\uace0\\ub9ac**: physics.bio-ph, cond-mat.soft, cond-mat.stat-mech, nlin.PS\\n**DOI**: None\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2301.12345\\n**PDF**: https://arxiv.org/pdf/2301.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nCollectives of actively-moving particles can spontaneously separate into\\ndilute and dense phases -- a fascinating phenomenon known as motility-induced\\nphase separation (MIPS). MIPS is well-studied for randomly-moving particles\\nwith no directional bias. However, many forms of active matter exhibit\\ncollective chemotaxis, directed motion along a chemical gradient that the\\nconstituent particles can generate themselves. Here, using theory and\\nsimulations, we demonstrate that collective chemotaxis strongly competes with\\nMIPS -- in some cases, arresting or completely suppressing phase separation, or\\nin other cases, generating fundamentally new dynamic instabilities. We\\nestablish quantitative principles describing this competition, thereby helping\\nto reveal and clarify the rich physics underlying active matter systems that\\nperform chemotaxis, ranging from cells to robots.\\n\"}], \"structuredContent\": {\"result\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Chemotactic motility-induced phase separation\\n\\n**\\uc800\\uc790**: Hongbo Zhao, Andrej Ko\\u0161mrlj, Sujit S. Datta\\n**\\ucd9c\\ud310\\uc77c**: 2023-01-29\\n**\\uce74\\ud14c\\uace0\\ub9ac**: physics.bio-ph, cond-mat.soft, cond-mat.stat-mech, nlin.PS\\n**DOI**: None\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2301.12345\\n**PDF**: https://arxiv.org/pdf/2301.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nCollectives of actively-moving particles can spontaneously separate into\\ndilute and dense phases -- a fascinating phenomenon known as motility-induced\\nphase separation (MIPS). MIPS is well-studied for randomly-moving particles\\nwith no directional bias. However, many forms of active matter exhibit\\ncollective chemotaxis, directed motion along a chemical gradient that the\\nconstituent particles can generate themselves. Here, using theory and\\nsimulations, we demonstrate that collective chemotaxis strongly competes with\\nMIPS -- in some cases, arresting or completely suppressing phase separation, or\\nin other cases, generating fundamentally new dynamic instabilities. We\\nestablish quantitative principles describing this competition, thereby helping\\nto reveal and clarify the rich physics underlying active matter systems that\\nperform chemotaxis, ranging from cells to robots.\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Extract and thoroughly analyze detailed and multifaceted information pertaining to the scholarly article identified by publication identifier 2307.12345, encompassing its abstract, primary conclusions, experimental or theoretical methodology, and prospective ramifications within its specialized academic domain."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_get_paper_info",
+                    "arguments": {
+                        "paper_id": "2307.12345"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_get_paper_info",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Tell me, what are you most afraid of? Exploring the Effects of Agent\\n  Representation on Information Disclosure in Human-Chatbot Interaction\\n\\n**\\uc800\\uc790**: Anna Stock, Stephan Schl\\u00f6gl, Aleksander Groth\\n**\\ucd9c\\ud310\\uc77c**: 2023-07-23\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.HC\\n**DOI**: http://dx.doi.org/10.1007/978-3-031-35894-4_13\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2307.12345\\n**PDF**: https://arxiv.org/pdf/2307.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nSelf-disclosure counts as a key factor influencing successful health\\ntreatment, particularly when it comes to building a functioning\\npatient-therapist-connection. To this end, the use of chatbots may be\\nconsidered a promising puzzle piece that helps foster respective information\\nprovision. Several studies have shown that people disclose more information\\nwhen they are interacting with a chatbot than when they are interacting with\\nanother human being. If and how the chatbot is embodied, however, seems to play\\nan important role influencing the extent to which information is disclosed.\\nHere, research shows that people disclose less if the chatbot is embodied with\\na human avatar in comparison to a chatbot without embodiment. Still, there is\\nonly little information available as to whether it is the embodiment with a\\nhuman face that inhibits disclosure, or whether any type of face will reduce\\nthe amount of shared information. The study presented in this paper thus aims\\nto investigate how the type of chatbot embodiment influences self-disclosure in\\nhuman-chatbot-interaction. We conducted a quasi-experimental study in which\\n$n=178$ participants were asked to interact with one of three settings of a\\nchatbot app. In each setting, the humanness of the chatbot embodiment was\\ndifferent (i.e., human vs. robot vs. disembodied). A subsequent discourse\\nanalysis explored difference in the breadth and depth of self-disclosure.\\nResults show that non-human embodiment seems to have little effect on\\nself-disclosure. Yet, our data also shows, that, contradicting to previous\\nwork, human embodiment may have a positive effect on the breadth and depth of\\nself-disclosure.\\n\"}], \"structuredContent\": {\"result\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Tell me, what are you most afraid of? Exploring the Effects of Agent\\n  Representation on Information Disclosure in Human-Chatbot Interaction\\n\\n**\\uc800\\uc790**: Anna Stock, Stephan Schl\\u00f6gl, Aleksander Groth\\n**\\ucd9c\\ud310\\uc77c**: 2023-07-23\\n**\\uce74\\ud14c\\uace0\\ub9ac**: cs.HC\\n**DOI**: http://dx.doi.org/10.1007/978-3-031-35894-4_13\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2307.12345\\n**PDF**: https://arxiv.org/pdf/2307.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nSelf-disclosure counts as a key factor influencing successful health\\ntreatment, particularly when it comes to building a functioning\\npatient-therapist-connection. To this end, the use of chatbots may be\\nconsidered a promising puzzle piece that helps foster respective information\\nprovision. Several studies have shown that people disclose more information\\nwhen they are interacting with a chatbot than when they are interacting with\\nanother human being. If and how the chatbot is embodied, however, seems to play\\nan important role influencing the extent to which information is disclosed.\\nHere, research shows that people disclose less if the chatbot is embodied with\\na human avatar in comparison to a chatbot without embodiment. Still, there is\\nonly little information available as to whether it is the embodiment with a\\nhuman face that inhibits disclosure, or whether any type of face will reduce\\nthe amount of shared information. The study presented in this paper thus aims\\nto investigate how the type of chatbot embodiment influences self-disclosure in\\nhuman-chatbot-interaction. We conducted a quasi-experimental study in which\\n$n=178$ participants were asked to interact with one of three settings of a\\nchatbot app. In each setting, the humanness of the chatbot embodiment was\\ndifferent (i.e., human vs. robot vs. disembodied). A subsequent discourse\\nanalysis explored difference in the breadth and depth of self-disclosure.\\nResults show that non-human embodiment seems to have little effect on\\nself-disclosure. Yet, our data also shows, that, contradicting to previous\\nwork, human embodiment may have a positive effect on the breadth and depth of\\nself-disclosure.\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Provide an in-depth analysis of the research paper identified by arXiv:2301.12345, including its core contributions, citation count, contextual significance within its field, and an evaluation of any notable subsequent works or advancements that have built upon its findings."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_get_paper_info",
+                    "arguments": {
+                        "paper_id": "2301.12345"
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_get_paper_info",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Chemotactic motility-induced phase separation\\n\\n**\\uc800\\uc790**: Hongbo Zhao, Andrej Ko\\u0161mrlj, Sujit S. Datta\\n**\\ucd9c\\ud310\\uc77c**: 2023-01-29\\n**\\uce74\\ud14c\\uace0\\ub9ac**: physics.bio-ph, cond-mat.soft, cond-mat.stat-mech, nlin.PS\\n**DOI**: None\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2301.12345\\n**PDF**: https://arxiv.org/pdf/2301.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nCollectives of actively-moving particles can spontaneously separate into\\ndilute and dense phases -- a fascinating phenomenon known as motility-induced\\nphase separation (MIPS). MIPS is well-studied for randomly-moving particles\\nwith no directional bias. However, many forms of active matter exhibit\\ncollective chemotaxis, directed motion along a chemical gradient that the\\nconstituent particles can generate themselves. Here, using theory and\\nsimulations, we demonstrate that collective chemotaxis strongly competes with\\nMIPS -- in some cases, arresting or completely suppressing phase separation, or\\nin other cases, generating fundamentally new dynamic instabilities. We\\nestablish quantitative principles describing this competition, thereby helping\\nto reveal and clarify the rich physics underlying active matter systems that\\nperform chemotaxis, ranging from cells to robots.\\n\"}], \"structuredContent\": {\"result\": \"## \\ub17c\\ubb38 \\uc0c1\\uc138 \\uc815\\ubcf4\\n\\n### Chemotactic motility-induced phase separation\\n\\n**\\uc800\\uc790**: Hongbo Zhao, Andrej Ko\\u0161mrlj, Sujit S. Datta\\n**\\ucd9c\\ud310\\uc77c**: 2023-01-29\\n**\\uce74\\ud14c\\uace0\\ub9ac**: physics.bio-ph, cond-mat.soft, cond-mat.stat-mech, nlin.PS\\n**DOI**: None\\n**\\ub9c1\\ud06c**: https://arxiv.org/abs/2301.12345\\n**PDF**: https://arxiv.org/pdf/2301.12345.pdf\\n\\n**\\ucd08\\ub85d**:\\nCollectives of actively-moving particles can spontaneously separate into\\ndilute and dense phases -- a fascinating phenomenon known as motility-induced\\nphase separation (MIPS). MIPS is well-studied for randomly-moving particles\\nwith no directional bias. However, many forms of active matter exhibit\\ncollective chemotaxis, directed motion along a chemical gradient that the\\nconstituent particles can generate themselves. Here, using theory and\\nsimulations, we demonstrate that collective chemotaxis strongly competes with\\nMIPS -- in some cases, arresting or completely suppressing phase separation, or\\nin other cases, generating fundamentally new dynamic instabilities. We\\nestablish quantitative principles describing this competition, thereby helping\\nto reveal and clarify the rich physics underlying active matter systems that\\nperform chemotaxis, ranging from cells to robots.\\n\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Compile an exhaustive and thoroughly detailed inventory of the latest scholarly articles and research publications specifically within the domain of machine learning, with an explicit focus on studies exploring advanced applications in natural language processing techniques or complex computer vision methodologies."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_scrape_recent_category_papers",
+                    "arguments": {
+                        "category": "machine learning",
+                        "max_results": 10
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_scrape_recent_category_papers",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"'machine learning' \\uce74\\ud14c\\uace0\\ub9ac\\uc758 \\ucd5c\\uc2e0 \\ub17c\\ubb38 \\ubaa9\\ub85d\\uc744 \\uc6f9 \\ud398\\uc774\\uc9c0\\uc5d0\\uc11c \\uac00\\uc838\\uc62c \\uc218 \\uc5c6\\uc2b5\\ub2c8\\ub2e4.\"}], \"structuredContent\": {\"result\": \"'machine learning' \\uce74\\ud14c\\uace0\\ub9ac\\uc758 \\ucd5c\\uc2e0 \\ub17c\\ubb38 \\ubaa9\\ub85d\\uc744 \\uc6f9 \\ud398\\uc774\\uc9c0\\uc5d0\\uc11c \\uac00\\uc838\\uc62c \\uc218 \\uc5c6\\uc2b5\\ub2c8\\ub2e4.\"}, \"isError\": false}"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "Analyze and distill the fundamental areas of innovation, recurring motifs, and interconnected patterns within the domain of computer science (cs.AI), synthesizing insights drawn from significant developments and discussions over the last 30 days. Additionally, trace their broader societal and technical implications, identifying underlying forces and multi-dimensional factors contributing to their emergence and relevance."
+        },
+        {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": {
+                "type": "function",
+                "function": {
+                    "name": "arxiv-paper-mcp_analyze_trends",
+                    "arguments": {
+                        "category": "cs.AI",
+                        "days": 30
+                    }
+                }
+            }
+        },
+        {
+            "role": "tool",
+            "tool_call_id": 0,
+            "name": "arxiv-paper-mcp_analyze_trends",
+            "content": "{\"content\": [{\"type\": \"text\", \"text\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}], \"structuredContent\": {\"result\": \"## cs.AI \\ubd84\\uc57c \\ucd5c\\uadfc 30\\uc77c \\ud2b8\\ub80c\\ub4dc \\ubd84\\uc11d\\n\\n### \\uc778\\uae30 \\ud0a4\\uc6cc\\ub4dc (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. \\ub300\\uaddc\\ubaa8 \\uc5b8\\uc5b4 \\ubaa8\\ub378 (LLM)\\n2. \\uac15\\ud654\\ud559\\uc2b5\\n3. \\uc790\\uae30\\uc9c0\\ub3c4\\ud559\\uc2b5\\n4. \\uba40\\ud2f0\\ubaa8\\ub2ec\\n5. \\uc0dd\\uc131\\ud615 AI\\n\\n### \\uc778\\uae30 \\ub17c\\ubb38 \\uc8fc\\uc81c (\\uc784\\uc2dc \\ub370\\uc774\\ud130)\\n1. AI \\ubaa8\\ub378\\uc758 \\ud574\\uc11d \\uac00\\ub2a5\\uc131\\n2. \\ud6a8\\uc728\\uc801\\uc778 \\ubbf8\\uc138 \\uc870\\uc815 \\ubc29\\ubc95\\n3. \\uc778\\uac04 \\ud53c\\ub4dc\\ubc31\\uc744 \\ud1b5\\ud55c \\uac15\\ud654\\ud559\\uc2b5\\n\"}, \"isError\": false}"
+        }
+    ]
+]

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "fruityvice-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@CelalKhalilov/fruityvice-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

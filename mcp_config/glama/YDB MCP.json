@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "ydb": {
+      "command": "uvx",
+      "args": [
+        "ydb-mcp",
+        "--ydb-endpoint",
+        "grpc://localhost:2136",
+        "--ydb-database",
+        "/local"
+      ]
+    }
+  }
+}

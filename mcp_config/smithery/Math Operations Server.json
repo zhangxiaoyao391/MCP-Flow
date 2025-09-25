@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "math-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@swaroopkasaraneni/math-mcp-server",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Math Operations Server",
+            "mcp_list_description": "Expose mathematical operations for seamless integration with your applications. Enhance your LLM capabilities by leveraging dynamic math functionalities through a standardized protocol. Start the server and unlock powerful computation features for your projects."
+        }
+    }
+}

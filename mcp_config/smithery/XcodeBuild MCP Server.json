@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "XcodeBuildMCP": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@cameroncooke/XcodeBuildMCP",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "XcodeBuild MCP Server",
+            "mcp_list_description": "Provide AI agents with streamlined and standardized tools to manage Xcode projects, simulators, and app utilities programmatically. Enable autonomous building, testing, and deployment workflows for iOS and macOS development. Simplify integration of Xcode operations into AI-driven development environments for efficient and error-reduced project management."
+        }
+    }
+}

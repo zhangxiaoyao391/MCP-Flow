@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "amazon-product-search": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@SiliconValleyInsight/amazon-product-search",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Amazon Product Search",
+            "mcp_list_description": "Enable seamless Amazon product searches with detailed information, including descriptions, pictures, and links. Quickly retrieve detailed product information to enhance your applications. Simplify access to Amazon's product data through a standardized MCP server interface."
+        }
+    }
+}

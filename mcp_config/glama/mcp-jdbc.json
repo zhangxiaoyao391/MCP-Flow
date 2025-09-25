@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "jdbc": {
+      "command": "jbang",
+      "args": [
+        "jdbc@quarkiverse/quarkus-mcp-servers",
+        "[jdbc_url]"
+      ]
+    }
+  }
+}

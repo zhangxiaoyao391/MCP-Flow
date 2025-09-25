@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "call-for-papers-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@iremert/call-for-papers-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

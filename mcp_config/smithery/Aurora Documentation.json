@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "doc-aurora-dev": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@aurora-is-near/doc-aurora-dev",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Aurora Documentation",
+            "mcp_list_description": "A complete and continuously updated knowledge base for the Aurora ecosystem, this MCP enables developers to build on Aurora and Virtual Chains by providing technical guidance, structured documentation, configuration support, integration assistance, and troubleshooting resources. Optimized for AI agents, tools, and builders, it offers seamless access to the core capabilities of Aurora’s infrastructure through a clear and searchable interface."
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "vibe-marketing": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@synthetic-ci/vibe-marketing",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

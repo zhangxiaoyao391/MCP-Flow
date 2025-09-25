@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "clear-thought-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@chirag127/clear-thought-mcp-server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

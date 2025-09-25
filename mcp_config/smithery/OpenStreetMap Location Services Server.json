@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "open-streetmap-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@ngoiyaeric/open-streetmap-mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "OpenStreetMap Location Services Server",
+            "mcp_list_description": "Enable LLMs to interact with rich geospatial data and location-based services from OpenStreetMap. Perform geocoding, routing, neighborhood analysis, and find points of interest to enhance location-aware applications. Optimize meeting points, analyze commutes, and locate EV charging or parking facilities seamlessly."
+        }
+    }
+}

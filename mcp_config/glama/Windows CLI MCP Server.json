@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "windows-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@simonb97/server-win-cli"
+      ]
+    }
+  }
+}

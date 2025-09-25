@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "simple-utcp-client-mcp": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--script",
+        "path\\to\\simple-utcp-client-mcp.py"
+      ]
+    }
+  }
+}

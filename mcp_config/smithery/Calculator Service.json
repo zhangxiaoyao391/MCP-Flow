@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp_calculator": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@ubn-dev/mcp_calculator",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Calculator Service",
+            "mcp_list_description": "Provide precise and efficient calculation capabilities to your agents. Enable seamless arithmetic operations through a standardized interface. Enhance your applications with reliable mathematical computations."
+        }
+    }
+}

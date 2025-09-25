@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-server-second-demo": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@ilkerAdanur/mcp-server-second-demo",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

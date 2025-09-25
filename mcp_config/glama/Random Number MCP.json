@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "random-number": {
+      "command": "uvx",
+      "args": [
+        "random-number-mcp"
+      ]
+    }
+  }
+}

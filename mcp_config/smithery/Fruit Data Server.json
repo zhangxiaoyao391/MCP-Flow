@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-fruit": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@myrve/mcp-fruit",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Fruit Data Server",
+            "mcp_list_description": "Provide structured access to fruit-related data and operations through a standardized protocol. Enable clients to query, manipulate, and retrieve fruit information efficiently. Facilitate integration of fruit data into LLM applications seamlessly."
+        }
+    }
+}

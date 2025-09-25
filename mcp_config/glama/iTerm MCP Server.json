@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "iterm-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "iterm-mcp"
+      ]
+    }
+  }
+}

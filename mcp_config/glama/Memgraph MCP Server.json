@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mpc-memgraph": {
+      "command": "/Users/katelatte/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/Users/katelatte/projects/mcp-memgraph",
+        "run",
+        "server.py"
+      ]
+    }
+  }
+}
