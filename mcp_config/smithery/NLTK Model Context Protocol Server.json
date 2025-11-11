@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "nltk-map": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@kwen1510/nltk-map",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "NLTK Model Context Protocol Server",
+            "mcp_list_description": "Integrate NLTK with external data and tools seamlessly. Enhance your natural language processing capabilities by leveraging real-world data and actions through a standardized interface."
+        }
+    }
+}

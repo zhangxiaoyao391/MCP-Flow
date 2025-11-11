@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "geeknews-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@the0807/geeknews-mcp-server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

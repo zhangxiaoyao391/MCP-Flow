@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "rednote-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@JonaFly/rednote-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

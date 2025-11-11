@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "weather360": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@musabz360/weather360",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Weather360 Server",
+            "mcp_list_description": "Provide real-time weather data and forecasts through a simple API interface. Enable applications to access comprehensive weather information seamlessly. Enhance user experience with accurate and timely weather updates."
+        }
+    }
+}

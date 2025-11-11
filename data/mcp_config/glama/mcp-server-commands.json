@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mcp-server-commands": {
+      "command": "npx",
+      "args": [
+        "mcp-server-commands"
+      ]
+    }
+  }
+}

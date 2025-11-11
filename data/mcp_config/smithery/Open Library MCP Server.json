@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-open-library": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@8enSmith/mcp-open-library",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

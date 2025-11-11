@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "bear": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/jkawamoto/mcp-bear",
+        "mcp-bear",
+        "--token",
+        "<YOUR_TOKEN>"
+      ]
+    }
+  }
+}

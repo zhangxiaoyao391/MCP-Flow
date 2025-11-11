@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "playwright-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@cloudflare/playwright-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Cloudflare Playwright",
+            "mcp_list_description": "Automate browser interactions and testing through a powerful MCP server integrated with Playwright and Cloudflare Workers. Execute web navigation, element interaction, and capture screenshots or snapshots to enhance your LLM-driven workflows. Easily deploy and connect to this server to enable rich browser automation capabilities for your agents."
+        }
+    }
+}

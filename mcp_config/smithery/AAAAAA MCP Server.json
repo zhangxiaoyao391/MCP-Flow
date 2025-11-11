@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "aaaaaa": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@Kermetek473/aaaaaa",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "AAAAAA MCP Server",
+            "mcp_list_description": "Provide a Python-based MCP server that exposes tools, resources, and prompts to integrate with LLM applications. Enable dynamic interaction with external data and actions through a standardized JSON-RPC interface. Facilitate seamless extension of LLM capabilities with custom context and operations."
+        }
+    }
+}

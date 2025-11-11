@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "time-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@yokingma/time-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Time MCP Server",
+            "mcp_list_description": "Empower your LLMs with time awareness capabilities. Access current time, convert between timezones, and get timestamps effortlessly."
+        }
+    }
+}

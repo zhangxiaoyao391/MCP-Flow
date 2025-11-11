@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "Office-Word-MCP-Server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@GongRzhe/Office-Word-MCP-Server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Office Word Document Server",
+            "mcp_list_description": "Enable AI assistants to create, read, and manipulate Microsoft Word documents through a standardized interface. Perform rich document editing operations such as adding content, formatting text and tables, merging documents, and applying document protection. Streamline Word document workflows by integrating powerful document management and formatting capabilities into your AI applications."
+        }
+    }
+}

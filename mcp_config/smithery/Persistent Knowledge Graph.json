@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-knowledge-graph": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@itseasy21/mcp-knowledge-graph",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Persistent Knowledge Graph",
+            "mcp_list_description": "Enable Claude/Cursor or other AI Tools with MCP Support to remember user information across chats using a local knowledge graph."
+        }
+    }
+}

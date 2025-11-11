@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "mcp-taskmanager": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@kazuph/mcp-taskmanager",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "TaskManager",
+            "mcp_list_description": "Model Context Protocol server for Task Management, allowing Claude Desktop (or any MCP client) to manage and execute tasks in a queue-based system."
+        }
+    }
+}

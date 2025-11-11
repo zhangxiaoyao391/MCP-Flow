@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "shadcn-ui-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@ymadd/shadcn-ui-mcp-server",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "shadcn-ui Component Reference Server",
+            "mcp_list_description": "Access comprehensive documentation and examples for shadcn/ui components. Retrieve detailed information, installation instructions, and usage examples to enhance your development experience. Streamline your workflow by leveraging structured data for efficient component integration."
+        }
+    }
+}

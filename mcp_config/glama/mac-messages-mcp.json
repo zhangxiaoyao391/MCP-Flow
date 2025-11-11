@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "messages": {
+      "command": "uvx",
+      "args": [
+        "mac-messages-mcp"
+      ]
+    }
+  }
+}

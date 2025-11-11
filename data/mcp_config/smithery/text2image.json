@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "image-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@PawNzZi/image-server",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "text2image",
+            "mcp_list_description": "Transform text prompts into stunning images effortlessly. Leverage advanced AI capabilities to create visuals that match your creative vision. Enhance your projects with unique imagery generated from your descriptions."
+        }
+    }
+}

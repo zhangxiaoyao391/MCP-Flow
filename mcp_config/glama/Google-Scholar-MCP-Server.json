@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "google-scholar": {
+      "command": "python",
+      "args": [
+        "-m",
+        "google_scholar_mcp_server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-think": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@iamwavecut/mcp-think",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

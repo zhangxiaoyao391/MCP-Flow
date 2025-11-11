@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "@grounddocs/grounddocs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@grounddocs/grounddocs@latest"
+      ]
+    }
+  }
+}

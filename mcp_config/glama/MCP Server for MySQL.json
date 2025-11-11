@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "mysql": {
+      "url": "http://your-host:3000/mcp",
+      "type": "streamableHttp",
+      "headers": {
+        "Authorization": "Bearer <REMOTE_SECRET_KEY>"
+      }
+    }
+  }
+}

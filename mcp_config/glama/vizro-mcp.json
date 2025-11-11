@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "vizro-mcp": {
+      "command": "/placeholder-path/uvx",
+      "args": [
+        "vizro-mcp"
+      ]
+    }
+  }
+}

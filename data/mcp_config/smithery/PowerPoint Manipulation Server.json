@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "Office-PowerPoint-MCP-Server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@GongRzhe/Office-PowerPoint-MCP-Server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

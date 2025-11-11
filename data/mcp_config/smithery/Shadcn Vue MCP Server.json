@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "shadcn-vue-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@HelloGGX/shadcn-vue-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

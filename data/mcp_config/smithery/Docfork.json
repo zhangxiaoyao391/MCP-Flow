@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@docfork/mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Docfork",
+            "mcp_list_description": "@latest documentation and code examples to 9000+ libraries for LLMs and AI code editors in a single tool call. Just add `use docfork` to your prompt for accurate and relevant answers."
+        }
+    }
+}

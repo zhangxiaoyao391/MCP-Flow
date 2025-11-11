@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "newsfeed-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@SpaceStation09/newsfeed-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "mcpServers": {
+        "endless-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@makingendless/endless-mcp",
+                "--key",
+                "your key"
+            ]
+        }
+    }
+}

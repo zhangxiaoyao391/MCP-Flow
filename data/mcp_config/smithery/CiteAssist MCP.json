@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "reference-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@ndchikin/reference-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

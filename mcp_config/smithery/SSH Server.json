@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "ssh-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@KinoThe-Kafkaesque/ssh-mcp-server",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "SSH Server",
+            "mcp_list_description": "Enable secure remote access and command execution through SSH using the Model Context Protocol. Manage SSH credentials effortlessly with a built-in SQLite database for data persistence. Experience a type-safe development environment with TypeScript support."
+        }
+    }
+}

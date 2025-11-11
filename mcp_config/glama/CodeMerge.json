@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "codemerge": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/path/to/codemerge",
+        "run",
+        "codemerge.py"
+      ]
+    }
+  }
+}

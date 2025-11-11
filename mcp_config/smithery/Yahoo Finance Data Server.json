@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "no-use-tools": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@marckwei/no-use-tools",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

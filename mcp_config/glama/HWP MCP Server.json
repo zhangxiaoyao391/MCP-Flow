@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "hwp": {
+      "command": "python",
+      "args": [
+        "경로/hwp-mcp/hwp_mcp_stdio_server.py"
+      ]
+    }
+  }
+}

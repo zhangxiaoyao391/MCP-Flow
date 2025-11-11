@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mongodb": {
+      "command": "npx",
+      "args": [
+        "coincap-mcp"
+      ]
+    }
+  }
+}

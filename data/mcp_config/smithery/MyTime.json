@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mytime": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@DocumentLess/mytime",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "MyTime",
+            "mcp_list_description": "Manage your time effectively with our intuitive scheduling and tracking tools. Streamline your daily tasks and enhance productivity with seamless integration into your workflow. Experience a smarter way to organize your time and achieve your goals."
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-stepstone": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@kdkiss/mcp-stepstone",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Stepstone Job Listings Fetcher",
+            "mcp_list_description": "Fetch dynamic job listings from Stepstone.de based on keywords and location parameters. Integrate seamlessly into autonomous agents or automation workflows using stdin/stdout communication."
+        }
+    }
+}

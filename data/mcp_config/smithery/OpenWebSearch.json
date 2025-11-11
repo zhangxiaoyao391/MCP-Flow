@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "open-websearch": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@Aas-ee/open-websearch",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "OpenWebSearch",
+            "mcp_list_description": "Web search using free multi-engine search (NO API KEYS REQUIRED) — Supports Bing, Baidu, DuckDuckGo, Brave, Exa, Github, Juejin, and CSDN."
+        }
+    }
+}

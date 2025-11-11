@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "uml-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@Swayingleaves/uml-mcp-server",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "UML Diagram Generation Tool",
+            "mcp_list_description": "Generate various types of UML diagrams effortlessly using natural language or PlantUML code. Share and view diagrams easily with accessible URLs and local file paths. Integrate seamlessly with MCP-compatible clients for enhanced functionality."
+        }
+    }
+}

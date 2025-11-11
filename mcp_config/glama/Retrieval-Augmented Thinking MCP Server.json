@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "retrieval-augmented-thinking": {
+      "command": "npx",
+      "args": [
+        "mcp-server-rat-node"
+      ]
+    }
+  }
+}

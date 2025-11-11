@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-JapaneseTextAnalyzer": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@Mistizz/mcp-JapaneseTextAnalyzer",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Japanese Text Analyzer",
+            "mcp_list_description": "Count characters and words in both Japanese and English texts. Analyze text efficiently with flexible input options, including file paths and direct text input."
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "autospectra-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@samuelvinay91/autospectra-mcp-server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

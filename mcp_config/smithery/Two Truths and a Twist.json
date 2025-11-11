@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "twotruthsandatwist": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@ErgodicLabs/twotruthsandatwist",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Two Truths and a Twist",
+            "mcp_list_description": "Engage in a fun trivia game where you identify the false statement among two truths. Experience interactive gameplay powered by AI, making each round unique and entertaining. Connect your MCP-compatible LLM to enjoy a seamless gaming experience."
+        }
+    }
+}

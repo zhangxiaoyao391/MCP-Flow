@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "pdf-reader-mcp": {
+      "command": "npx",
+      "args": [
+        "@sylphlab/pdf-reader-mcp"
+      ],
+      "name": "PDF Reader (npx)"
+    }
+  }
+}

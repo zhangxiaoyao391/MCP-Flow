@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "cms-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@dravidsajinraj-iex/cms-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "CMS Mcp Server",
+            "mcp_list_description": "Provide a scaffold framework to build MCP servers efficiently. Enable rapid development and integration of MCP tools, resources, and prompts with modern TypeScript support. Simplify MCP server setup and management for developers."
+        }
+    }
+}

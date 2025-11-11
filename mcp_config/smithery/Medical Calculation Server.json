@@ -1,0 +1,7 @@
+{
+    "mcpServers": {
+        "medcalc": {
+            "command": "npx"
+        }
+    }
+}

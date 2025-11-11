@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "SuricataMCP": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@Medinios/SuricataMCP",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Suricata Network Traffic Analysis Server",
+            "mcp_list_description": "Enable autonomous network traffic analysis by programmatically interacting with Suricata through a simple MCP interface. Retrieve Suricata version info, help output, and alerts from pcap files seamlessly integrated with AI coding tools. Enhance your security workflows with easy access to Suricata's powerful detection capabilities."
+        }
+    }
+}

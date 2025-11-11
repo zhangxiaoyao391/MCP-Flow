@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "TVRecommender": {
+      "command": "npx",
+      "args": [
+        "tv-recommender-mcp-server"
+      ]
+    }
+  }
+}

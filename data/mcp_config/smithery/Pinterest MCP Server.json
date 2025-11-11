@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-pinterest": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@terryso/mcp-pinterest",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

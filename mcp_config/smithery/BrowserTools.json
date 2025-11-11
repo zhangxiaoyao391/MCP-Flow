@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "browser-tools-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@diulela/browser-tools-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "game-trends-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@halismertkir/game-trends-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

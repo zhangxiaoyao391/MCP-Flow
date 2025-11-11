@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "git_test": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@trojansaga/git_test",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Git Test Server",
+            "mcp_list_description": "Provide a simple MCP server implementation for testing and demonstration purposes. Enable clients to interact with basic tools and resources to validate MCP integration. Facilitate learning and experimentation with MCP features in a controlled environment."
+        }
+    }
+}

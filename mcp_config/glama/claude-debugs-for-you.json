@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "debug": {
+      "command": "node",
+      "args": [
+        "/path/to/mcp-debug.js"
+      ]
+    }
+  }
+}

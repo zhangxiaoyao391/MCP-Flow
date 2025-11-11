@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "nationality-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@ahmetcvlk/nationality-mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Nationality Detection Service",
+            "mcp_list_description": "Provide nationality detection capabilities by analyzing input data. Enable applications to identify and classify nationalities efficiently. Enhance user experience with accurate and fast nationality recognition."
+        }
+    }
+}

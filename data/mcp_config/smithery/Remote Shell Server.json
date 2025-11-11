@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "remote-shell-terminal-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@samihalawa/remote-shell-terminal-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

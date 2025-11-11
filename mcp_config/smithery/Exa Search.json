@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "exa": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "exa",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Exa Search",
+            "mcp_list_description": "Provide your AI coding tools with token-efficient access to up-to-date technical documentation for APIs, services, libraries, and more. Enable powerful search and reading capabilities to help your agent find precise information from documentation and web pages."
+        }
+    }
+}

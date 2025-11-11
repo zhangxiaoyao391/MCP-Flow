@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-tabnews": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@renant/mcp-tabnews",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "TabNews Integration",
+            "mcp_list_description": "Access and interact with TabNews API data seamlessly. Enhance your applications with real-time news updates and insights from TabNews. Simplify your development process with a structured integration that leverages the Model Context Protocol."
+        }
+    }
+}

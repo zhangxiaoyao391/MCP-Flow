@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mcp2mqtt": {
+      "command": "uvx",
+      "args": [
+        "mcp2mqtt"
+      ]
+    }
+  }
+}

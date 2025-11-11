@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "webflow": {
+      "command": "npx mcp-remote https://mcp.webflow.com/sse"
+    }
+  }
+}

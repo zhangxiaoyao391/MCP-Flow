@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-servers-test2": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@bombe89/mcp-servers-test2",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Math Server",
+            "mcp_list_description": "Provide mathematical computation capabilities to your agents by enabling them to perform arithmetic operations through this server. Enhance your applications with reliable and straightforward math functions accessible via a standardized protocol. Simplify integration of math tools into your workflows with this ready-to-use server."
+        }
+    }
+}

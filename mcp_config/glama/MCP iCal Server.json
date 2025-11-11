@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mcp-ical": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/ABSOLUTE/PATH/TO/PARENT/FOLDER/mcp-ical",
+        "run",
+        "mcp-ical"
+      ]
+    }
+  }
+}

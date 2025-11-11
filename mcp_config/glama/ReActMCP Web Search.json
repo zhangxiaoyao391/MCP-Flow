@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "websearch": {
+      "command": "python",
+      "args": [
+        "path/to/servers/exa_web_search.py"
+      ]
+    }
+  }
+}

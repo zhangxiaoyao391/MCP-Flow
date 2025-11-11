@@ -1,0 +1,220 @@
+{
+  "model": "Doubao-Seed-1.6",
+  "api_provider": "Internal Doubao API",
+  "base_url": "http://10.105.0.30:3008/v1",
+  "accuracy": 86.66666666666667,
+  "correct": 26,
+  "total": 30,
+  "details": [
+    {
+      "id": 1,
+      "instruction": ": Find out the current weather conditions at the location with latitude 40.7128 and longitude -74.0060.",
+      "ground_truth": "weather360_get_live_weather",
+      "predicted": "weather360_get_live_weather",
+      "correct": true
+    },
+    {
+      "id": 2,
+      "instruction": "Access the target remote server through a secure shell (SSH) connection and run the Linux shell command \"find /var/log -type f -exec du -ch {} + | grep total$\" to calculate the aggregate disk usage of all individual files within the \"/var/log\" directory, ensuring an overview of cumulative log storage.",
+      "ground_truth": "remote-shell-terminal-mcp_shell-exec",
+      "predicted": "remote-shell-terminal-mcp_shell-exec",
+      "correct": true
+    },
+    {
+      "id": 3,
+      "instruction": "Unveil a fabled relic, the Adamant Orb, that profoundly influenced the cultural and mythological evolution of the Sinnoh region, detailing its intricate bond with the legendary Pokémon Dialga.",
+      "ground_truth": "poke-mcp_random-pokemon-from-region",
+      "predicted": "poke-mcp_random-pokemon-from-region",
+      "correct": true
+    },
+    {
+      "id": 4,
+      "instruction": "Extract and systematically arrange structured data for boutique and luxury hotel listings from the URL https://www.example.com/hotels, ensuring a comprehensive evaluation of lodging options by analyzing specific factors such as nightly rates, in-room and on-site amenities, proximity to landmarks, and detailed guest satisfaction metrics.",
+      "ground_truth": "brightdata-mcp_web_data_booking_hotel_listings",
+      "predicted": "brightdata-mcp_web_data_booking_hotel_listings",
+      "correct": true
+    },
+    {
+      "id": 5,
+      "instruction": "Extract the Document Object Model (DOM) structure and associated metadata of the webpage located at https://example.com to conduct an in-depth analysis of its semantic content hierarchy and externally or internally linked resource assets.",
+      "ground_truth": "brightdata-mcp_scrape_as_html",
+      "predicted": "brightdata-mcp_scrape_as_html",
+      "correct": true
+    },
+    {
+      "id": 6,
+      "instruction": "Surprise me with any creature from a large database of unique species.",
+      "ground_truth": "poke-mcp_random-pokemon",
+      "predicted": "poke-mcp_random-pokemon",
+      "correct": true
+    },
+    {
+      "id": 7,
+      "instruction": "Access the URL: https://www.walmart.com/seller-profile/example-seller-id, and conduct a detailed, multi-faceted analysis of the seller's profile by systematically evaluating aspects such as ratings, reviews, product range, policies, and any other relevant information that may provide deeper insights into their overall credibility and business practices.",
+      "ground_truth": "brightdata-mcp_web_data_walmart_seller",
+      "predicted": "brightdata-mcp_web_data_walmart_seller",
+      "correct": true
+    },
+    {
+      "id": 8,
+      "instruction": "Craft a succinct and captivating announcement intricately designed for optimal visual appeal and persuasive impact on a high-definition electronic billboard.",
+      "ground_truth": "human-message-prompt-mcp_human-messages-prompts",
+      "predicted": "human-message-prompt-mcp_human-messages-prompts",
+      "correct": true
+    },
+    {
+      "id": 9,
+      "instruction": "Retrieve detailed real estate information, encompassing the latest transaction history, nearby educational institutions, healthcare facilities, recreational areas, and transportation options, from the Zillow property listing available at https://www.zillow.com/homedetails/12345678.",
+      "ground_truth": "brightdata-mcp_web_data_zillow_properties_listing",
+      "predicted": "brightdata-mcp_web_data_zillow_properties_listing",
+      "correct": true
+    },
+    {
+      "id": 10,
+      "instruction": "Locate the password input field with the CSS selector \"#password-input\" on the login page, verify that the field is empty, input the password \"securePass123!\", and ensure no other fields are modified or submitted.",
+      "ground_truth": "brightdata-mcp_scraping_browser_type",
+      "predicted": "brightdata-mcp_scraping_browser_type",
+      "correct": true
+    },
+    {
+      "id": 11,
+      "instruction": "Find detailed information about Pikachu, such as its abilities, type, or base stats.",
+      "ground_truth": "poke-mcp_pokemon-query",
+      "predicted": "poke-mcp_pokemon-query",
+      "correct": true
+    },
+    {
+      "id": 12,
+      "instruction": "Generate an in-depth analysis detailing the session's functional dynamics, encompassing intricate efficiency indicators, irregular patterns, and longitudinal behavioral shifts.",
+      "ground_truth": "brightdata-mcp_session_stats",
+      "predicted": "brightdata-mcp_session_stats",
+      "correct": true
+    },
+    {
+      "id": 13,
+      "instruction": "Gather a comprehensive and meticulously detailed dataset of profile information, requiring multi-faceted analysis of follower demographics, engagement trends, content performance metrics, and all publicly accessible account insights for the Tiktok account found at https://www.tiktok.com/@exampleusername, ensuring connections between these data points are thoroughly examined.",
+      "ground_truth": "brightdata-mcp_web_data_tiktok_profiles",
+      "predicted": "brightdata-mcp_web_data_tiktok_profiles",
+      "correct": true
+    },
+    {
+      "id": 14,
+      "instruction": ": Compile an extensively curated and analytical list of significant articles from the past week addressing key advancements, nuanced ethical dilemmas, emerging applications, and intricate societal ramifications of artificial intelligence, accompanied by an in-depth yet succinct summarization of their core insights and conclusions.",
+      "ground_truth": "google-news-trends-mcp_get_news_by_keyword",
+      "predicted": "google-news-trends-mcp_get_news_by_topic",
+      "correct": false
+    },
+    {
+      "id": 15,
+      "instruction": "Determine the precise numerical outcome when the integer base 7 is elevated exponentially to the fourth power (i.e., 7^4), and furnish a concise yet clear explanation of the mathematical process or steps utilized to reach the result.",
+      "ground_truth": "mcp-server-calculator_calculate",
+      "predicted": "mcp-server-calculator_calculate",
+      "correct": true
+    },
+    {
+      "id": 16,
+      "instruction": "Analyze and categorize nuanced emotional tones by reviewing 50 employee endorsements from the Glassdoor profile of ExampleCompany at https://www.glassdoor.com/Overview/Working-at-ExampleCompany.",
+      "ground_truth": "brightdata-mcp_web_data_facebook_company_reviews",
+      "predicted": "brightdata-mcp_web_data_facebook_company_reviews",
+      "correct": true
+    },
+    {
+      "id": 17,
+      "instruction": "Identify the most recent trending search topics within the United States (US) to understand the current interests of its online users.",
+      "ground_truth": "google-news-trends-mcp_get_trending_terms",
+      "predicted": "google-news-trends-mcp_get_trending_terms",
+      "correct": true
+    },
+    {
+      "id": 18,
+      "instruction": "Analyze the TikTok video found at https://www.tiktok.com/@EXAMPLE_USER/video/EXAMPLE_ID/, providing an in-depth breakdown of its metadata, performance metrics, visual and auditory elements, thematic content, and notable audience reactions or comments.",
+      "ground_truth": "brightdata-mcp_web_data_instagram_reels",
+      "predicted": "brightdata-mcp_web_data_instagram_reels",
+      "correct": true
+    },
+    {
+      "id": 19,
+      "instruction": "Open a virtual desktop environment and access an online portal at the designated address, https://example.com, verifying that all interactive elements on the page function as intended.",
+      "ground_truth": "brightdata-mcp_scraping_browser_navigate",
+      "predicted": "brightdata-mcp_scraping_browser_navigate",
+      "correct": true
+    },
+    {
+      "id": 20,
+      "instruction": "Type the desired product name into the search box with the CSS selector \".search-box\" on the webpage and submit the form to view results.",
+      "ground_truth": "brightdata-mcp_scraping_browser_type",
+      "predicted": "brightdata-mcp_scraping_browser_type",
+      "correct": true
+    },
+    {
+      "id": 21,
+      "instruction": "Create a comprehensive itinerary, specifying date, time, location, and description for the Meetup event hosted at https://www.meetup.com/event/987654321/, ensuring all activities are tailored to accommodate both virtual and in-person attendees.",
+      "ground_truth": "brightdata-mcp_web_data_facebook_events",
+      "predicted": "（注：给定的可用工具中无适配Meetup event页面数据爬取的工具，若必须从选项中选择则无合适答案。但根据题目要求需返回工具名称，推测可能存在题目疏漏，暂按逻辑空缺处理，实际场景中应补充Meetup相关工具。）\n\n（若严格按题目要求强行返回，无正确选项，故此处标注异常。但根据用户指令需返回工具名称，可能题目存在错误，暂不输出。）\n\n（经再次确认，给定工具均无法满足需求，故无合适工具名称可返回。）",
+      "correct": false
+    },
+    {
+      "id": 22,
+      "instruction": "Retrieve and analyze comprehensive and nuanced details about all available hotel options, including amenities, pricing, location, guest reviews, cancellation policies, and the environmental sustainability practices of each hotel, from the booking website link: https://www.examplebooking.com/hotels.",
+      "ground_truth": "brightdata-mcp_web_data_booking_hotel_listings",
+      "predicted": "brightdata-mcp_web_data_booking_hotel_listings",
+      "correct": true
+    },
+    {
+      "id": 23,
+      "instruction": "Retrieve detailed and multifaceted organizational and operational intelligence about Example Company by leveraging the designated ZoomInfo URL https://www.zoominfo.com/c/example-company/123456 to uncover intricate insights into its executive hierarchy, specialized departmental roles, and nuanced corporate strategies.",
+      "ground_truth": "brightdata-mcp_web_data_zoominfo_company_profile",
+      "predicted": "brightdata-mcp_web_data_zoominfo_company_profile",
+      "correct": true
+    },
+    {
+      "id": 24,
+      "instruction": "Ensure the element with the CSS selector \".example-class\" on the webpage becomes visible before proceeding with further actions.",
+      "ground_truth": "brightdata-mcp_scraping_browser_wait_for",
+      "predicted": "brightdata-mcp_scraping_browser_wait_for",
+      "correct": true
+    },
+    {
+      "id": 25,
+      "instruction": "Extract and systematically organize granular, structured data from the professional networking update found at https://www.linkedin.com/posts/example-post to enable sophisticated computational processing or comprehensive analytical scrutiny.",
+      "ground_truth": "brightdata-mcp_web_data_linkedin_posts",
+      "predicted": "brightdata-mcp_web_data_linkedin_posts",
+      "correct": true
+    },
+    {
+      "id": 26,
+      "instruction": "Systematically analyze and compile detailed service offerings from the Airbnb listing at https://www.airbnb.com/rooms/example, ensuring the extraction includes intricate details such as amenity specifications, host policies, seasonal pricing fluctuations, and guest review patterns.",
+      "ground_truth": "brightdata-mcp_web_data_zara_products",
+      "predicted": "human-message-prompt-mcp_human-messages-prompts",
+      "correct": false
+    },
+    {
+      "id": 27,
+      "instruction": "Confirm that the section identified by the CSS selector \".main-content\" is not only visible and fully rendered on the page but also verify its structural integrity, content accuracy, and readiness for interaction before proceeding with the subsequent steps of the task.",
+      "ground_truth": "brightdata-mcp_scraping_browser_wait_for",
+      "predicted": "brightdata-mcp_scraping_browser_wait_for",
+      "correct": true
+    },
+    {
+      "id": 28,
+      "instruction": "Extract, analyze, and compile comprehensive, structured product data, encompassing detailed specifications, pricing trends over time, in-depth customer reviews, seller performance metrics, and any additional relevant insights, from Amazon for the product available at https://www.amazon.com/dp/B08N5WRWNW.",
+      "ground_truth": "brightdata-mcp_web_data_amazon_product",
+      "predicted": "brightdata-mcp_web_data_amazon_product",
+      "correct": true
+    },
+    {
+      "id": 29,
+      "instruction": "Analyze and extract intricate observations and layered feedback from user-generated reviews of the establishment located at https://www.google.com/maps/place/SpecificVenueURL, ensuring a focus on both explicit and implicit experiences shared within the most recent days.",
+      "ground_truth": "brightdata-mcp_web_data_google_maps_reviews",
+      "predicted": "brightdata-mcp_web_data_google_maps_reviews",
+      "correct": true
+    },
+    {
+      "id": 30,
+      "instruction": "Extract detailed and accurate information about a property listed on Zillow, including its full description, pricing trends, seller or agent details, neighborhood statistics, and historical sale data, for the property available at https://www.zillow.com/homedetails/123456789/example-property.",
+      "ground_truth": "brightdata-mcp_web_data_etsy_products",
+      "predicted": "brightdata-mcp_scraping_browser_get_text",
+      "correct": false
+    }
+  ]
+}

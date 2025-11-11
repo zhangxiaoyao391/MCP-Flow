@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "things": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/yourusername/things-mcp",
+        "run",
+        "things_server.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-units": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@sellisd/mcp-units",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

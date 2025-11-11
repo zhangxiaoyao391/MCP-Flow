@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-react-native-skia": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@mahecode/mcp-react-native-skia",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

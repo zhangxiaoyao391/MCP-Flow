@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "postgresql-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@HenkDz/postgresql-mcp-server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "PostgreSQL Database Management Server",
+            "mcp_list_description": "Analyze, manage, and optimize your PostgreSQL databases effortlessly. Streamline your database operations with powerful tools for debugging, schema management, and data migration. Enhance performance monitoring and ensure your database runs smoothly with real-time insights and recommendations."
+        }
+    }
+}

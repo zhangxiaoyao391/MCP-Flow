@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "mcp-server-chart": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@antvis/mcp-server-chart",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Visualization Charts Server",
+            "mcp_list_description": "A Model Context Protocol server for generating charts using AntV, This is a TypeScript-based MCP server that provides chart generation capabilities. It allows you to create various types of charts through MCP tools."
+        }
+    }
+}

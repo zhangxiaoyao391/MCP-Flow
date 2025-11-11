@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-hn": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "mcp-hn",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

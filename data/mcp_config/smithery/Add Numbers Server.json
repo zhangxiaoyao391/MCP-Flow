@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "add_mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@Huramkin/add_mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Add Numbers Server",
+            "mcp_list_description": "Perform accurate addition calculations through a simple server. Connect your large language models or other clients to execute integer and floating-point arithmetic seamlessly. Enjoy flexible transport options with standard input/output or server-sent events for enhanced integration."
+        }
+    }
+}

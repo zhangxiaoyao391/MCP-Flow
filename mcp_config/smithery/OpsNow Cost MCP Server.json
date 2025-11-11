@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "opsnow-mcp-cost-server-no-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@taejulee/opsnow-mcp-cost-server-no-server",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "OpsNow Cost MCP Server",
+            "mcp_list_description": "This is a Proof of Concept (PoC) project by OpsNow to provide cost exploration capabilities through Claude MCP (Model Context Protocol)."
+        }
+    }
+}

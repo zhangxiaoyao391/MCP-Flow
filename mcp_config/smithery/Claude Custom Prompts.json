@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "claude-prompts-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@minipuft/claude-prompts-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

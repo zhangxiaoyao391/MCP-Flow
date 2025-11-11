@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "xcode": {
+      "command": "node",
+      "args": [
+        "/path/to/xcode-mcp-server/dist/index.js"
+      ]
+    }
+  }
+}

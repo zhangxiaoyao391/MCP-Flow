@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "apple-health": {
+      "command": "npx",
+      "args": [
+        "@neiltron/apple-health-mcp"
+      ],
+      "env": {
+        "HEALTH_DATA_DIR": "/path/to/your/health/export"
+      }
+    }
+  }
+}

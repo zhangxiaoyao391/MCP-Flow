@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "json-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@VadimNastoyashchy/json-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

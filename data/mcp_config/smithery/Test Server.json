@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "test-mcp-py": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@nqdhocai/test-mcp-py",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Test Server",
+            "mcp_list_description": "Integrate your applications with external data and tools seamlessly. Enhance your workflows by leveraging real-world data and executing actions through a standardized interface. Experience the power of dynamic context integration with ease."
+        }
+    }
+}

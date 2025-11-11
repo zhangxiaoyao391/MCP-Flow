@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "starknet-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@mcpdotdirect/starknet-mcp-server",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Starknet MCP Server",
+            "mcp_list_description": "A comprehensive Model Context Protocol (MCP) server for the Starknet blockchain. This server provides AI agents with the ability to interact with Starknet networks, query blockchain data, manage wallets, and interact with smart contracts."
+        }
+    }
+}

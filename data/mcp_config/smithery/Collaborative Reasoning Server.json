@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "collaborative-reasoning": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@waldzellai/collaborative-reasoning",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

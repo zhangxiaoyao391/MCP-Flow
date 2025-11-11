@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "elasticsearch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@octodet/elasticsearch-mcp"
+      ],
+      "env": {
+        "ES_URL": "http://localhost:9200",
+        "ES_API_KEY": "your_api_key",
+        "ES_VERSION": "8"
+      }
+    }
+  }
+}

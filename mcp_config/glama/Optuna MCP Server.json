@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "Optuna": {
+      "command": "uvx",
+      "args": [
+        "optuna-mcp"
+      ]
+    }
+  }
+}

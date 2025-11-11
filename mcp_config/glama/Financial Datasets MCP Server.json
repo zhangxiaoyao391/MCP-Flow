@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "financial-datasets": {
+      "command": "/path/to/uv",
+      "args": [
+        "--directory",
+        "/absolute/path/to/financial-datasets-mcp",
+        "run",
+        "server.py"
+      ]
+    }
+  }
+}

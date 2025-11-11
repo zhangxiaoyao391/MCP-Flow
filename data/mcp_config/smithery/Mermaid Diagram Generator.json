@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-mermaid": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@hustcc/mcp-mermaid",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Mermaid Diagram Generator",
+            "mcp_list_description": "Generate dynamic Mermaid diagrams and charts with AI assistance. Customize styles and export diagrams in multiple formats including PNG, SVG, and Mermaid syntax. Ensure valid Mermaid syntax for multi-round AI interactions to produce accurate visualizations."
+        }
+    }
+}

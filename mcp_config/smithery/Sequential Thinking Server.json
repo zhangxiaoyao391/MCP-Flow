@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "pathways_to_parenthood_mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@nikhilp0799/pathways_to_parenthood_mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Sequential Thinking Server",
+            "mcp_list_description": "Enable structured sequential thinking to break down complex problems into logical steps, track reasoning chains, and visualize thinking pathways."
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "hackerNews": {
+      "command": "node",
+      "args": [
+        "ABSOLUTE_PATH_TO_DIRECTORY/mcp-claude-hackernews/build/index.js"
+      ]
+    }
+  }
+}

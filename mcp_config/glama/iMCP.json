@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "iMCP": {
+      "command": "{paste iMCP server command}"
+    }
+  }
+}

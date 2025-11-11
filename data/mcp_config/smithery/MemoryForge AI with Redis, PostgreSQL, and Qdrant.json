@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "ai-assistant-simple": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@cpretzinger/ai-assistant-simple",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "MemoryForge AI with Redis, PostgreSQL, and Qdrant",
+            "mcp_list_description": "The Ultimate Context Intelligence Engine Transform your AI into a memory master with lightning-fast recall and semantic superpowers. MemoryForge AI is the most advanced context management system ever built for AI assistants. Combining blazing-fast Redis caching, rock-solid PostgreSQL persistence, and cutting-edge Qdrant vector search, it gives your AI perfect memory that never forgets and always finds exactly what you need."
+        }
+    }
+}

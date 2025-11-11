@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "map_mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@Alex-Smith-1234/map_mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Map MCP Server",
+            "mcp_list_description": "Enhance your applications with dynamic data integration and real-time context manipulation. Access and manage external resources seamlessly to enrich user interactions. Empower your agents with the ability to perform actions and retrieve data effortlessly."
+        }
+    }
+}

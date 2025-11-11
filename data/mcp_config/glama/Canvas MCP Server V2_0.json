@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "canvas-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "canvas-mcp-server"
+      ],
+      "env": {
+        "CANVAS_API_TOKEN": "your_token_here",
+        "CANVAS_DOMAIN": "your_school.instructure.com"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "next.js": {
+      "url": "http://localhost:4857/sse"
+    }
+  }
+}

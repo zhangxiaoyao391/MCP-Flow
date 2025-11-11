@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "unrealmcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@AlexKissiJr/unrealmcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

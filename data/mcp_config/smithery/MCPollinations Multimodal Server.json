@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcpollinations": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@pinkpixel-dev/mcpollinations",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

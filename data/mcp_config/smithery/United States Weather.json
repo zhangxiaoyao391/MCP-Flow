@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "national-weather-service": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@smithery-ai/national-weather-service",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

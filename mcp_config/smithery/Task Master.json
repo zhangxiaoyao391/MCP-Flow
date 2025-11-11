@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "claude-task-master": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@eyaltoledano/claude-task-master",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Task Master",
+            "mcp_list_description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others."
+        }
+    }
+}

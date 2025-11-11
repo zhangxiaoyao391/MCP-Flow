@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "tusclasesparticulares-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@samihalawa/tusclasesparticulares-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "crypto-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@1595901624/crypto-mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Crypto_MCP",
+            "mcp_list_description": "A Model Context Protocol (MCP) server for encrypting/decrypting/algorithm/hash."
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "todos": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-postgrest@latest",
+        "--apiUrl",
+        "https://your-project-ref.supabase.co/rest/v1",
+        "--apiKey",
+        "your-anon-key",
+        "--schema",
+        "public"
+      ]
+    }
+  }
+}

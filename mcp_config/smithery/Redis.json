@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "mcp-redis": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@redis/mcp-redis",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ],
+            "mcp_list_name": "Redis",
+            "mcp_list_description": "Enable AI agents to manage and search data in Redis using natural language queries. Seamlessly integrate with MCP clients to interact with Redis data structures like hashes, lists, sets, streams, and more. Enhance your applications with scalable, high-performance Redis data operations and real-time insights."
+        }
+    }
+}

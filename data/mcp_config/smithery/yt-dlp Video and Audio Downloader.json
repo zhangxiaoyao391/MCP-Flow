@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "youtube-download": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@daniellopez-2/youtube-download",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

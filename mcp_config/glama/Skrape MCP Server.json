@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "skrape": {
+      "command": "node",
+      "args": [
+        "path/to/skrape-mcp/build/index.js"
+      ],
+      "env": {
+        "SKRAPE_API_KEY": "your-key-here"
+      }
+    }
+  }
+}

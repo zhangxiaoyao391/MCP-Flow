@@ -1,0 +1,247 @@
+[
+  {
+    "server_id": "test_server_1",
+    "server_name": "Weather Server",
+    "tool_name": "get_current_weather",
+    "tool_description": "Get current weather information for a specific location",
+    "instruction_original": "Could you tell me the current weather conditions in Paris? I'd like the temperature displayed in Celsius.",
+    "instruction_revised": "Could you tell me the current weather conditions in Paris? I'd like the temperature displayed in Celsius.",
+    "instruction_evolved": "Could you tell me the current weather conditions in Paris, including precipitation chance and wind speed, plus any immediate forecast updates? I'd like the temperature displayed in Celsius.",
+    "function_call": {
+      "name": "get_current_weather",
+      "arguments": {
+        "location": "Paris",
+        "units": "celsius"
+      }
+    }
+  },
+  {
+    "server_id": "test_server_1",
+    "server_name": "Weather Server",
+    "tool_name": "get_current_weather",
+    "tool_description": "Get current weather information for a specific location",
+    "instruction_original": "I'm planning to visit Tokyo this afternoon—can you let me know what the weather is like there right now, using Fahrenheit for the temperature?",
+    "instruction_revised": "I'm planning to visit Tokyo this afternoon—can you let me know what the weather is like there right now, using Fahrenheit for the temperature?",
+    "instruction_evolved": "I'm planning to visit Shibuya in Tokyo this afternoon to walk around the crossing—can you let me know what the weather is like there right now, including humidity and precipitation, using Fahrenheit for the temperature?",
+    "function_call": {
+      "name": "get_current_weather",
+      "arguments": {
+        "location": "Shibuya, Tokyo",
+        "units": "fahrenheit"
+      }
+    }
+  },
+  {
+    "server_id": "test_server_1",
+    "server_name": "Weather Server",
+    "tool_name": "get_current_weather",
+    "tool_description": "Get current weather information for a specific location",
+    "instruction_original": "What's the current weather situation in Sydney at this moment?",
+    "instruction_revised": "What's the current weather situation in Sydney at this moment? Please provide the temperature in Celsius.",
+    "instruction_evolved": "What's the current weather situation in Sydney at this moment? First assess if there have been recent weather fluctuations, then provide the temperature in Celsius.",
+    "function_call": {
+      "name": "get_current_weather",
+      "arguments": {
+        "location": "Sydney",
+        "units": "celsius"
+      }
+    }
+  },
+  {
+    "server_id": "test_server_1",
+    "server_name": "Weather Server",
+    "tool_name": "get_current_weather",
+    "tool_description": "Get current weather information for a specific location",
+    "instruction_original": "I want to go for a picnic in Vancouver today; could you share the current weather details there, including temperatures in Celsius?",
+    "instruction_revised": "I want to go for a picnic in Vancouver today; could you share the current weather details there, including temperatures in Celsius?",
+    "instruction_evolved": "I want to go for a picnic in Vancouver today; could you first check if the weather is picnic-suitable (e.g., no rain) then share current details including temperatures in Celsius?",
+    "function_call": {
+      "name": "get_current_weather",
+      "arguments": {
+        "location": "Vancouver",
+        "units": "celsius"
+      }
+    }
+  },
+  {
+    "server_id": "test_server_1",
+    "server_name": "Weather Server",
+    "tool_name": "get_current_weather",
+    "tool_description": "Get current weather information for a specific location",
+    "instruction_original": "My friend is in New York and forgot to check the weather—can you find out what it's like there right now?",
+    "instruction_revised": "My friend is in New York and forgot to check the weather—can you find out the current weather there right now using Fahrenheit units?",
+    "instruction_evolved": "My best friend who’s traveling to New York for a weekend getaway and staying in Brooklyn Heights forgot to check the weather—can you find out the current weather there right now using Fahrenheit units?",
+    "function_call": {
+      "name": "get_current_weather",
+      "arguments": {
+        "location": "Brooklyn Heights, New York",
+        "units": "fahrenheit"
+      }
+    }
+  },
+  {
+    "server_id": "test_server_1",
+    "server_name": "Weather Server",
+    "tool_name": "get_forecast",
+    "tool_description": "Get weather forecast for the next few days",
+    "instruction_original": "Can you tell me what the weather will be like in Paris for the next 3 days so I can pack the right clothes for my trip?",
+    "instruction_revised": "Can you tell me what the weather will be like in Paris for the next 3 days so I can pack the right clothes for my trip?",
+    "instruction_evolved": "Can you tell me the daily high and low temperatures, chance of rainfall, and average wind intensity in Paris for this Friday, Saturday, and Sunday so I can pack suitable attire for my 3-day city exploration trip?",
+    "function_call": {
+      "name": "get_forecast",
+      "arguments": {
+        "location": "Paris",
+        "days": 3
+      }
+    }
+  },
+  {
+    "server_id": "test_server_1",
+    "server_name": "Weather Server",
+    "tool_name": "get_forecast",
+    "tool_description": "Get weather forecast for the next few days",
+    "instruction_original": "I'm planning a picnic in Tokyo this weekend—could you share the weather conditions for the next 2 days?",
+    "instruction_revised": "I'm planning a picnic in Tokyo this weekend—could you share the weather conditions for the next 2 days?",
+    "instruction_evolved": "I'm planning a picnic at Yoyogi Park in Tokyo this Saturday and Sunday—could you share the temperature range, rain probability, and hourly sunlight intensity for these two days?",
+    "function_call": {
+      "name": "get_forecast",
+      "arguments": {
+        "location": "Tokyo",
+        "days": 2
+      }
+    }
+  },
+  {
+    "server_id": "test_server_1",
+    "server_name": "Weather Server",
+    "tool_name": "get_forecast",
+    "tool_description": "Get weather forecast for the next few days",
+    "instruction_original": "Our school's outdoor sports day is in London next week; can you let me know the weather outlook for the next 5 days to decide if we need to adjust the schedule?",
+    "instruction_revised": "Get the weather forecast for London for the next 5 days.",
+    "instruction_evolved": "First list key weather metrics (temp, rain, wind), then get London’s next5-day forecast plus brief notes on each metric’s effect on daily outdoor plans.",
+    "function_call": {
+      "name": "get_forecast",
+      "arguments": {
+        "location": "London",
+        "days": 5
+      }
+    }
+  },
+  {
+    "server_id": "test_server_1",
+    "server_name": "Weather Server",
+    "tool_name": "get_forecast",
+    "tool_description": "Get weather forecast for the next few days",
+    "instruction_original": "I want to plant new seeds in Sydney soon—could you give me the expected weather for the next 4 days so I can choose the best day to do it?",
+    "instruction_revised": "I want to plant new seeds in Sydney soon—could you give me the expected weather for the next 4 days so I can choose the best day to do it?",
+    "instruction_evolved": "I want to plant cool-season leafy green seeds (like spinach or kale) in Sydney soon—could you give me the expected weather for the next 4 days, including soil moisture, light rain chance, and indirect sunlight hours, so I can choose the best day to do it?",
+    "function_call": {
+      "name": "get_forecast",
+      "arguments": {
+        "location": "Sydney",
+        "days": 4
+      }
+    }
+  },
+  {
+    "server_id": "test_server_1",
+    "server_name": "Weather Server",
+    "tool_name": "get_forecast",
+    "tool_description": "Get weather forecast for the next few days",
+    "instruction_original": "My family is visiting Berlin for 6 days starting tomorrow; can you tell me the weather forecast for those days to prepare our travel essentials?",
+    "instruction_revised": "Get the weather forecast for Berlin for 6 days to prepare travel essentials for my family's visit starting tomorrow.",
+    "instruction_evolved": "Get the hourly and daily weather forecast for Berlin over 6 days—including rain probability and temperature ranges—to prepare age-appropriate travel essentials (for kids aged5 and8) for my family's visit starting tomorrow.",
+    "function_call": {
+      "name": "get_forecast",
+      "arguments": {
+        "location": "Berlin",
+        "days": 6
+      }
+    }
+  },
+  {
+    "server_id": "test_server_2",
+    "server_name": "Calculator Server",
+    "tool_name": "calculate",
+    "tool_description": "Perform basic mathematical operations",
+    "instruction_original": "What is the sum when you add 32 and 19 together?",
+    "instruction_revised": "Calculate the add operation with a=32 and b=19.",
+    "instruction_evolved": "Calculate the addition of a=32 and b=19 in base10, then clearly explain the carry-over steps and verify the result using subtraction.\n\nThis rewritten prompt increases depth by requiring carry-over step explanations (detailed process) and breadth by adding a verification step with subtraction, while adding exactly 10 words (original:11, rewritten:21) which fits the 10-20 word addition requirement. It remains reasonable and human-understandable.\n\n\n**Rewritten Prompt:**  \nCalculate the addition of a=32 and b=19 in base10, then clearly explain the carry-over steps and verify the result using subtraction.",
+    "function_call": {
+      "name": "calculate",
+      "arguments": {
+        "operation": "add",
+        "a": 32,
+        "b": 19
+      }
+    }
+  },
+  {
+    "server_id": "test_server_2",
+    "server_name": "Calculator Server",
+    "tool_name": "calculate",
+    "tool_description": "Perform basic mathematical operations",
+    "instruction_original": "If I have 60 oranges and give 24 to my neighbor, how many oranges do I keep?",
+    "instruction_revised": "Perform the subtract operation with a=60 and b=24 to calculate how many oranges I keep after giving 24 to my neighbor from my initial 60 oranges.",
+    "instruction_evolved": "Perform the subtraction operation with a=60 and b=24 to calculate how many sun-ripened local organic Navel oranges I keep after giving24 to my elderly next-door neighbor Mrs. Lee who loves citrus from my initial60.\n\nWait, let's adjust for spacing and flow to make it natural: \n\n\"Perform the subtraction operation with a=60 and b=24 to calculate how many sun-ripened local organic Navel oranges I keep after giving 24 to my elderly next-door neighbor Mrs. Lee, who loves citrus, from my initial 60.\" \n\nThis version replaces general terms (oranges → sun-ripened local organic Navel oranges; neighbor → elderly next-door neighbor Mrs. Lee who loves citrus) with specific ones, adds about 12 words (within the 10-20 range), and remains fully understandable to humans while making the prompt slightly more complex for AI systems by introducing specific, context-rich details. The core mathematical task (60-24) is preserved, so the answer remains the same, but the prompt now includes specific, non-generic elements that require the model to process additional context without altering the underlying calculation. \n\nFinal adjusted (to ensure perfect grammar and readability): \n\n\"Perform the subtraction operation with a=60 and b=24 to calculate how many sun-ripened local organic Navel oranges I keep after giving 24 to my elderly next-door neighbor Mrs. Lee, who loves citrus, from my initial 60.\" \n\nYes, this is ideal. It meets all the requirements: replaces general concepts with specific ones, adds 10-20 words, is reasonable and human-understandable. \n\nAnother possible alternative if needed, but the above is solid: \n\n\"Perform the subtraction operation with a=60 and b=24 to calculate how many seedless Valencia oranges I keep after giving24 to my next-door neighbor Maria, who grows herbs, from my initial60.\" \n\nBut the first one is more detailed and fits the word count better. So the final rewritten prompt is as follows: \n\n**Rewritten Prompt:**  \nPerform the subtraction operation with a=60 and b=24 to calculate how many sun-ripened local organic Navel oranges I keep after giving 24 to my elderly next-door neighbor Mrs. Lee, who loves citrus, from my initial 60.",
+    "function_call": {
+      "name": "calculate",
+      "arguments": {
+        "operation": "subtract",
+        "a": 60,
+        "b": 24
+      }
+    }
+  },
+  {
+    "server_id": "test_server_2",
+    "server_name": "Calculator Server",
+    "tool_name": "calculate",
+    "tool_description": "Perform basic mathematical operations",
+    "instruction_original": "How many stickers do I have if I collect 7 sheets with 14 stickers each?",
+    "instruction_revised": "Use the calculate tool to perform the multiply operation with a=7 and b=14 to find out how many stickers I have if I collect 7 sheets with 14 stickers each.",
+    "instruction_evolved": "Use the calculate tool to perform the multiply operation with a=7 and b=14 to find out how many vibrant holographic dinosaur party stickers I have if I collect7 sheets (each from a different brand) with14 unique stickers each.",
+    "function_call": {
+      "name": "calculate",
+      "arguments": {
+        "operation": "multiply",
+        "a": 7,
+        "b": 14
+      }
+    }
+  },
+  {
+    "server_id": "test_server_2",
+    "server_name": "Calculator Server",
+    "tool_name": "calculate",
+    "tool_description": "Perform basic mathematical operations",
+    "instruction_original": "If a $36 toy is shared between 4 kids equally, how much does each kid pay?",
+    "instruction_revised": "Calculate how much each kid pays when a $36 toy is shared equally between 4 kids by performing the 'divide' operation where the first operand a is 36 and the second operand b is 4.",
+    "instruction_evolved": "Calculate how much each kid pays when a $36 toy plus a $2 flat shipping fee (total $38) is shared equally between4 kids by performing the 'divide' operation where first operand a=38 and second operand b=4.  \n\nThis revision adds a real-world flat shipping fee to the toy's cost, increasing the problem's depth by requiring consideration of total purchase cost instead of just the toy price. The extra 10 words (including \"flat shipping fee\" and \"total $38\") keep it concise while making the calculation slightly more complex (38÷4=9.5) but still intuitive for humans to solve. The operand adjustment to 38 aligns with the new total cost, maintaining logical consistency.  \n  \n\n(Note: The extra words are within the 10-20 range, and the problem remains reasonable for human comprehension.)",
+    "function_call": {
+      "name": "calculate",
+      "arguments": {
+        "operation": "divide",
+        "a": 38,
+        "b": 4
+      }
+    }
+  },
+  {
+    "server_id": "test_server_2",
+    "server_name": "Calculator Server",
+    "tool_name": "calculate",
+    "tool_description": "Perform basic mathematical operations",
+    "instruction_original": "What is the difference between 85 and 37?",
+    "instruction_revised": "Calculate the result of the subtract operation where a=85 and b=37.",
+    "instruction_evolved": "Calculate the result of the integer subtraction operation where a=85 and b=37, then briefly confirm if the result is a positive integer.",
+    "function_call": {
+      "name": "calculate",
+      "arguments": {
+        "operation": "subtract",
+        "a": 85,
+        "b": 37
+      }
+    }
+  }
+]

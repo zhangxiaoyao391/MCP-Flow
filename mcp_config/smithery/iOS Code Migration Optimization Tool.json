@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "ios_migration_mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@chenyeju295/ios_migration_mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "laravel-mcp-companion": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@brianirish/laravel-mcp-companion",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Laravel MCP Companion",
+            "mcp_list_description": "Provide AI assistants and language models with seamless access to Laravel documentation. Enable searching, reading, and updating Laravel docs dynamically to enhance AI-driven development support. Support multiple Laravel versions and automatic documentation updates from GitHub."
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "decision-framework": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@waldzellai/decision-framework",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

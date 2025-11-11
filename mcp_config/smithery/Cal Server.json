@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "cal-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@pwh-pwh/cal-mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Cal Server",
+            "mcp_list_description": "Evaluate mathematical expressions efficiently and accurately. Input your expressions and receive instant results, leveraging built-in constants like PI and E. Perfect for quick calculations and mathematical evaluations in a lightweight service."
+        }
+    }
+}

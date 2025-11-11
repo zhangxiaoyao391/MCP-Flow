@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "metacognitive-monitoring": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@waldzellai/metacognitive-monitoring",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Metacognitive Monitoring Server",
+            "mcp_list_description": "Provide a structured framework for language models to evaluate and monitor their own cognitive processes, improving accuracy, reliability, and transparency in reasoning. Track knowledge boundaries, classify claims, monitor reasoning quality, and manage uncertainty effectively. Visualize metacognitive states to support technical advising, scientific analysis, decision support, and educational content."
+        }
+    }
+}

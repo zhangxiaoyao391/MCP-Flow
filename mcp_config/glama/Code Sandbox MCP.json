@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "code-sandbox-mcp": {
+      "command": "/path/to/code-sandbox-mcp",
+      "args": [],
+      "env": {}
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "ctx": {
+      "command": "ctx",
+      "args": [
+        "server",
+        "-c",
+        "/path/to/your/project"
+      ]
+    }
+  }
+}

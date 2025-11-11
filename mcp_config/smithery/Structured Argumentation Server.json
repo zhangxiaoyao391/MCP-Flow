@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "structured-argumentation": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@waldzellai/structured-argumentation",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

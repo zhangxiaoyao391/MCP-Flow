@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "diff": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "diff-mcp"
+      ]
+    }
+  }
+}

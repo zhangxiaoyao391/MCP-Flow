@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@EminUstun/mcp-server",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Dictionary",
+            "mcp_list_description": "Provide quick and easy access to word definitions and related linguistic information. Enhance your applications with comprehensive dictionary data to improve language understanding and processing. Enable users to look up words efficiently within your workflows."
+        }
+    }
+}

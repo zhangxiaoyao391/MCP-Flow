@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "gbox-android": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gbox.ai/mcp-android-server@latest"
+      ]
+    }
+  }
+}

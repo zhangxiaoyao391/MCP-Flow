@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "opik-mcp-server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@comet-ml/opik-mcp-server",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "weibo_hotsearch_mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@RusianHu/weibo_hotsearch_mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Weibo Hot Search Service - 获取微博热搜",
+            "mcp_list_description": "Provide real-time access to the top 10 trending topics on Weibo without requiring user authentication. Easily integrate trending data into AI assistants supporting MCP protocol for enhanced social media insights. Analyze and explore popular topics effortlessly within your AI workflows."
+        }
+    }
+}

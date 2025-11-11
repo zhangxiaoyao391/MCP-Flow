@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "mcp-dice": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "mcp-dice",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

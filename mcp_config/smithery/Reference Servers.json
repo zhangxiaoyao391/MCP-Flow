@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "reference-servers-check": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@mirinda-cmd/reference-servers-check",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

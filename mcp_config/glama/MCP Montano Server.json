@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "montano-mcp-server": {
+      "command": "node",
+      "args": [
+        "path/to/mcp-montano-server/build/index.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "GhidraMCP": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@LaurieWired/GhidraMCP",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

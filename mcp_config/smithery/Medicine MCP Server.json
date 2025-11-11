@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "medicine-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@hcatakli/medicine-mcp",
+                "--key",
+                "your key"
+            ],
+            "mcp_list_name": "Medicine MCP Server",
+            "mcp_list_description": "Provide medical knowledge and context integration to enhance healthcare-related AI applications. Enable seamless access to medical data and tools for improved decision-making and information retrieval. Facilitate dynamic interaction with medical resources through a standardized protocol."
+        }
+    }
+}

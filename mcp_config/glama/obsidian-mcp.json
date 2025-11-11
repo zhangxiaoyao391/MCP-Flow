@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "obsidian": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "obsidian-mcp",
+        "/path/to/your/vault",
+        "/path/to/your/vault2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "chatgpt": {
+      "command": "uvx",
+      "args": [
+        "chatgpt-mcp"
+      ]
+    }
+  }
+}

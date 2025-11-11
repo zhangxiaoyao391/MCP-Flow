@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "siri-shortcuts": {
+      "command": "npx",
+      "args": [
+        "mcp-server-siri-shortcuts"
+      ],
+      "env": {
+        "GENERATE_SHORTCUT_TOOLS": "true",
+        "INJECT_SHORTCUT_LIST": "false"
+      }
+    }
+  }
+}

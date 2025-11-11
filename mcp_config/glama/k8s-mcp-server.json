@@ -1,0 +1,4 @@
+{
+  "KUBECONFIG": "/path/to/your/kubeconfig",
+  "KUBERNETES_CONTEXT": "your-context-name"
+}

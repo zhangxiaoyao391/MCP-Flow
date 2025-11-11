@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "chaingpt": {
+      "command": "npx",
+      "args": [
+        "/path/to/chaingpt-mcp/build/index.js"
+      ],
+      "env": {
+        "CHAINGPT_SECRET_KEY": "your-secret-key-here"
+      },
+      "toolCallTimeoutMillis": 120000
+    }
+  }
+}

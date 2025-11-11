@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "llm-context": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "llm-context",
+        "lc-mcp"
+      ]
+    }
+  }
+}

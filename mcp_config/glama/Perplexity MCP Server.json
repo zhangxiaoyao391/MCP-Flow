@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "perplexity-server": {
+      "command": "bun",
+      "args": [
+        "/absolute/path/to/build/main.js"
+      ],
+      "timeout": 300
+    }
+  }
+}

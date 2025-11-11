@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "jinni": {
+      "command": "uvx",
+      "args": [
+        "jinni-server"
+      ]
+    }
+  }
+}

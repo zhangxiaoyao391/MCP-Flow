@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "movie-recommender-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "@iremert/movie-recommender-mcp",
+                "--key",
+                "your key",
+                "--profile",
+                "your profile"
+            ]
+        }
+    }
+}

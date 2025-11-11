@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mcp-pandoc": {
+      "command": "uvx",
+      "args": [
+        "mcp-pandoc"
+      ]
+    }
+  }
+}
