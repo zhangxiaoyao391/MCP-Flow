@@ -4,44 +4,51 @@ __pycache__/
 *$py.class
 *.so
 .Python
-*.egg-info/
-dist/
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Mac
-.DS_Store
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# Data and output files
+# Config files with sensitive data
+config.yaml
+
+# Data directories (optional - can be removed if you want to push data)
 data/test_output/
 data/filtered/
-data/function_call/
-data/trajectory/
-data/instructions/
-data/servers/
-data/tools/
-data/__init__.py
-data/*.json
 models/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
 
 # Temporary files
-*.log
 *.tmp
-nul
-
-# Old config files (keep only current config)
-mcp_config/
-
-# Sensitive
+*.bak
+test_*.py
 filter_key.py
-config.yaml  # 包含API密钥，不提交
-
-# MCP tools and scripts
-.serena/
-.spec-workflow/
-setup.sh
