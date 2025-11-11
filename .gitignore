@@ -23,6 +23,10 @@ data/filtered/
 data/function_call/
 data/trajectory/
 data/instructions/
+data/servers/
+data/tools/
+data/__init__.py
+data/*.json
 models/
 
 # Temporary files
@@ -36,3 +40,8 @@ mcp_config/
 # Sensitive
 filter_key.py
 config.yaml  # 包含API密钥，不提交
+
+# MCP tools and scripts
+.serena/
+.spec-workflow/
+setup.sh
