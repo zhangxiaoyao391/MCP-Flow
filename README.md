@@ -1,7 +1,49 @@
 # MCP-Flow
 
 **Facilitating LLM Agents to Master Real-World, Diverse and Scaling MCP Tools**
+
 > 📄 [Paper Url](https://arxiv.org/abs/2510.24284)
+
+
+## 🌿 分支说明 (Branch Guide)
+
+本项目包含两个主要分支,适用于不同用途:
+
+### 🎯 demo 分支 (推荐用于快速演示)
+- **用途**: 展示项目核心算法和最终成果
+- **特点**:
+  - 包含 80 个高质量测试样本 (100% 通过率, 评分 7-10)
+  - 保留成功的 `test_filtration_doubao.py` 脚本
+  - 已清理失败的测试文件和临时数据
+  - 适合展示、教学和快速验证
+- **切换命令**: `git checkout demo`
+- **数据位置**: `data/test_output/test_filtered_data_doubao.json`
+
+### 🔧 full-pipeline 分支 (用于完整流程复现)
+- **用途**: 运行完整的 1-4 步 pipeline
+- **特点**:
+  - 包含完整的 `src/main.py` 和所有模块
+  - 支持 Server Collection → Tool Extraction → Data Generation → Data Filtration
+  - 包含 `requirements.txt` 和所有依赖
+  - 适合完整复现、二次开发和扩展研究
+- **切换命令**: `git checkout full-pipeline`
+- **运行方式**:
+  ```bash
+  # 1. 安装依赖
+  pip install -r requirements.txt
+
+  # 2. 配置 config.yaml (复制 config.yaml.example)
+  cp config.yaml.example config.yaml
+  # 编辑 config.yaml 填入你的 API 密钥
+
+  # 3. 运行完整 pipeline
+  python src/main.py
+
+  # 或分步运行
+  python src/main.py --step collect    # 步骤1: 收集服务器
+  python src/main.py --step generate   # 步骤2-3: 提取工具+生成数据
+  python src/main.py --step filter     # 步骤4: 质量过滤
+  ```
 
 
 ## 🗓️ News
@@ -16,19 +58,19 @@
 
 ### 🌐 Key Features
 
-* 🤖 **Automated server collection** from *6 major MCP marketplaces*  
+* 🤖 **Automated server collection** from *6 major MCP marketplaces*
 
   <p align="center">
     <img src="assets/mcp-flow.png" alt="Server collection" width="600"/>
   </p>
 
-* 📊 **Extensive tool coverage:** 1,166 real-world servers, 11,536 tools, and 68K+ instruction–function call pairs  
+* 📊 **Extensive tool coverage:** 1,166 real-world servers, 11,536 tools, and 68K+ instruction–function call pairs
 
   <p align="center">
     <img src="assets/tool_server.png" alt="Tool coverage" width="600"/>
   </p>
 
-* 🧩 **Scale & diversity** far beyond previous benchmarks  
+* 🧩 **Scale & diversity** far beyond previous benchmarks
 
   <p align="center">
     <img src="assets/bench.png" alt="Benchmark scale" width="600"/>
@@ -239,13 +281,13 @@ Contributions are welcome! Please feel free to submit Issues and Pull Requests.
 If you find **MCP-Flow** useful in your research, please consider citing:
 ```bibtex
 @misc{wang2025mcpflowfacilitatingllmagents,
-      title={MCP-Flow: Facilitating LLM Agents to Master Real-World, Diverse and Scaling MCP Tools}, 
+      title={MCP-Flow: Facilitating LLM Agents to Master Real-World, Diverse and Scaling MCP Tools},
       author={Wenhao Wang and Peizhi Niu and Zhao Xu and Zhaoyu Chen and Jian Du and Yaxin Du and Xianghe Pang and Keduan Huang and Yanfeng Wang and Qiang Yan and Siheng Chen},
       year={2025},
       eprint={2510.24284},
       archivePrefix={arXiv},
       primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2510.24284}, 
+      url={https://arxiv.org/abs/2510.24284},
 }
 ```
 
@@ -253,5 +295,5 @@ If you find **MCP-Flow** useful in your research, please consider citing:
 ## 📧 Contact
 If you have any questions or encounter issues, feel free to open an issue or reach out to the authors directly:
 
-📮 Email: 12321254@zju.edu.cn  
+📮 Email: 12321254@zju.edu.cn
 💬 WeChat: <br> <img src="assets/wechat.png" alt="WeChat QR" width="80"/>
