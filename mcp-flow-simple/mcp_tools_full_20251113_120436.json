@@ -1,0 +1,437 @@
+{
+  "server_info": {
+    "name": "HTTP RESTMCP Server",
+    "description": "MCP HTTP REST 服务器 v1.0.0。 提供基于自然语言的智能 API 调用功能， 通过 LLM 自动分析用户意图并调用相应的底层 API。 监听地址: 0.0.0.0:3333。 支持系统登录认证。"
+  },
+  "server_config": {
+    "name": "http-mcp-service",
+    "command": "python",
+    "args": [
+      "main.py",
+      "--server-config",
+      "src/config/server_config.json",
+      "--api-config",
+      "src/config/api_config.json",
+      "--llm-config",
+      "src/config/llm_config.json",
+      "--host",
+      "0.0.0.0",
+      "--port",
+      "3333"
+    ]
+  },
+  "tools": [
+    {
+      "name": "bussiness_llm_api",
+      "description": "处理自然语言查询的智能 API 工具。接收用户的自然语言查询，自动分析意图，选择合适的底层 API，提取参数并执行调用，最后返回自然语言响应。支持意图检测、参数提取、参数验证、缓存增强等功能。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "用户的自然语言查询，例如：'查询所有部门列表'、'获取业务经理信息'、'查看技术部门的业务统计数据'等"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "get_departs_list",
+      "description": "获取部门列表。包含以下字段: orgCode - 部门Code, departName - 部门名称",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "get_user_list",
+      "description": "获取业务经理列表。包含以下参数: id - 业务经理ID, realname - 业务经理名称",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "summaryUsingGET",
+      "description": "业务Tab-主营业务利润总计以及各业务大类和业务小类收入、成本、利润统计",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "departCode": {
+            "type": "string",
+            "description": "部门编码"
+          },
+          "endMonth": {
+            "type": "string",
+            "description": "结束月份 格式：yyyy-MM"
+          },
+          "managerId": {
+            "type": "string",
+            "description": "业务经理id"
+          },
+          "startMonth": {
+            "type": "string",
+            "description": "开始月份 格式：yyyy-MM"
+          },
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "departCode",
+          "managerId",
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "queryBusinessTypeFinanceInfoUsingGET",
+      "description": "各业务类型财务情况接口.\n各业务类型财务情况接口。\n",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "endMonth": {
+            "type": "string",
+            "description": "结束月份 格式：yyyy-MM"
+          },
+          "startMonth": {
+            "type": "string",
+            "description": "开始月份 格式：yyyy-MM"
+          },
+          "type": {
+            "type": "integer",
+            "description": "类型 1-收付实现制 2-权责发生制"
+          },
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "endMonth",
+          "startMonth",
+          "type",
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "queryBusinessTypeUsingGET",
+      "description": "业务类型查询接口。如果没有参数，则默认查询业务大类；如果传业务大类的id，则查询该业务大类下的业务小类。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "业务类型id"
+          },
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "id",
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "deptBusinessCaseUsingGET",
+      "description": "钱包管理-财务-各部门经营情况.\n钱包管理-财务-各部门经营情况。\n",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "endMonth": {
+            "type": "string",
+            "description": "结束时间 格式：yyyy-MM"
+          },
+          "startMonth": {
+            "type": "string",
+            "description": "开始时间 格式：yyyy-MM"
+          },
+          "type": {
+            "type": "integer",
+            "description": "类型 1-收付实现制 2-权责发生制"
+          },
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "endMonth",
+          "startMonth",
+          "type",
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "managerIncomeAndCostUsingGET",
+      "description": "钱包管理-财务-业务经理主营业务数据.\n钱包管理-财务-业务经理主营业务数据。\n",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "departCode": {
+            "type": "string",
+            "description": "部门编码"
+          },
+          "endMonth": {
+            "type": "string",
+            "description": "结束时间 格式：yyyy-MM"
+          },
+          "startMonth": {
+            "type": "string",
+            "description": "开始时间 格式：yyyy-MM"
+          },
+          "type": {
+            "type": "integer",
+            "description": "类型 1-收付实现制 2-权责发生制"
+          },
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "departCode",
+          "type",
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "queryMainBusinessTrendUsingGET",
+      "description": "财务Tab-根据时间范围按月分组统计主营业务收入和成本。默认展示当年每月的收入与成本趋势图。主营业务成本：筛选按照成本月份中的实际付款金额（BPM资金记录--支出）。主营业务收入：筛选按照成本月份中的实际到账金额（BPM资金记录-收入）。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "departCode": {
+            "type": "string",
+            "description": "部门编码"
+          },
+          "endDate": {
+            "type": "string",
+            "description": "结束时间 格式：yyyy-MM"
+          },
+          "startDate": {
+            "type": "string",
+            "description": "开始时间 格式：yyyy-MM"
+          },
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "departCode",
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "queryOrderListUsingGET_1",
+      "description": "钱包管理-财务-订单列表接口.\n钱包管理-财务-订单列表接口。\n",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "activityId": {
+            "type": "string",
+            "description": "活动id"
+          },
+          "businessTypeName": {
+            "type": "string",
+            "description": "业务小类"
+          },
+          "commodityCode": {
+            "type": "string",
+            "description": "商品编码"
+          },
+          "commodityName": {
+            "type": "string",
+            "description": "商品名称"
+          },
+          "endDate": {
+            "type": "string",
+            "description": "结束时间 格式：yyyy-MM-dd"
+          },
+          "orderStatus": {
+            "type": "string",
+            "description": "订单状态"
+          },
+          "pageNo": {
+            "type": "integer",
+            "description": "分页页码"
+          },
+          "pageSize": {
+            "type": "integer",
+            "description": "每页数据条数"
+          },
+          "parentBusinessTypeName": {
+            "type": "string",
+            "description": "业务大类"
+          },
+          "startDate": {
+            "type": "string",
+            "description": "开始时间 格式：yyyy-MM-dd"
+          },
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "activityId",
+          "businessTypeName",
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "queryProfitAmountUsingGET",
+      "description": "当日利润总额和当月利润总额总计以及按部门分组统计当日利润总额和当月利润总额。当日利润总额：当日应收账款（总计）-当日应付账款（总计）。取利润核算平台，今日订单产生的发生利润（发生订单结算金额（大数据根据时间筛选计算的订单结算金额）-发生订单成本（大数据根据时间筛选计算的订单成本))。当月利润总额：当月应收账款（总计）-当月应付账款（总计）。取利润核算平台，本月订单产生的发生利润（发生订单结算金额（大数据根据时间筛选计算的订单结算金额）-发生订单成本（大数据根据时间筛选计算的订单成本))",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "departCode": {
+            "type": "string",
+            "description": "部门编码"
+          },
+          "endMonth": {
+            "type": "string",
+            "description": "结束时间"
+          },
+          "managerId": {
+            "type": "string",
+            "description": "业务经理id"
+          },
+          "startMonth": {
+            "type": "string",
+            "description": "开始时间"
+          },
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "departCode",
+          "managerId",
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "statisticsActivityOrderInfoUsingGET",
+      "description": "钱包管理-财务-业务经理活动订单统计接口.\n钱包管理-财务-业务经理活动订单统计接口。\n",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "businessManagerId": {
+            "type": "string",
+            "description": "业务经理id"
+          },
+          "businessTypeName": {
+            "type": "string",
+            "description": "业务小类"
+          },
+          "endMonth": {
+            "type": "string",
+            "description": "结束时间 格式：yyyy-MM"
+          },
+          "startMonth": {
+            "type": "string",
+            "description": "开始时间 格式：yyyy-MM"
+          },
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "businessManagerId",
+          "businessTypeName",
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "summaryUsingGET_1",
+      "description": "钱包管理-财务.\n钱包管理-财务。\n主营业务利润：主营业务收入-主营业务成本。发生利润总额：应收账款（总计）-应付账款（总计）。收付利润总额：主营业务收入-主营业务成本。主营业务成本：筛选按照成本月份中的实际付款金额（BPM资金记录--支出）。应付账款（总计）：筛选时间内全部应付账款总额（BPM应付款管理--应付金额+调整金额）。应付账款（已付）：筛选时间内应付账款中已付金额（BPM应付款管理--已付款金额）。应付账款（未付）：筛选时间内应付账款中未付金额（BPM应付款管理--未付款金额）。主营业务收入：筛选按照成本月份中的实际到账金额（BPM资金记录-收入）。应收账款（总计）：筛选时间内全部应收账款总额（BPM应收款管理--应收金额+调整金额）。应收账款（已收）：筛选时间内应收账款中已收金额（BPM应收款管理--已收金额）。应收账款（未收）：筛选时间内应收账款中未收金额（BPM应收款管理--未收金额）。货币资金盘点金额：预付款余额+货币资金余额+其他应收款-保证金（实时）。预付款余额：取青岛话费、北京话费、卡券平台的供应商管理中的平台余额。期初：取青岛话费、北京话费、卡券平台的供应商管理中的平台余额的期初余额（筛选时间内的期初，如筛选1月，则为1月期初，筛选1、2、3月，则为1月期初）。期末：取青岛话费、北京话费、卡券平台的供应商管理中的平台余额的期末余额（筛选时间内的期末，如筛选1月，则为1月期末，筛选1、2、3月，则为3月期末）。货币资金余额：资源管理平台--库存商品的成本*库存。期初：资源管理平台--库存商品的成本*库存的期初余额（筛选时间内的期初）。期末：资源管理平台--库存商品的成本*库存的期末余额（筛选时间内的期末）。其他应收款-保证金：BPM保证金申请--未退回金额。预收款余额：取BPM预收款管理--未抵扣金额。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "departCode": {
+            "type": "string",
+            "description": "部门编码"
+          },
+          "endMonth": {
+            "type": "string",
+            "description": "结束时间"
+          },
+          "managerId": {
+            "type": "string",
+            "description": "业务经理id"
+          },
+          "startMonth": {
+            "type": "string",
+            "description": "开始时间"
+          },
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "departCode",
+          "managerId",
+          "token"
+        ]
+      }
+    },
+    {
+      "name": "cashAndCashEquivalentsUsingGET",
+      "description": "货币资金查询接口.\n货币资金查询接口。\n货币资金盘点金额：预付款余额+货币资金余额。预付款余额：取青岛话费、北京话费、卡券平台的供应商管理中的平台余额。期初：取青岛话费、北京话费、卡券平台的供应商管理中的平台余额的期初余额（筛选时间内的期初，如筛选1月，则为1月期初，筛选1、2、3月，则为1月期初）。期末：取青岛话费、北京话费、卡券平台的供应商管理中的平台余额的期末余额（筛选时间内的期末，如筛选1月，则为1月期末，筛选1、2、3月，则为3月期末）。货币资金余额：资源管理平台--库存商品的成本*库存。期初：资源管理平台--库存商品的成本*库存的期初余额（筛选时间内的期初）。期末：资源管理平台--库存商品的成本*库存的期末余额（筛选时间内的期末）。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "endMonth": {
+            "type": "string",
+            "description": "结束时间 格式：yyyy-MM"
+          },
+          "startMonth": {
+            "type": "string",
+            "description": "开始时间 格式：yyyy-MM"
+          },
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "token"
+        ]
+      }
+    }
+  ]
+}

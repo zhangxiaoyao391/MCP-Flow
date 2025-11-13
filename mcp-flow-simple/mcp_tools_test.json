@@ -1,0 +1,57 @@
+{
+  "server_info": {
+    "name": "HTTP RESTMCP Server",
+    "description": "MCP HTTP REST 服务器 v1.0.0。 提供基于自然语言的智能 API 调用功能， 通过 LLM 自动分析用户意图并调用相应的底层 API。 监听地址: 0.0.0.0:3333。 支持系统登录认证。"
+  },
+  "server_config": {
+    "name": "http-mcp-service",
+    "command": "python",
+    "args": [
+      "main.py",
+      "--server-config",
+      "src/config/server_config.json",
+      "--api-config",
+      "src/config/api_config.json",
+      "--llm-config",
+      "src/config/llm_config.json",
+      "--host",
+      "0.0.0.0",
+      "--port",
+      "3333"
+    ]
+  },
+  "tools": [
+    {
+      "name": "bussiness_llm_api",
+      "description": "处理自然语言查询的智能 API 工具。接收用户的自然语言查询，自动分析意图，选择合适的底层 API，提取参数并执行调用，最后返回自然语言响应。支持意图检测、参数提取、参数验证、缓存增强等功能。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "用户的自然语言查询，例如：'查询所有部门列表'、'获取业务经理信息'、'查看技术部门的业务统计数据'等"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "get_departs_list",
+      "description": "获取部门列表。包含以下字段: orgCode - 部门Code, departName - 部门名称",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "description": "认证令牌"
+          }
+        },
+        "required": [
+          "token"
+        ]
+      }
+    }
+  ]
+}

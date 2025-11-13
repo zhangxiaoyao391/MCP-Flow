@@ -1,0 +1,43 @@
+# MCP-Flow 简化版配置
+
+# LLM API配置
+llm_providers:
+  primary:
+    name: "doubao"
+    provider: "openai"
+    api_key: "sk-ANWVdI9hgOSILVbKWyPJbYfjFrDgK12B96U93jQ9MP6AF5tY"
+    base_url: "http://10.105.0.30:3008/v1"
+    model: "Doubao-Seed-1.6"
+    timeout: 60
+    max_retries: 3
+
+  fallback:
+    name: "openai"
+    provider: "openai"
+    api_key: "sk-placeholder"
+    base_url: "https://api.openai.com/v1"
+    model: "gpt-4o-mini"
+    timeout: 60
+    max_retries: 3
+
+# 任务分配
+task_assignments:
+  generation: "primary"
+  function_call: "primary"
+  scoring: "primary"
+
+# 数据生成配置
+data_generation:
+  instruction_per_tool: 5
+  evolution_depth: 1
+  temperature: 0.7
+  max_tokens: 4096
+
+# 数据过滤配置
+data_filtering:
+  quality_score_threshold: 6
+
+# 输出路径
+output_paths:
+  function_calls: "../data/function_call"
+  filtered_data: "../data/filtered"

@@ -1,0 +1,16 @@
+# MCP-Flow 简化版依赖
+
+# LLM API
+openai>=1.0.0
+anthropic>=0.18.0
+
+# 配置和数据
+pyyaml>=6.0
+requests>=2.31.0
+
+# 数据处理
+numpy>=1.24.0
+pandas>=2.0.0
+
+# 工具
+tqdm>=4.66.0
