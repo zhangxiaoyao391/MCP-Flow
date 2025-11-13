@@ -3,9 +3,9 @@
 # LLM API配置
 llm_providers:
   primary:
-    name: "doubao"
+    name: "openai"
     provider: "openai"
-    api_key: "sk-ANWVdI9hgOSILVbKWyPJbYfjFrDgK12B96U93jQ9MP6AF5tY"
+    api_key: "sk-ANWVdI9hgOSILVbKWyPJbYfjFrDgK12B96U93jQ9MP6AF5tY" # 请替换为您的OpenAI API密钥
     base_url: "http://10.105.0.30:3008/v1"
     model: "Doubao-Seed-1.6"
     timeout: 60
@@ -14,7 +14,7 @@ llm_providers:
   fallback:
     name: "openai"
     provider: "openai"
-    api_key: "sk-placeholder"
+    api_key: "sk-placeholder" # 请替换为您的OpenAI API密钥
     base_url: "https://api.openai.com/v1"
     model: "gpt-4o-mini"
     timeout: 60

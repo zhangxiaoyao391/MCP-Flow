@@ -1,0 +1,19 @@
+# LoRA训练额外依赖
+# 在原有requirements.txt基础上添加
+
+# LLaMA-Factory框架
+llmtuner>=0.7.0
+
+# PEFT (Parameter-Efficient Fine-Tuning)
+peft>=0.11.0
+
+# 训练加速
+accelerate>=0.28.0
+deepspeed>=0.14.0
+
+# 可视化
+tensorboard>=2.16.0
+
+# 模型加载
+transformers>=4.41.0
+torch>=2.1.0

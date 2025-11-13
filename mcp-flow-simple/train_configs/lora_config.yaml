@@ -1,0 +1,53 @@
+### LoRA微调配置
+### 完全遵循论文 Table 12 的超参数配置
+
+### 模型参数
+model_name_or_path: Qwen/Qwen2.5-7B-Instruct  # 替换为您的模型路径
+
+### LoRA配置 (论文 Table 12)
+finetuning_type: lora
+lora_rank: 64                    # LoRA Rank
+lora_alpha: 128                  # LoRA Alpha (通常是rank的2倍)
+lora_dropout: 0.1                # Dropout率
+lora_target: all                 # 应用LoRA到所有线性层
+
+### 数据集配置
+dataset: mcp_function_calling
+template: qwen                   # 根据您的模型选择: qwen/llama3/chatglm等
+cutoff_len: 4096                 # 最大序列长度
+preprocessing_num_workers: 8
+
+### 训练配置 (论文 Table 12)
+stage: sft
+do_train: true
+per_device_train_batch_size: 16  # 单卡批大小
+gradient_accumulation_steps: 8   # 累积步数,总batch_size = 16*8 = 128
+learning_rate: 0.0002            # 2e-4 学习率
+num_train_epochs: 1.0            # 1 epoch (防止过拟合)
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+
+### 优化器配置 (论文指定AdamW)
+optim: adamw_torch
+adam_beta1: 0.9
+adam_beta2: 0.999
+max_grad_norm: 1.0
+
+### DeepSpeed配置 (论文: ZeRO-0)
+deepspeed: examples/deepspeed/ds_z0_config.json
+
+### 输出配置
+output_dir: outputs/mcp_lora
+logging_steps: 10
+save_steps: 100
+save_total_limit: 3
+bf16: true                       # 使用BF16混合精度训练
+
+### 评估配置
+val_size: 0.1                    # 10%数据用于验证
+evaluation_strategy: steps
+eval_steps: 50
+
+### 其他配置
+overwrite_output_dir: true
+plot_loss: true

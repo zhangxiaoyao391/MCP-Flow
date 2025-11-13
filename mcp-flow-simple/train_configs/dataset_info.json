@@ -1,0 +1,12 @@
+[
+  {
+    "dataset_name": "mcp_function_calling",
+    "file_name": "mcp_train_data.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+]
