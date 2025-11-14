@@ -4,7 +4,7 @@ LLM统一调用客户端
 """
 import logging
 from typing import Dict, List, Optional
-from openai import OpenAI
+from openai import OpenAI, APIError, APIConnectionError, APITimeoutError, RateLimitError
 
 logger = logging.getLogger(__name__)
 
@@ -22,17 +22,32 @@ class LLMClient:
     def __init__(self, config: Dict):
         """
         初始化LLM客户端
-        
+
         参数:
             config: 完整配置字典,包含llm_providers
         """
         self.config = config
         self.providers = config.get('llm_providers', {})
         self.task_assignments = config.get('task_assignments', {})
+
+        # API调用统计
+        self.api_call_stats = {
+            'total_calls': 0,
+            'successful_calls': 0,
+            'failed_calls': 0,
+            'provider_stats': {}
+        }
         
         # 初始化各provider的OpenAI客户端
         self.clients = {}
         for provider_name, provider_config in self.providers.items():
+            # 初始化provider统计
+            self.api_call_stats['provider_stats'][provider_name] = {
+                'calls': 0,
+                'success': 0,
+                'failed': 0
+            }
+
             try:
                 self.clients[provider_name] = OpenAI(
                     api_key=provider_config['api_key'],
@@ -41,6 +56,8 @@ class LLMClient:
                     max_retries=provider_config.get('max_retries', 3)
                 )
                 logger.info(f"✓ 初始化LLM provider: {provider_config.get('name', provider_name)}")
+            except (ValueError, KeyError) as e:
+                logger.error(f"✗ Provider {provider_name} 配置错误: {e}")
             except Exception as e:
                 logger.error(f"✗ 初始化provider {provider_name} 失败: {e}")
 
@@ -128,25 +145,61 @@ class LLMClient:
         if provider_name not in self.clients:
             logger.error(f"Provider {provider_name} 不存在")
             return None
-            
+
+        # 记录调用
+        self.api_call_stats['total_calls'] += 1
+        self.api_call_stats['provider_stats'][provider_name]['calls'] += 1
+
         try:
             client = self.clients[provider_name]
             provider_config = self.providers[provider_name]
             model = provider_config['model']
-            
+
             response = client.chat.completions.create(
                 model=model,
                 messages=messages,
                 temperature=temperature,
                 max_tokens=max_tokens
             )
-            
+
             content = response.choices[0].message.content
+
+            # 记录成功
+            self.api_call_stats['successful_calls'] += 1
+            self.api_call_stats['provider_stats'][provider_name]['success'] += 1
+
             return content
-            
-        except Exception as e:
-            logger.error(f"Provider {provider_name} 调用失败: {e}")
+
+        except RateLimitError as e:
+            logger.error(f"Provider {provider_name} 速率限制: {e}")
+            self._record_failure(provider_name)
             return None
+        except APITimeoutError as e:
+            logger.error(f"Provider {provider_name} 请求超时: {e}")
+            self._record_failure(provider_name)
+            return None
+        except APIConnectionError as e:
+            logger.error(f"Provider {provider_name} 连接失败: {e}")
+            self._record_failure(provider_name)
+            return None
+        except APIError as e:
+            logger.error(f"Provider {provider_name} API错误: {e}")
+            self._record_failure(provider_name)
+            return None
+        except (KeyError, IndexError) as e:
+            logger.error(f"Provider {provider_name} 响应格式错误: {e}")
+            self._record_failure(provider_name)
+            return None
+        except Exception as e:
+            logger.error(f"Provider {provider_name} 未知错误: {e}")
+            self._record_failure(provider_name)
+            return None
+
+    def _record_failure(self, provider_name: str):
+        """记录失败调用"""
+        self.api_call_stats['failed_calls'] += 1
+        if provider_name in self.api_call_stats['provider_stats']:
+            self.api_call_stats['provider_stats'][provider_name]['failed'] += 1
 
     def get_model_name(self, task_type: str = 'generation') -> str:
         """获取任务对应的模型名称"""
@@ -156,3 +209,25 @@ class LLMClient:
     def get_provider_info(self) -> Dict:
         """获取所有provider信息"""
         return {name: config.get('name', name) for name, config in self.providers.items()}
+
+    def get_api_stats(self) -> Dict:
+        """获取API调用统计信息"""
+        return self.api_call_stats.copy()
+
+    def print_api_stats(self):
+        """打印API调用统计"""
+        stats = self.api_call_stats
+        logger.info("=" * 60)
+        logger.info("API调用统计")
+        logger.info("=" * 60)
+        logger.info(f"总调用次数: {stats['total_calls']}")
+        logger.info(f"成功: {stats['successful_calls']} ({stats['successful_calls']/stats['total_calls']*100:.1f}%)" if stats['total_calls'] > 0 else "成功: 0 (0.0%)")
+        logger.info(f"失败: {stats['failed_calls']} ({stats['failed_calls']/stats['total_calls']*100:.1f}%)" if stats['total_calls'] > 0 else "失败: 0 (0.0%)")
+        logger.info("-" * 60)
+        for provider_name, provider_stats in stats['provider_stats'].items():
+            if provider_stats['calls'] > 0:
+                logger.info(f"{provider_name}:")
+                logger.info(f"  调用: {provider_stats['calls']}")
+                logger.info(f"  成功: {provider_stats['success']}")
+                logger.info(f"  失败: {provider_stats['failed']}")
+        logger.info("=" * 60)

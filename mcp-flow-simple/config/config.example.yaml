@@ -39,5 +39,5 @@ data_filtering:
 
 # 输出路径
 output_paths:
-  function_calls: "../data/function_call"
-  filtered_data: "../data/filtered"
+  function_calls: "./data/function_call"
+  filtered_data: "./data/filtered"
