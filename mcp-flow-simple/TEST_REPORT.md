@@ -165,12 +165,13 @@ main.py
 pip install -r requirements.txt
 
 # 2. 配置API
-cp config/config.example.yaml config/config.yaml
+MCP-Flow\mcp-flow-simple\config\config.example.yaml
 # 编辑config.yaml填写API密钥
 
 # 3. 运行
-cd src
-python main.py --tools ../mcp_tools_full_20251113_120436.json
+cd mcp-flow-simple
+完整工具数据集
+python src/main.py --tools mcp_tools_full_20251113_120436.json --config config/config.yaml
 ```
 
 ### 预期输出
@@ -267,18 +268,3 @@ cat PROJECT_SUMMARY.md
 
 # 安装依赖
 pip install -r requirements.txt
-
-# 配置
-cp config/config.example.yaml config/config.yaml
-notepad config/config.yaml
-
-# 运行
-cd src
-python main.py --tools ../mcp_tools_full_20251113_120436.json
-```
-
----
-
-**测试人**: Claude Code  
-**测试时间**: 2025-11-13 15:30  
-**测试结果**: ✅ **通过**

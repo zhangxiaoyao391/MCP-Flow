@@ -6,6 +6,7 @@ import argparse
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, List
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from data_generator.generator import DataGenerator
 from data_filter.filter import DataFilter
@@ -82,30 +83,45 @@ class MCPFlowPipeline:
 
     def generate_data(self, tools_data: Dict) -> List[Dict]:
         logger.info("=" * 60)
-        logger.info("阶段1: 数据生成")
+        logger.info("阶段1: 数据生成 (并行处理)")
         logger.info("=" * 60)
         generator = DataGenerator(self.config)
         server_info = tools_data['server_info']
         tools = tools_data['tools']
-        samples = []
 
         # 预估API调用次数
         estimated_calls = len(tools) * self.config['data_generation'].get('instruction_per_tool', 5) * 5
         logger.info(f"预估API调用次数: ~{estimated_calls} (每工具约5-10次)")
+        logger.info(f"并行线程数: 5")
 
-        for idx, tool in enumerate(tools, 1):
-            logger.info(f"[{idx}/{len(tools)}] 处理: {tool.get('name')}")
+        def process_tool(tool_data):
+            """处理单个工具"""
+            idx, tool = tool_data
+            results = []
             try:
+                logger.info(f"[{idx}/{len(tools)}] 处理: {tool.get('name')}")
                 instructions = generator.generate_instructions(tool, server_info)
-                logger.info(f"  生成{len(instructions)}条指令")
+                logger.info(f"  [{tool.get('name')}] 生成{len(instructions)}条指令")
                 for inst in instructions:
                     revised = generator.slot_fill_revision(inst, tool)
                     evolved = generator.wizardlm_evolution(revised, self.config['data_generation'].get('evolution_depth', 1))
                     sample = generator.generate_function_call(evolved, tool, server_info)
                     if sample:
-                        samples.append(sample)
+                        results.append(sample)
+                logger.info(f"  [{tool.get('name')}] 完成: {len(results)}个样本")
             except Exception as e:
-                logger.error(f"  处理失败: {e}")
+                logger.error(f"  [{tool.get('name')}] 处理失败: {e}")
+            return results
+
+        # 并行处理,最多5个线程
+        samples = []
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            futures = {executor.submit(process_tool, (idx, tool)): tool
+                       for idx, tool in enumerate(tools, 1)}
+
+            for future in as_completed(futures):
+                samples.extend(future.result())
+
         output_dir = Path(self.config['output_paths']['function_calls'])
         output_dir.mkdir(parents=True, exist_ok=True)
         output_file = output_dir / f"generated_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"

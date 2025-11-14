@@ -107,19 +107,24 @@ class LLMClient:
         
         if result:
             return result
-            
+
         # Primary失败,尝试fallback
         if 'fallback' in self.clients and primary_provider != 'fallback':
-            logger.warning(f"Primary provider失败,尝试fallback...")
-            result = self._call_provider(
-                'fallback',
-                messages,
-                temperature,
-                max_tokens
-            )
-            if result:
-                return result
-        
+            fallback_config = self.providers.get('fallback', {})
+            # 检查fallback是否配置了有效的API key
+            if fallback_config.get('api_key') and fallback_config['api_key'] != 'sk-placeholder':
+                logger.warning(f"Primary provider失败,尝试fallback...")
+                result = self._call_provider(
+                    'fallback',
+                    messages,
+                    temperature,
+                    max_tokens
+                )
+                if result:
+                    return result
+            else:
+                logger.debug("Fallback未配置有效API key,跳过")
+
         logger.error("所有provider均失败")
         return None
 

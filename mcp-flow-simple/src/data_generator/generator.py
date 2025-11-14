@@ -48,10 +48,12 @@ class DataGenerator:
                 return [re.sub(r'^\d+[.、]\s*', '', l) for l in lines if re.match(r'^\d+[.、]', l)][:num]
         except json.JSONDecodeError as e:
             logger.error(f"JSON解析失败: {e}")
+            logger.debug(f"响应内容: {response[:200] if response else 'None'}")
         except ValueError as e:
             logger.error(f"数据格式错误: {e}")
         except Exception as e:
             logger.error(f"生成指令失败: {e}")
+            logger.debug(f"异常类型: {type(e).__name__}")
         return []
 
     def slot_fill_revision(self, instruction: str, tool: Dict) -> str:
