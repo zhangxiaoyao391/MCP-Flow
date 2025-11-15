@@ -1,4 +1,4 @@
-"""MCP-Flow简化版主入口"""
+"""MCP-Flow完整版主入口"""
 import logging
 import yaml
 import json
@@ -134,43 +134,84 @@ class MCPFlowPipeline:
 
         return samples
 
-    def filter_data(self, samples: List[Dict]) -> List[Dict]:
+    def filter_data(self, samples: List[Dict], all_tools: List[Dict]) -> List[Dict]:
+        """
+        数据过滤 (完整版)
+
+        参数:
+            samples: 待过滤样本
+            all_tools: 所有工具列表(用于生成干扰工具)
+        """
         logger.info("=" * 60)
-        logger.info("阶段2: 数据过滤")
+        logger.info("阶段2: 数据过滤 (完整版)")
         logger.info("=" * 60)
-        filter_module = DataFilter(self.config)
+
+        # 初始化过滤器,传入工具池
+        filter_module = DataFilter(self.config, all_tools)
         initial = len(samples)
+
+        # 显示配置信息
+        filter_config = self.config.get('data_filtering', {})
+        if filter_config.get('enable_cross_validation', False):
+            logger.info(f"✓ 交叉验证: 启用 (双模型 + {filter_config.get('num_distractor_tools', 2)}个干扰工具)")
+        else:
+            logger.info("⚠ 交叉验证: 禁用 (简化模式)")
+
+        if filter_config.get('enable_error_detection', False):
+            logger.info("✓ 错误检测: 启用 (HTTP/API错误识别)")
+        else:
+            logger.info("⚠ 错误检测: 禁用 (简化模式)")
+
+        # 过滤步骤
         samples = filter_module.filter_by_tool_invocation(samples)
         logger.info(f"工具验证: {len(samples)}/{initial}")
+
         samples = filter_module.filter_by_quality_score(samples)
         logger.info(f"质量评分: {len(samples)}/{initial}")
+
         samples = filter_module.filter_trajectory(samples)
         logger.info(f"轨迹验证: {len(samples)}/{initial}")
+
+        # 保存结果
         output_dir = Path(self.config['output_paths']['filtered_data'])
         output_dir.mkdir(parents=True, exist_ok=True)
         output_file = output_dir / f"filtered_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(samples, f, ensure_ascii=False, indent=2)
+
         percent = (len(samples)/initial*100) if initial > 0 else 0
         logger.info(f"✓ 过滤完成: {len(samples)}个样本({percent:.1f}%), 保存至 {output_file}")
+
+        # 打印API调用统计
+        filter_module.llm_client.print_api_stats()
+
         return samples
 
     def run(self, tools_json: str):
         start = datetime.now()
         logger.info("=" * 60)
-        logger.info("MCP-Flow 简化版 Pipeline")
+        logger.info("MCP-Flow 完整版 Pipeline")
         logger.info("=" * 60)
+
+        # 加载工具
         tools_data = self.load_tools(tools_json)
+        all_tools = tools_data['tools']
+
+        # 数据生成
         samples = self.generate_data(tools_data)
-        filtered = self.filter_data(samples)
+
+        # 数据过滤 (传入工具池)
+        filtered = self.filter_data(samples, all_tools)
+
+        # 统计
         duration = datetime.now() - start
         logger.info("=" * 60)
         logger.info(f"✓ 完成! 耗时: {duration}")
-        logger.info(f"✓ 工具: {len(tools_data['tools'])}, 生成: {len(samples)}, 通过: {len(filtered)}")
+        logger.info(f"✓ 工具: {len(all_tools)}, 生成: {len(samples)}, 通过: {len(filtered)}")
         logger.info("=" * 60)
 
 def main():
-    parser = argparse.ArgumentParser(description='MCP-Flow简化版')
+    parser = argparse.ArgumentParser(description='MCP-Flow完整版')
     parser.add_argument('--tools', required=True, help='工具JSON路径')
     parser.add_argument('--config', default='../config/config.yaml', help='配置文件')
     args = parser.parse_args()

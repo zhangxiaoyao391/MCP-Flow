@@ -206,17 +206,6 @@ data_filtering:
 4. **模块化**: 清晰的模块划分,易于扩展
 5. **无GPU**: 移除嵌入模型,降低硬件要求
 
-### 对比原项目
-
-| 指标 | 原项目 | 简化版 | 变化 |
-|------|--------|--------|------|
-| 代码行数 | ~5391 | ~500 | -91% |
-| 模块数 | 5 | 4 | -20% |
-| 依赖数 | 28 | 8 | -71% |
-| Pipeline阶段 | 5 | 2 | -60% |
-| GPU需求 | 是 | 否 | ✅ |
-| 安装时间 | ~15分钟 | ~3分钟 | -80% |
-
 ### 保留的核心算法
 
 ✅ **完整保留:**
@@ -228,19 +217,6 @@ data_filtering:
 - LLM质量评分
 - 轨迹完整性验证
 
-## 依赖清单
-
-```
-openai>=1.0.0          # OpenAI API
-anthropic>=0.18.0      # Anthropic API
-pyyaml>=6.0            # YAML配置
-requests>=2.31.0       # HTTP请求
-numpy>=1.24.0          # 数值计算
-pandas>=2.0.0          # 数据处理
-tqdm>=4.66.0           # 进度条
-```
-
-## 文件清单
 
 ### 核心代码文件
 
@@ -283,12 +259,6 @@ tqdm>=4.66.0           # 进度条
 ### 运行命令
 
 ```bash
-# 基本运行
-python src/main.py --tools mcp_tools.json
-
-# 自定义配置
-python src/main.py --tools tools.json --config my_config.yaml
-```
 
 ### 目录说明
 

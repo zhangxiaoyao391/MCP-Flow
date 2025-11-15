@@ -268,3 +268,101 @@ cat PROJECT_SUMMARY.md
 
 # 安装依赖
 pip install -r requirements.txt
+
+  📊 项目实现与预期对比分析方案
+
+  当前项目实现概况
+
+  项目已实现的过滤机制:
+
+  1. 工具调用验证 (filter.py:16-29)
+    - 检查 tool_name 与 function_call.name 是否一致
+  2. 质量评分过滤 (filter.py:31-53)
+    - 使用 LLM 对样本打分 (0-10)
+    - 默认阈值 6 分
+  3. 轨迹验证 (filter.py:55-67)
+    - 检查必需字段完整性
+    - 验证 final_response 长度
+
+  ---
+  🔍 与您预期的三个机制对比
+
+  | 维度           | 您的预期                                             | 当前实现                       | 差异分析                   |
+  |--------------|--------------------------------------------------|----------------------------|------------------------|
+  | 1. 工具调用可靠性过滤 | ✅ GPT-4o + DeepSeek-V3 交叉验证从 1正确+2随机 中选择两者都选错才丢弃 | ⚠️ 仅验证名称匹配无交叉验证机制无干扰工具测试   | 缺少多模型验证缺少干扰工具选择测试      |
+  | 2. 质量评分过滤    | ✅ DeepSeek-V3 打分评估指令+函数调用低于 6 分丢弃                | ✅ 已实现LLM 打分 0-10阈值可配置(默认6) | 基本一致但未指定使用 DeepSeek-V3 |
+  | 3. 轨迹过滤      | ✅ 过滤无效响应服务器不可用API Key 缺失等错误                      | ⚠️ 仅检查字段完整性检查长度下限无错误类型识别   | 缺少错误原因分析无服务器状态检测       |
+
+  ---
+  🎯 具体差异说明
+
+  ❌ 差异 1: 工具调用可靠性过滤 (最大差异)
+
+  您的预期:
+  # 伪代码逻辑
+  正确工具 = sample['tool_info']['tool_name']
+  随机工具1, 随机工具2 = 从工具池随机选择2个
+
+  候选工具 = [正确工具, 随机工具1, 随机工具2]
+
+  gpt4o_choice = GPT-4o.选择工具(instruction, 候选工具)
+  deepseek_choice = DeepSeek-V3.选择工具(instruction, 候选工具)
+
+  if gpt4o_choice != 正确工具 AND deepseek_choice != 正确工具:
+      丢弃样本  # 两个模型都选错
+  else:
+      保留样本
+
+  当前实现:
+  # filter.py:16-29
+  def filter_by_tool_invocation(self, samples):
+      for sample in samples:
+          tool_name = sample['tool_info']['tool_name']
+          call_name = sample['function_call']['name']
+          if tool_name == call_name:  # 仅检查名称匹配
+              filtered.append(sample)
+
+  缺失功能:
+  - ❌ 无多模型交叉验证
+  - ❌ 无干扰工具构造
+  - ❌ 无工具选择测试
+
+  ---
+  ⚠️ 差异 2: 质量评分过滤 (基本符合)
+
+  当前实现基本符合预期,但有细节差异:
+
+  | 维度   | 预期          | 当前实现                  |
+  |------|-------------|-----------------------|
+  | 评分模型 | DeepSeek-V3 | 可配置 LLM (config.yaml) |
+  | 评分范围 | 1-10        | 0-10                  |
+  | 评分对象 | 指令 + 函数调用   | ✅ 已包含                 |
+  | 阈值   | 6           | ✅ 6 (可配置)             |
+
+  ---
+  ⚠️ 差异 3: 轨迹过滤 (功能不足)
+
+  您的预期:
+  # 识别并丢弃这些错误类型
+  错误类型 = [
+      "服务器不可用 (503, timeout)",
+      "API Key 缺失/无效 (401, 403)",
+      "速率限制 (429)",
+      "响应格式错误",
+      "空响应/截断响应"
+  ]
+
+  当前实现:
+  # filter.py:55-67
+  def filter_trajectory(self, samples):
+      required_keys = ['instruction', 'function_call',
+                       'tool_response', 'final_response']
+      if all(k in sample for k in required_keys):  # 仅检查字段存在
+          if len(sample['final_response']) > 5:     # 仅检查长度
+              filtered.append(sample)
+
+  缺失功能:
+  - ❌ 无 HTTP 状态码检测
+  - ❌ 无 API 错误消息解析
+  - ❌ 无服务器可用性验证
+  - ❌ 无响应质量深度检查

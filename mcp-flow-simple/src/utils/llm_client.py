@@ -236,3 +236,84 @@ class LLMClient:
                 logger.info(f"  成功: {provider_stats['success']}")
                 logger.info(f"  失败: {provider_stats['failed']}")
         logger.info("=" * 60)
+
+    def cross_validate_tool_selection(
+        self,
+        instruction: str,
+        correct_tool: Dict,
+        distractor_tools: List[Dict],
+        temperature: float = 0.3
+    ) -> Dict[str, str]:
+        """
+        交叉验证工具选择 (完整版新增功能)
+
+        使用两个DeepSeek模型独立验证工具选择的正确性
+
+        参数:
+            instruction: 用户指令
+            correct_tool: 正确的工具信息
+            distractor_tools: 干扰工具列表
+            temperature: 生成温度
+
+        返回:
+            {"primary": "tool_name", "secondary": "tool_name"}
+        """
+        import random
+        import json
+
+        # 构造候选工具列表
+        candidates = [correct_tool] + distractor_tools
+        random.shuffle(candidates)
+
+        # 构造提示词
+        tools_desc = "\n".join([
+            f"{i+1}. {tool['name']}: {tool.get('description', 'No description')}"
+            for i, tool in enumerate(candidates)
+        ])
+
+        prompt = f"""给定用户指令,从以下工具中选择最合适的一个。
+
+用户指令: {instruction}
+
+可用工具:
+{tools_desc}
+
+只返回工具名称,不要其他内容。"""
+
+        messages = [{"role": "user", "content": prompt}]
+
+        # 主模型验证
+        primary_provider = self.task_assignments.get('cross_validation_primary', 'deepseek')
+        primary_result = self._call_provider(
+            primary_provider,
+            messages,
+            temperature,
+            max_tokens=100
+        )
+
+        # 备用模型验证
+        secondary_provider = self.task_assignments.get('cross_validation_secondary', 'deepseek_backup')
+        secondary_result = self._call_provider(
+            secondary_provider,
+            messages,
+            temperature,
+            max_tokens=100
+        )
+
+        # 清理结果
+        def clean_result(result: Optional[str]) -> str:
+            if not result:
+                return ""
+            # 提取工具名称
+            result = result.strip()
+            # 尝试匹配候选工具名称
+            for tool in candidates:
+                if tool['name'] in result:
+                    return tool['name']
+            return result
+
+        return {
+            "primary": clean_result(primary_result),
+            "secondary": clean_result(secondary_result),
+            "correct": correct_tool['name']
+        }

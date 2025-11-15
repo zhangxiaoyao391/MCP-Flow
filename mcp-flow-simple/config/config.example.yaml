@@ -1,30 +1,54 @@
-# MCP-Flow 简化版配置
+# MCP-Flow 完整版配置 - 火山方舟免费模型
 
 # LLM API配置
 llm_providers:
+  # 主力模型 - 数据生成
   primary:
-    name: "doubao"
+    name: "doubao-thinking-pro"
     provider: "openai"
-    api_key: "YOUR_API_KEY_HERE"
-    base_url: "YOUR_BASE_URL_HERE"
-    model: "Doubao-Seed-1.6"
-    timeout: 60
+    api_key: "a49c64f7-1e75-49f3-9816-c2921b528069"
+    base_url: "https://ark.cn-beijing.volces.com/api/v3"
+    model: "ep-20251115142804-lg9km"  # Doubao-1.5-thinking-pro
+    timeout: 90
     max_retries: 3
 
-  fallback:
-    name: "openai"
+  # 评分/验证主模型
+  deepseek:
+    name: "deepseek-v3.1"
     provider: "openai"
-    api_key: "YOUR_OPENAI_KEY"
-    base_url: "https://api.openai.com/v1"
-    model: "gpt-4o-mini"
+    api_key: "a49c64f7-1e75-49f3-9816-c2921b528069"
+    base_url: "https://ark.cn-beijing.volces.com/api/v3"
+    model: "ep-20251115143356-zmsxn"  # DeepSeek-V3.1 (最新)
+    timeout: 90
+    max_retries: 3
+
+  # DeepSeek备用
+  deepseek_backup:
+    name: "deepseek-v3"
+    provider: "openai"
+    api_key: "a49c64f7-1e75-49f3-9816-c2921b528069"
+    base_url: "https://ark.cn-beijing.volces.com/api/v3"
+    model: "ep-20251115142837-h8j76"  # DeepSeek-V3
+    timeout: 90
+    max_retries: 3
+
+  # 通用备用 - 快速轻量
+  fallback:
+    name: "doubao-lite"
+    provider: "openai"
+    api_key: "a49c64f7-1e75-49f3-9816-c2921b528069"
+    base_url: "https://ark.cn-beijing.volces.com/api/v3"
+    model: "ep-20251115142650-pjvst"  # Doubao-Seed-1.6-lite
     timeout: 60
     max_retries: 3
 
 # 任务分配
 task_assignments:
-  generation: "primary"
-  function_call: "primary"
-  scoring: "primary"
+  generation: "primary"              # 数据生成 → Doubao-thinking-pro
+  function_call: "primary"           # 函数调用 → Doubao-thinking-pro
+  scoring: "deepseek"                # 质量评分 → DeepSeek-V3.1
+  cross_validation_primary: "deepseek"     # 交叉验证主模型 → DeepSeek-V3.1
+  cross_validation_secondary: "deepseek_backup"  # 交叉验证备用 → DeepSeek-V3
 
 # 数据生成配置
 data_generation:
@@ -33,9 +57,20 @@ data_generation:
   temperature: 0.7
   max_tokens: 4096
 
-# 数据过滤配置
+# 数据过滤配置 (完整版)
 data_filtering:
+  # 质量评分
   quality_score_threshold: 6
+
+  # 工具调用可靠性验证 (新增)
+  enable_cross_validation: true
+  cross_validation_mode: "dual_model"  # 双模型验证
+  num_distractor_tools: 2              # 干扰工具数量
+
+  # 轨迹过滤 (增强)
+  enable_error_detection: true         # 启用错误检测
+  check_http_errors: true              # 检查HTTP错误
+  check_api_errors: true               # 检查API错误
 
 # 输出路径
 output_paths:
